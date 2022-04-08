@@ -17,5 +17,6 @@
 p {
   font-size: constants.$small-size;
   opacity: 35%;
+  text-align: center;
 }
 </style>
