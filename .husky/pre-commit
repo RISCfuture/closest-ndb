@@ -3,4 +3,3 @@
 
 npx stylelint ./src/**/*.{vue,scss} --fix
 npx vue-cli-service lint --fix
-git add .
