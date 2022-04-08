@@ -8,4 +8,6 @@ module.exports = defineConfig({
     lintStyleOnBuild: false,
     stylelint: {},
   },
+
+  publicPath: process.env.NODE_ENV === 'development' ? '/' : '/closest-ndb',
 });

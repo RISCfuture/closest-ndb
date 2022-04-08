@@ -1,0 +1,4 @@
+[submodule "deploy"]
+	path = deploy
+	url = git@github.com:RISCfuture/closest-ndb.git
+	branch = deploy
