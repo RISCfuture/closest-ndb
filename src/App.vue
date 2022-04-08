@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container full-height">
     <title-view />
     <router-view/>
     <footer-view />
@@ -22,8 +22,6 @@ export default class App extends Vue {
 @use 'src/styles/constants';
 
 .container {
-  @include constants.full-height;
-
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: auto 1fr auto;

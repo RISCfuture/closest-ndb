@@ -2,7 +2,7 @@
 
 html,
 body {
-  @include constants.full-height;
+  height: 100vh;
 
   width: 100vw;
   overflow: hidden;
@@ -10,6 +10,19 @@ body {
 
   @media (prefers-color-scheme: dark) {
     background-color: black;
+  }
+
+  .full-height {
+    height: 100vh;
+  }
+
+  /* mobile viewport bug fix */
+  &:not(.is-chrome) {
+    height: -webkit-fill-available;
+
+    .full-height {
+      height: -webkit-fill-available;
+    }
   }
 }
 
