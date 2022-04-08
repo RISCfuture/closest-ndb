@@ -4,9 +4,11 @@
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
-    "sizes": "192x192"
-  }],
+    "sizes": "512x512",
+    "purpose": "any maskable"
+  }
+  ],
   "start_url": "/",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "background_color": "#ffffff",
+  "theme_color": "#7d5732"
 }
