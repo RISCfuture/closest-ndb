@@ -19,7 +19,11 @@ export default class App extends Vue {
 </script>
 
 <style lang="scss">
+@use 'src/styles/constants';
+
 .container {
+  @include constants.full-height;
+
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: auto 1fr auto;
@@ -30,7 +34,6 @@ export default class App extends Vue {
     ". adf ."
     ". info ."
     "footer footer footer";
-  height: 100vh;
   background-image: url('images/background.svg');
   background-size: cover;
   background-position: center;
