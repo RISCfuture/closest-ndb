@@ -1,0 +1,8703 @@
+[
+  {
+    "id":   "AMF",
+    "name": "AMBLER",
+    "lat":  241578,
+    "lon":  -568296,
+    "freq": "403"
+  },
+  {
+    "id":   "AKP",
+    "name": "ANAKTUVUK PASS",
+    "lat":  245291,
+    "lon":  -546279,
+    "freq": "348"
+  },
+  {
+    "id":   "CMQ",
+    "name": "CAMPBELL LAKE",
+    "lat":  220215,
+    "lon":  -540171,
+    "freq": "338"
+  },
+  {
+    "id":   "ANI",
+    "name": "ANIAK",
+    "lat":  221724,
+    "lon":  -574552,
+    "freq": "359"
+  },
+  {
+    "id":   "ICK",
+    "name": "NICHOLS",
+    "lat":  198255,
+    "lon":  -473778,
+    "freq": "266"
+  },
+  {
+    "id":   "ANV",
+    "name": "ANVIK",
+    "lat":  225509,
+    "lon":  -576667,
+    "freq": "365"
+  },
+  {
+    "id":   "ATK",
+    "name": "ATQASUK",
+    "lat":  253688,
+    "lon":  -566738,
+    "freq": "350"
+  },
+  {
+    "id":   "OSE",
+    "name": "OSCARVILLE",
+    "lat":  218848,
+    "lon":  -582741,
+    "freq": "251"
+  },
+  {
+    "id":   "EAV",
+    "name": "EVANSVILLE",
+    "lat":  240815,
+    "lon":  -545629,
+    "freq": "391"
+  },
+  {
+    "id":   "CZF",
+    "name": "CAPE ROMANZOF",
+    "lat":  222445,
+    "lon":  -597492,
+    "freq": "275"
+  },
+  {
+    "id":   "CQR",
+    "name": "CHANDALAR LAKE",
+    "lat":  243008,
+    "lon":  -534489,
+    "freq": "263"
+  },
+  {
+    "id":   "CGL",
+    "name": "COGHLAN ISLAND",
+    "lat":  210093,
+    "lon":  -484918,
+    "freq": "212"
+  },
+  {
+    "id":   "ELF",
+    "name": "ELFEE",
+    "lat":  199066,
+    "lon":  -586041,
+    "freq": "341"
+  },
+  {
+    "id":   "GCR",
+    "name": "GLACIER RIVER",
+    "lat":  217795,
+    "lon":  -523708,
+    "freq": "404"
+  },
+  {
+    "id":   "PVQ",
+    "name": "PUT RIVER",
+    "lat":  252801,
+    "lon":  -534298,
+    "freq": "376"
+  },
+  {
+    "id":   "DJN",
+    "name": "DELTA JUNCTION",
+    "lat":  230484,
+    "lon":  -524472,
+    "freq": "347"
+  },
+  {
+    "id":   "BTS",
+    "name": "WOOD RIVER",
+    "lat":  212398,
+    "lon":  -570773,
+    "freq": "429"
+  },
+  {
+    "id":   "CUN",
+    "name": "CHENA",
+    "lat":  233418,
+    "lon":  -530982,
+    "freq": "257"
+  },
+  {
+    "id":   "FTO",
+    "name": "YUKON RIVER",
+    "lat":  239688,
+    "lon":  -522765,
+    "freq": "242"
+  },
+  {
+    "id":   "FOX",
+    "name": "FOX",
+    "lat":  233888,
+    "lon":  -531287,
+    "freq": "356"
+  },
+  {
+    "id":   "GBH",
+    "name": "GALBRAITH LAKE",
+    "lat":  246524,
+    "lon":  -538194,
+    "freq": "417"
+  },
+  {
+    "id":   "GLA",
+    "name": "GLENNALLEN",
+    "lat":  223903,
+    "lon":  -523683,
+    "freq": "248"
+  },
+  {
+    "id":   "GAV",
+    "name": "GUSTAVUS",
+    "lat":  210317,
+    "lon":  -488541,
+    "freq": "219"
+  },
+  {
+    "id":   "HNS",
+    "name": "HAINES",
+    "lat":  213163,
+    "lon":  -487551,
+    "freq": "245"
+  },
+  {
+    "id":   "ALJ",
+    "name": "ORCA BAY",
+    "lat":  217727,
+    "lon":  -527714,
+    "freq": "233"
+  },
+  {
+    "id":   "ACE",
+    "name": "KACHEMAK",
+    "lat":  214708,
+    "lon":  -545400,
+    "freq": "277"
+  },
+  {
+    "id":   "IWW",
+    "name": "WILDWOOD",
+    "lat":  218155,
+    "lon":  -544360,
+    "freq": "379"
+  },
+  {
+    "id":   "CMJ",
+    "name": "CLAM COVE",
+    "lat":  199231,
+    "lon":  -474086,
+    "freq": "396"
+  },
+  {
+    "id":   "AUB",
+    "name": "CHINOOK",
+    "lat":  211453,
+    "lon":  -564401,
+    "freq": "355"
+  },
+  {
+    "id":   "RWO",
+    "name": "WOODY ISLAND",
+    "lat":  207989,
+    "lon":  -548368,
+    "freq": "394"
+  },
+  {
+    "id":   "HHM",
+    "name": "HOTHAM",
+    "lat":  240844,
+    "lon":  -585231,
+    "freq": "356"
+  },
+  {
+    "id":   "PYC",
+    "name": "PITSAND",
+    "lat":  253180,
+    "lon":  -538687,
+    "freq": "290"
+  },
+  {
+    "id":   "SQM",
+    "name": "SUMNER STRAIT",
+    "lat":  203272,
+    "lon":  -479150,
+    "freq": "529"
+  },
+  {
+    "id":   "VTR",
+    "name": "TAKOTNA RIVER",
+    "lat":  226608,
+    "lon":  -560006,
+    "freq": "350"
+  },
+  {
+    "id":   "MHM",
+    "name": "MINCHUMINA",
+    "lat":  229981,
+    "lon":  -548338,
+    "freq": "227"
+  },
+  {
+    "id":   "OAY",
+    "name": "NORTON BAY",
+    "lat":  232903,
+    "lon":  -583429,
+    "freq": "263"
+  },
+  {
+    "id":   "ICW",
+    "name": "ICE POOL",
+    "lat":  232364,
+    "lon":  -536676,
+    "freq": "525"
+  },
+  {
+    "id":   "FDV",
+    "name": "FORT DAVIS",
+    "lat":  232181,
+    "lon":  -595134,
+    "freq": "529"
+  },
+  {
+    "id":   "HCP",
+    "name": "KULIK LAKE",
+    "lat":  212463,
+    "lon":  -560161,
+    "freq": "334"
+  },
+  {
+    "id":   "AES",
+    "name": "NABESNA",
+    "lat":  226617,
+    "lon":  -510875,
+    "freq": "390"
+  },
+  {
+    "id":   "UQS",
+    "name": "NUIQSUT VILLAGE",
+    "lat":  252763,
+    "lon":  -543602,
+    "freq": "241"
+  },
+  {
+    "id":   "FPN",
+    "name": "FREDERICKS POINT",
+    "lat":  204452,
+    "lon":  -478155,
+    "freq": "372"
+  },
+  {
+    "id":   "PHO",
+    "name": "POINT HOPE",
+    "lat":  246040,
+    "lon":  -600473,
+    "freq": "221"
+  },
+  {
+    "id":   "PIZ",
+    "name": "POINT LAY",
+    "lat":  251051,
+    "lon":  -586786,
+    "freq": "362"
+  },
+  {
+    "id":   "PPC",
+    "name": "PROSPECT",
+    "lat":  240547,
+    "lon":  -542278,
+    "freq": "340"
+  },
+  {
+    "id":   "SYA",
+    "name": "SHEMYA",
+    "lat":  189799,
+    "lon":  -626617,
+    "freq": "403"
+  },
+  {
+    "id":   "SHH",
+    "name": "SHISHMAREF",
+    "lat":  238529,
+    "lon":  -597788,
+    "freq": "365"
+  },
+  {
+    "id":   "EEF",
+    "name": "ELEPHANT",
+    "lat":  209415,
+    "lon":  -486928,
+    "freq": "391"
+  },
+  {
+    "id":   "IME",
+    "name": "MOUNT EDGECUMBE",
+    "lat":  205370,
+    "lon":  -487316,
+    "freq": "414"
+  },
+  {
+    "id":   "SIT",
+    "name": "SITKA",
+    "lat":  204676,
+    "lon":  -487923,
+    "freq": "358"
+  },
+  {
+    "id":   "CRN",
+    "name": "CAIRN MOUNTAIN",
+    "lat":  219966,
+    "lon":  -560047,
+    "freq": "281"
+  },
+  {
+    "id":   "SMA",
+    "name": "ST MARYS",
+    "lat":  223413,
+    "lon":  -587814,
+    "freq": "230"
+  },
+  {
+    "id":   "UMM",
+    "name": "SUMMIT",
+    "lat":  227920,
+    "lon":  -536870,
+    "freq": "326"
+  },
+  {
+    "id":   "PEE",
+    "name": "PETERS CREEK",
+    "lat":  224391,
+    "lon":  -540347,
+    "freq": "305"
+  },
+  {
+    "id":   "BCC",
+    "name": "BEAR CREEK",
+    "lat":  234625,
+    "lon":  -547941,
+    "freq": "212"
+  },
+  {
+    "id":   "JNR",
+    "name": "NORTH RIVER",
+    "lat":  230067,
+    "lon":  -578922,
+    "freq": "382"
+  },
+  {
+    "id":   "VIR",
+    "name": "BROWERVILLE",
+    "lat":  256616,
+    "lon":  -564412,
+    "freq": "281"
+  },
+  {
+    "id":   "MNL",
+    "name": "MINERAL CREEK",
+    "lat":  220047,
+    "lon":  -526868,
+    "freq": "524"
+  },
+  {
+    "id":   "UKK",
+    "name": "WAINWRIGHT VILLAGE",
+    "lat":  254295,
+    "lon":  -576033,
+    "freq": "338"
+  },
+  {
+    "id":   "CYT",
+    "name": "YAKATAGA",
+    "lat":  216310,
+    "lon":  -512959,
+    "freq": "209"
+  },
+  {
+    "id":   "OCC",
+    "name": "OCEAN CAPE",
+    "lat":  214357,
+    "lon":  -503021,
+    "freq": "385"
+  },
+  {
+    "id":   "ARF",
+    "name": "SARATOGA",
+    "lat":  123310,
+    "lon":  -310404,
+    "freq": "296"
+  },
+  {
+    "id":   "DER",
+    "name": "ALEXANDER CITY",
+    "lat":  118365,
+    "lon":  -309460,
+    "freq": "382"
+  },
+  {
+    "id":   "JUY",
+    "name": "JUDD",
+    "lat":  112698,
+    "lon":  -311007,
+    "freq": "264"
+  },
+  {
+    "id":   "AN",
+    "name": "BOGGA",
+    "lat":  120723,
+    "lon":  -309352,
+    "freq": "211"
+  },
+  {
+    "id":   "BH",
+    "name": "MCDEN",
+    "lat":  120641,
+    "lon":  -312644,
+    "freq": "224"
+  },
+  {
+    "id":   "GGY",
+    "name": "GRAGG-WADE",
+    "lat":  118271,
+    "lon":  -311800,
+    "freq": "338"
+  },
+  {
+    "id":   "BVG",
+    "name": "BOLL WEEVIL",
+    "lat":  112821,
+    "lon":  -309534,
+    "freq": "352"
+  },
+  {
+    "id":   "FTP",
+    "name": "FORT PAYNE",
+    "lat":  124276,
+    "lon":  -308423,
+    "freq": "426"
+  },
+  {
+    "id":   "LOR",
+    "name": "LOWE",
+    "lat":  112901,
+    "lon":  -308676,
+    "freq": "269"
+  },
+  {
+    "id":   "HYE",
+    "name": "HANCHEY",
+    "lat":  112953,
+    "lon":  -308353,
+    "freq": "221"
+  },
+  {
+    "id":   "OZ",
+    "name": "RUCKR",
+    "lat":  112412,
+    "lon":  -308937,
+    "freq": "212"
+  },
+  {
+    "id":   "CWH",
+    "name": "CAPSHAW",
+    "lat":  125185,
+    "lon":  -312404,
+    "freq": "350"
+  },
+  {
+    "id":   "MOB",
+    "name": "WISLE",
+    "lat":  110738,
+    "lon":  -317891,
+    "freq": "248"
+  },
+  {
+    "id":   "MG",
+    "name": "MARRA",
+    "lat":  116321,
+    "lon":  -311438,
+    "freq": "245"
+  },
+  {
+    "id":   "HUA",
+    "name": "REDSTONE",
+    "lat":  124915,
+    "lon":  -312076,
+    "freq": "287"
+  },
+  {
+    "id":   "SE",
+    "name": "POLLK",
+    "lat":  116171,
+    "lon":  -312939,
+    "freq": "344"
+  },
+  {
+    "id":   "ESU",
+    "name": "SUMMERDALE",
+    "lat":  109797,
+    "lon":  -315812,
+    "freq": "204"
+  },
+  {
+    "id":   "SCD",
+    "name": "SYLACAUGA",
+    "lat":  119427,
+    "lon":  -310745,
+    "freq": "284"
+  },
+  {
+    "id":   "TOI",
+    "name": "BLOOD",
+    "lat":  114590,
+    "lon":  -309981,
+    "freq": "365"
+  },
+  {
+    "id":   "TC",
+    "name": "TUSKE",
+    "lat":  119370,
+    "lon":  -315613,
+    "freq": "362"
+  },
+  {
+    "id":   "ADF",
+    "name": "ARKADELPHIA",
+    "lat":  122600,
+    "lon":  -335178,
+    "freq": "275"
+  },
+  {
+    "id":   "BV",
+    "name": "ALMND",
+    "lat":  128531,
+    "lon":  -330471,
+    "freq": "335"
+  },
+  {
+    "id":   "CZE",
+    "name": "CLARKSVILLE",
+    "lat":  127689,
+    "lon":  -336324,
+    "freq": "201"
+  },
+  {
+    "id":   "CWS",
+    "name": "CONWAY",
+    "lat":  126302,
+    "lon":  -332736,
+    "freq": "302"
+  },
+  {
+    "id":   "EL",
+    "name": "LADOS",
+    "lat":  119829,
+    "lon":  -333821,
+    "freq": "418"
+  },
+  {
+    "id":   "GK",
+    "name": "JEMBO",
+    "lat":  127161,
+    "lon":  -340107,
+    "freq": "311"
+  },
+  {
+    "id":   "FS",
+    "name": "WIZER",
+    "lat":  127275,
+    "lon":  -339181,
+    "freq": "223"
+  },
+  {
+    "id":   "HR",
+    "name": "BAKKY",
+    "lat":  130288,
+    "lon":  -335376,
+    "freq": "395"
+  },
+  {
+    "id":   "HPC",
+    "name": "HOPE",
+    "lat":  121385,
+    "lon":  -337142,
+    "freq": "362"
+  },
+  {
+    "id":   "HO",
+    "name": "HOSSY",
+    "lat":  123921,
+    "lon":  -335482,
+    "freq": "385"
+  },
+  {
+    "id":   "TYV",
+    "name": "TONEYVILLE",
+    "lat":  125829,
+    "lon":  -331270,
+    "freq": "290"
+  },
+  {
+    "id":   "LI",
+    "name": "LASKY",
+    "lat":  124808,
+    "lon":  -332299,
+    "freq": "353"
+  },
+  {
+    "id":   "VM",
+    "name": "FENCH",
+    "lat":  124340,
+    "lon":  -338661,
+    "freq": "352"
+  },
+  {
+    "id":   "MPJ",
+    "name": "MORRILTON",
+    "lat":  126427,
+    "lon":  -334530,
+    "freq": "410"
+  },
+  {
+    "id":   "RO",
+    "name": "ROGRS",
+    "lat":  131260,
+    "lon":  -338650,
+    "freq": "263"
+  },
+  {
+    "id":   "RUE",
+    "name": "RUSSELLVILLE",
+    "lat":  126925,
+    "lon":  -335140,
+    "freq": "379"
+  },
+  {
+    "id":   "DS",
+    "name": "CERCY",
+    "lat":  126441,
+    "lon":  -330341,
+    "freq": "375"
+  },
+  {
+    "id":   "SLG",
+    "name": "SILOAM SPRINGS",
+    "lat":  130281,
+    "lon":  -340158,
+    "freq": "284"
+  },
+  {
+    "id":   "TT",
+    "name": "STUTT",
+    "lat":  124220,
+    "lon":  -329694,
+    "freq": "338"
+  },
+  {
+    "id":   "SGT",
+    "name": "STUTTGART",
+    "lat":  124789,
+    "lon":  -329725,
+    "freq": "269"
+  },
+  {
+    "id":   "TX",
+    "name": "TECCO",
+    "lat":  120686,
+    "lon":  -338061,
+    "freq": "234"
+  },
+  {
+    "id":   "TNZ",
+    "name": "LAWRENCE COUNTY",
+    "lat":  130344,
+    "lon":  -327323,
+    "freq": "227"
+  },
+  {
+    "id":   "LOG",
+    "name": "LOGOTALA HILL",
+    "lat":  51673,
+    "lon":  -614696,
+    "freq": "242"
+  },
+  {
+    "id":   "TUT",
+    "name": "PAGO PAGO",
+    "lat":  51595,
+    "lon":  -614590,
+    "freq": "403"
+  },
+  {
+    "id":   "CHD",
+    "name": "CHANDLER",
+    "lat":  119759,
+    "lon":  -402508,
+    "freq": "407"
+  },
+  {
+    "id":   "AZC",
+    "name": "COLORADO CITY",
+    "lat":  133056,
+    "lon":  -406833,
+    "freq": "403"
+  },
+  {
+    "id":   "DAO",
+    "name": "DRAGOO",
+    "lat":  113708,
+    "lon":  -397239,
+    "freq": "410"
+  },
+  {
+    "id":   "AVQ",
+    "name": "MARANA",
+    "lat":  116682,
+    "lon":  -400376,
+    "freq": "245"
+  },
+  {
+    "id":   "FFZ",
+    "name": "FALCON FIELD",
+    "lat":  120462,
+    "lon":  -402239,
+    "freq": "281"
+  },
+  {
+    "id":   "ENZ",
+    "name": "NOGALES",
+    "lat":  113116,
+    "lon":  -399047,
+    "freq": "394"
+  },
+  {
+    "id":   "SOW",
+    "name": "SHOW LOW",
+    "lat":  123362,
+    "lon":  -396029,
+    "freq": "206"
+  },
+  {
+    "id":   "RBJ",
+    "name": "ROBLES",
+    "lat":  115467,
+    "lon":  -400896,
+    "freq": "220"
+  },
+  {
+    "id":   "RYN",
+    "name": "RYAN",
+    "lat":  115699,
+    "lon":  -400181,
+    "freq": "338"
+  },
+  {
+    "id":   "AWR",
+    "name": "WINDOW ROCK",
+    "lat":  128392,
+    "lon":  -392645,
+    "freq": "254"
+  },
+  {
+    "id":   "UR",
+    "name": "VINEE",
+    "lat":  123113,
+    "lon":  -426160,
+    "freq": "253"
+  },
+  {
+    "id":   "CPM",
+    "name": "COMPTON",
+    "lat":  122000,
+    "lon":  -425690,
+    "freq": "378"
+  },
+  {
+    "id":   "CC",
+    "name": "KANAN",
+    "lat":  136967,
+    "lon":  -439320,
+    "freq": "335"
+  },
+  {
+    "id":   "COR",
+    "name": "SALYER FARMS",
+    "lat":  129837,
+    "lon":  -430311,
+    "freq": "205"
+  },
+  {
+    "id":   "EMT",
+    "name": "EL MONTE",
+    "lat":  122717,
+    "lon":  -424912,
+    "freq": "359"
+  },
+  {
+    "id":   "HGT",
+    "name": "HUNTER LIGGETT",
+    "lat":  129460,
+    "lon":  -436281,
+    "freq": "209"
+  },
+  {
+    "id":   "FCH",
+    "name": "CHANDLER",
+    "lat":  132206,
+    "lon":  -431401,
+    "freq": "344"
+  },
+  {
+    "id":   "LV",
+    "name": "REIGA",
+    "lat":  135691,
+    "lon":  -438062,
+    "freq": "374"
+  },
+  {
+    "id":   "LG",
+    "name": "BECCA",
+    "lat":  121523,
+    "lon":  -425078,
+    "freq": "233"
+  },
+  {
+    "id":   "MY",
+    "name": "HALOW",
+    "lat":  141009,
+    "lon":  -437795,
+    "freq": "222"
+  },
+  {
+    "id":   "MOG",
+    "name": "MONTAGUE",
+    "lat":  150218,
+    "lon":  -440934,
+    "freq": "404"
+  },
+  {
+    "id":   "MR",
+    "name": "MUNSO",
+    "lat":  131834,
+    "lon":  -438978,
+    "freq": "385"
+  },
+  {
+    "id":   "PAI",
+    "name": "PACOIMA",
+    "lat":  123335,
+    "lon":  -426288,
+    "freq": "370"
+  },
+  {
+    "id":   "PBT",
+    "name": "PROBERTA",
+    "lat":  144410,
+    "lon":  -440054,
+    "freq": "338"
+  },
+  {
+    "id":   "UAD",
+    "name": "CHUALAR",
+    "lat":  131367,
+    "lon":  -437309,
+    "freq": "263"
+  },
+  {
+    "id":   "SB",
+    "name": "PETIS",
+    "lat":  122603,
+    "lon":  -422518,
+    "freq": "397"
+  },
+  {
+    "id":   "TCY",
+    "name": "TRACY",
+    "lat":  135692,
+    "lon":  -437200,
+    "freq": "203"
+  },
+  {
+    "id":   "UK",
+    "name": "KEARN",
+    "lat":  141393,
+    "lon":  -443666,
+    "freq": "371"
+  },
+  {
+    "id":   "PDG",
+    "name": "PAJAR",
+    "lat":  132888,
+    "lon":  -438508,
+    "freq": "327"
+  },
+  {
+    "id":   "ITR",
+    "name": "KIT CARSON",
+    "lat":  141286,
+    "lon":  -368221,
+    "freq": "209"
+  },
+  {
+    "id":   "CO",
+    "name": "PETEY",
+    "lat":  139299,
+    "lon":  -376978,
+    "freq": "407"
+  },
+  {
+    "id":   "AP",
+    "name": "CASSE",
+    "lat":  142027,
+    "lon":  -377445,
+    "freq": "260"
+  },
+  {
+    "id":   "FT",
+    "name": "SKIPI",
+    "lat":  143250,
+    "lon":  -375963,
+    "freq": "321"
+  },
+  {
+    "id":   "IHS",
+    "name": "IRONHORSE",
+    "lat":  139242,
+    "lon":  -377111,
+    "freq": "335"
+  },
+  {
+    "id":   "FN",
+    "name": "COLLN",
+    "lat":  145307,
+    "lon":  -377896,
+    "freq": "400"
+  },
+  {
+    "id":   "DC",
+    "name": "BUFFS",
+    "lat":  145204,
+    "lon":  -376653,
+    "freq": "348"
+  },
+  {
+    "id":   "TF",
+    "name": "ARUBA",
+    "lat":  137847,
+    "lon":  -375678,
+    "freq": "373"
+  },
+  {
+    "id":   "BAJ",
+    "name": "BATTEN",
+    "lat":  145915,
+    "lon":  -371628,
+    "freq": "392"
+  },
+  {
+    "id":   "TAD",
+    "name": "TRINIDAD",
+    "lat":  134301,
+    "lon":  -375600,
+    "freq": "329"
+  },
+  {
+    "id":   "JWE",
+    "name": "CLERA",
+    "lat":  148976,
+    "lon":  -263204,
+    "freq": "362"
+  },
+  {
+    "id":   "GTN",
+    "name": "GEORGETOWN",
+    "lat":  140147,
+    "lon":  -277647,
+    "freq": "323"
+  },
+  {
+    "id":   "DCA",
+    "name": "OXONN",
+    "lat":  139557,
+    "lon":  -277298,
+    "freq": "332"
+  },
+  {
+    "id":   "IL",
+    "name": "HADIN",
+    "lat":  142492,
+    "lon":  -272210,
+    "freq": "248"
+  },
+  {
+    "id":   "AAF",
+    "name": "APALACHICOLA",
+    "lat":  107003,
+    "lon":  -306101,
+    "freq": "349"
+  },
+  {
+    "id":   "BKK",
+    "name": "TRI COUNTY",
+    "lat":  111065,
+    "lon":  -308164,
+    "freq": "275"
+  },
+  {
+    "id":   "CE",
+    "name": "KOBRA",
+    "lat":  111070,
+    "lon":  -311531,
+    "freq": "201"
+  },
+  {
+    "id":   "DED",
+    "name": "DELAND/DCMSND",
+    "lat":  104643,
+    "lon":  -292587,
+    "freq": "201"
+  },
+  {
+    "id":   "FX",
+    "name": "PRAIZ",
+    "lat":  94266,
+    "lon":  -289074,
+    "freq": "221"
+  },
+  {
+    "id":   "FM",
+    "name": "CALOO",
+    "lat":  95458,
+    "lon":  -295020,
+    "freq": "341"
+  },
+  {
+    "id":   "FPR",
+    "name": "FORT PIERCE",
+    "lat":  98952,
+    "lon":  -289343,
+    "freq": "275"
+  },
+  {
+    "id":   "GN",
+    "name": "WYNDS",
+    "lat":  106812,
+    "lon":  -295819,
+    "freq": "269"
+  },
+  {
+    "id":   "RYD",
+    "name": "REYNOLDS",
+    "lat":  107880,
+    "lon":  -293967,
+    "freq": "338"
+  },
+  {
+    "id":   "JA",
+    "name": "DINNS",
+    "lat":  109674,
+    "lon":  -294485,
+    "freq": "344"
+  },
+  {
+    "id":   "EYA",
+    "name": "EASTPORT",
+    "lat":  109524,
+    "lon":  -293793,
+    "freq": "357"
+  },
+  {
+    "id":   "UTX",
+    "name": "UNITED",
+    "lat":  96872,
+    "lon":  -289206,
+    "freq": "405"
+  },
+  {
+    "id":   "FIS",
+    "name": "FISH HOOK",
+    "lat":  88374,
+    "lon":  -294430,
+    "freq": "332"
+  },
+  {
+    "id":   "LCQ",
+    "name": "LAKE CITY",
+    "lat":  108667,
+    "lon":  -297282,
+    "freq": "204"
+  },
+  {
+    "id":   "LEE",
+    "name": "LEESBURG",
+    "lat":  103745,
+    "lon":  -294506,
+    "freq": "335"
+  },
+  {
+    "id":   "MTH",
+    "name": "MARATHON",
+    "lat":  88962,
+    "lon":  -291943,
+    "freq": "260"
+  },
+  {
+    "id":   "SMY",
+    "name": "SOYYA",
+    "lat":  111137,
+    "lon":  -306810,
+    "freq": "329"
+  },
+  {
+    "id":   "SQT",
+    "name": "SATELLITE",
+    "lat":  101158,
+    "lon":  -290522,
+    "freq": "257"
+  },
+  {
+    "id":   "TN",
+    "name": "MONRY",
+    "lat":  93102,
+    "lon":  -291640,
+    "freq": "227"
+  },
+  {
+    "id":   "TM",
+    "name": "QEEZY",
+    "lat":  92310,
+    "lon":  -289817,
+    "freq": "266"
+  },
+  {
+    "id":   "EVB",
+    "name": "NEW SMYRNA BEACH",
+    "lat":  104595,
+    "lon":  -291389,
+    "freq": "417"
+  },
+  {
+    "id":   "OR",
+    "name": "HERNY",
+    "lat":  102624,
+    "lon":  -293162,
+    "freq": "221"
+  },
+  {
+    "id":   "SFB",
+    "name": "SANFORD",
+    "lat":  103625,
+    "lon":  -292475,
+    "freq": "408"
+  },
+  {
+    "id":   "IAK",
+    "name": "PALATKA",
+    "lat":  106752,
+    "lon":  -294525,
+    "freq": "243"
+  },
+  {
+    "id":   "PFN",
+    "name": "LYNNE",
+    "lat":  109175,
+    "lon":  -308816,
+    "freq": "278"
+  },
+  {
+    "id":   "PKZ",
+    "name": "PICKENS",
+    "lat":  109573,
+    "lon":  -313842,
+    "freq": "326"
+  },
+  {
+    "id":   "PI",
+    "name": "CAPOK",
+    "lat":  100782,
+    "lon":  -297733,
+    "freq": "360"
+  },
+  {
+    "id":   "TL",
+    "name": "WAKUL",
+    "lat":  109174,
+    "lon":  -303689,
+    "freq": "379"
+  },
+  {
+    "id":   "TP",
+    "name": "COSME",
+    "lat":  101107,
+    "lon":  -297090,
+    "freq": "368"
+  },
+  {
+    "id":   "AM",
+    "name": "PICNY",
+    "lat":  100300,
+    "lon":  -297165,
+    "freq": "388"
+  },
+  {
+    "id":   "TVV",
+    "name": "SPACE CENTER EXECUTIVE",
+    "lat":  102646,
+    "lon":  -290858,
+    "freq": "237"
+  },
+  {
+    "id":   "VNC",
+    "name": "VENICE",
+    "lat":  97421,
+    "lon":  -296750,
+    "freq": "206"
+  },
+  {
+    "id":   "RHZ",
+    "name": "ZEPHYRHILLS",
+    "lat":  101617,
+    "lon":  -295765,
+    "freq": "253"
+  },
+  {
+    "id":   "AB",
+    "name": "PUTNY",
+    "lat":  113242,
+    "lon":  -303394,
+    "freq": "227"
+  },
+  {
+    "id":   "LKG",
+    "name": "LINDBERGH",
+    "lat":  115828,
+    "lon":  -302789,
+    "freq": "242"
+  },
+  {
+    "id":   "BJT",
+    "name": "BULLDOG",
+    "lat":  122224,
+    "lon":  -299590,
+    "freq": "221"
+  },
+  {
+    "id":   "FT",
+    "name": "FLANC",
+    "lat":  121544,
+    "lon":  -304700,
+    "freq": "344"
+  },
+  {
+    "id":   "FFC",
+    "name": "PECAT",
+    "lat":  119883,
+    "lon":  -304151,
+    "freq": "316"
+  },
+  {
+    "id":   "BR",
+    "name": "REDAN",
+    "lat":  121123,
+    "lon":  -303520,
+    "freq": "266"
+  },
+  {
+    "id":   "AG",
+    "name": "BUSHE",
+    "lat":  119832,
+    "lon":  -295008,
+    "freq": "233"
+  },
+  {
+    "id":   "EMR",
+    "name": "EMORY",
+    "lat":  120466,
+    "lon":  -295188,
+    "freq": "385"
+  },
+  {
+    "id":   "LYZ",
+    "name": "WILLIS",
+    "lat":  111500,
+    "lon":  -304289,
+    "freq": "359"
+  },
+  {
+    "id":   "BHC",
+    "name": "BAXLEY",
+    "lat":  114163,
+    "lon":  -296604,
+    "freq": "376"
+  },
+  {
+    "id":   "IWJ",
+    "name": "BLAAK",
+    "lat":  113240,
+    "lon":  -305348,
+    "freq": "344"
+  },
+  {
+    "id":   "CYR",
+    "name": "CAIDY",
+    "lat":  111197,
+    "lon":  -302973,
+    "freq": "338"
+  },
+  {
+    "id":   "OUK",
+    "name": "CALHOUN",
+    "lat":  123845,
+    "lon":  -305735,
+    "freq": "323"
+  },
+  {
+    "id":   "CXU",
+    "name": "CAMILLA",
+    "lat":  112373,
+    "lon":  -303253,
+    "freq": "369"
+  },
+  {
+    "id":   "DJD",
+    "name": "CHERO",
+    "lat":  123308,
+    "lon":  -304155,
+    "freq": "415"
+  },
+  {
+    "id":   "GPQ",
+    "name": "CARROLLTON",
+    "lat":  120836,
+    "lon":  -306471,
+    "freq": "278"
+  },
+  {
+    "id":   "EVZ",
+    "name": "CARTERSVILLE",
+    "lat":  123116,
+    "lon":  -305434,
+    "freq": "308"
+  },
+  {
+    "id":   "CWV",
+    "name": "CLAXTON",
+    "lat":  115894,
+    "lon":  -294748,
+    "freq": "395"
+  },
+  {
+    "id":   "CS",
+    "name": "FENIX",
+    "lat":  116827,
+    "lon":  -306150,
+    "freq": "355"
+  },
+  {
+    "id":   "AWS",
+    "name": "LAWSON",
+    "lat":  116253,
+    "lon":  -306083,
+    "freq": "335"
+  },
+  {
+    "id":   "OHY",
+    "name": "CONEY",
+    "lat":  115192,
+    "lon":  -301902,
+    "freq": "400"
+  },
+  {
+    "id":   "AJR",
+    "name": "HABERSHAM",
+    "lat":  124205,
+    "lon":  -300779,
+    "freq": "347"
+  },
+  {
+    "id":   "VOF",
+    "name": "ALCOVY",
+    "lat":  121067,
+    "lon":  -301615,
+    "freq": "370"
+  },
+  {
+    "id":   "UWI",
+    "name": "WHITFIELD",
+    "lat":  125248,
+    "lon":  -305796,
+    "freq": "400"
+  },
+  {
+    "id":   "OWC",
+    "name": "COFFEE COUNTY",
+    "lat":  113057,
+    "lon":  -298525,
+    "freq": "390"
+  },
+  {
+    "id":   "DB",
+    "name": "CREKE",
+    "lat":  116941,
+    "lon":  -298839,
+    "freq": "251"
+  },
+  {
+    "id":   "EZM",
+    "name": "EASTMAN",
+    "lat":  115674,
+    "lon":  -299354,
+    "freq": "366"
+  },
+  {
+    "id":   "SUR",
+    "name": "FITZGERALD",
+    "lat":  113806,
+    "lon":  -299846,
+    "freq": "362"
+  },
+  {
+    "id":   "MOQ",
+    "name": "MC INTOSH",
+    "lat":  114592,
+    "lon":  -293436,
+    "freq": "263"
+  },
+  {
+    "id":   "FKV",
+    "name": "FLOWERY BRANCH",
+    "lat":  123132,
+    "lon":  -302062,
+    "freq": "365"
+  },
+  {
+    "id":   "VV",
+    "name": "JUNNE",
+    "lat":  121127,
+    "lon":  -298878,
+    "freq": "353"
+  },
+  {
+    "id":   "AZE",
+    "name": "HAZLEHURST",
+    "lat":  114767,
+    "lon":  -297530,
+    "freq": "414"
+  },
+  {
+    "id":   "HOE",
+    "name": "HOMERVILLE",
+    "lat":  111799,
+    "lon":  -297978,
+    "freq": "209"
+  },
+  {
+    "id":   "DDA",
+    "name": "COMMERCE",
+    "lat":  122624,
+    "lon":  -300675,
+    "freq": "244"
+  },
+  {
+    "id":   "JES",
+    "name": "SLOVER",
+    "lat":  113589,
+    "lon":  -294793,
+    "freq": "340"
+  },
+  {
+    "id":   "TX",
+    "name": "GWNET",
+    "lat":  122471,
+    "lon":  -301906,
+    "freq": "419"
+  },
+  {
+    "id":   "MQW",
+    "name": "MC RAE",
+    "lat":  115545,
+    "lon":  -298376,
+    "freq": "280"
+  },
+  {
+    "id":   "UMB",
+    "name": "CULVR",
+    "lat":  119346,
+    "lon":  -299374,
+    "freq": "380"
+  },
+  {
+    "id":   "LNH",
+    "name": "MILLEN",
+    "lat":  118420,
+    "lon":  -295080,
+    "freq": "205"
+  },
+  {
+    "id":   "JNM",
+    "name": "MONROE",
+    "lat":  121455,
+    "lon":  -301416,
+    "freq": "392"
+  },
+  {
+    "id":   "IZS",
+    "name": "MONTEZUMA",
+    "lat":  116521,
+    "lon":  -302424,
+    "freq": "426"
+  },
+  {
+    "id":   "EQQ",
+    "name": "COWETA COUNTY",
+    "lat":  119725,
+    "lon":  -304967,
+    "freq": "234"
+  },
+  {
+    "id":   "BEP",
+    "name": "BAY CREEK",
+    "lat":  116846,
+    "lon":  -301556,
+    "freq": "350"
+  },
+  {
+    "id":   "PIM",
+    "name": "PINE MOUNTAIN",
+    "lat":  118234,
+    "lon":  -305541,
+    "freq": "272"
+  },
+  {
+    "id":   "RVJ",
+    "name": "PRISON",
+    "lat":  115407,
+    "lon":  -295748,
+    "freq": "424"
+  },
+  {
+    "id":   "HIT",
+    "name": "KAOLIN",
+    "lat":  118860,
+    "lon":  -298581,
+    "freq": "360"
+  },
+  {
+    "id":   "SA",
+    "name": "MAVIS",
+    "lat":  115667,
+    "lon":  -292793,
+    "freq": "368"
+  },
+  {
+    "id":   "SV",
+    "name": "WASSA",
+    "lat":  115214,
+    "lon":  -291550,
+    "freq": "335"
+  },
+  {
+    "id":   "BZ",
+    "name": "BULLO",
+    "lat":  116695,
+    "lon":  -293990,
+    "freq": "407"
+  },
+  {
+    "id":   "EEX",
+    "name": "EMANUEL COUNTY",
+    "lat":  117599,
+    "lon":  -296829,
+    "freq": "309"
+  },
+  {
+    "id":   "JYL",
+    "name": "SYLVANIA",
+    "lat":  117536,
+    "lon":  -293739,
+    "freq": "245"
+  },
+  {
+    "id":   "OP",
+    "name": "YATES",
+    "lat":  118509,
+    "lon":  -303073,
+    "freq": "339"
+  },
+  {
+    "id":   "GTP",
+    "name": "PATON",
+    "lat":  111447,
+    "lon":  -301776,
+    "freq": "245"
+  },
+  {
+    "id":   "AA",
+    "name": "CEDAR",
+    "lat":  120719,
+    "lon":  -297411,
+    "freq": "341"
+  },
+  {
+    "id":   "TM",
+    "name": "TIFTO",
+    "lat":  112907,
+    "lon":  -300398,
+    "freq": "409"
+  },
+  {
+    "id":   "UQN",
+    "name": "ONYUN",
+    "lat":  116005,
+    "lon":  -296270,
+    "freq": "372"
+  },
+  {
+    "id":   "IIY",
+    "name": "WASHINGTON/WILKES COUNTY",
+    "lat":  121589,
+    "lon":  -298127,
+    "freq": "435"
+  },
+  {
+    "id":   "AY",
+    "name": "WIKET",
+    "lat":  112772,
+    "lon":  -296632,
+    "freq": "219"
+  },
+  {
+    "id":   "BMW",
+    "name": "BARROW COUNTY",
+    "lat":  122167,
+    "lon":  -300922,
+    "freq": "404"
+  },
+  {
+    "id":   "AJA",
+    "name": "MT MACAJNA",
+    "lat":  48432,
+    "lon":  -521052,
+    "freq": "385"
+  },
+  {
+    "id":   "BSF",
+    "name": "BRADSHAW",
+    "lat":  71148,
+    "lon":  -560139,
+    "freq": "339"
+  },
+  {
+    "id":   "HN",
+    "name": "EWABE",
+    "lat":  76768,
+    "lon":  -568976,
+    "freq": "242"
+  },
+  {
+    "id":   "VYI",
+    "name": "VALLEY ISLAND",
+    "lat":  75171,
+    "lon":  -563193,
+    "freq": "327"
+  },
+  {
+    "id":   "LLD",
+    "name": "LANAI",
+    "lat":  74780,
+    "lon":  -565104,
+    "freq": "353"
+  },
+  {
+    "id":   "POA",
+    "name": "PAHOA",
+    "lat":  70348,
+    "lon":  -557900,
+    "freq": "332"
+  },
+  {
+    "id":   "HHI",
+    "name": "WHEELER",
+    "lat":  77319,
+    "lon":  -568921,
+    "freq": "373"
+  },
+  {
+    "id":   "AXA",
+    "name": "ALGONA",
+    "lat":  155093,
+    "lon":  -339380,
+    "freq": "403"
+  },
+  {
+    "id":   "EE",
+    "name": "MERLE",
+    "lat":  150850,
+    "lon":  -337172,
+    "freq": "362"
+  },
+  {
+    "id":   "AIO",
+    "name": "ATLANTIC",
+    "lat":  149054,
+    "lon":  -342166,
+    "freq": "365"
+  },
+  {
+    "id":   "ADU",
+    "name": "AUDUBON",
+    "lat":  150079,
+    "lon":  -341675,
+    "freq": "266"
+  },
+  {
+    "id":   "BEX",
+    "name": "BLOOMFIELD",
+    "lat":  146682,
+    "lon":  -332749,
+    "freq": "269"
+  },
+  {
+    "id":   "BR",
+    "name": "BURNS",
+    "lat":  146355,
+    "lon":  -328043,
+    "freq": "390"
+  },
+  {
+    "id":   "CCY",
+    "name": "CHARLES CITY",
+    "lat":  155046,
+    "lon":  -333389,
+    "freq": "375"
+  },
+  {
+    "id":   "IY",
+    "name": "CHUKK",
+    "lat":  155282,
+    "lon":  -333821,
+    "freq": "417"
+  },
+  {
+    "id":   "ICL",
+    "name": "CLARINDA",
+    "lat":  146605,
+    "lon":  -342100,
+    "freq": "353"
+  },
+  {
+    "id":   "CAV",
+    "name": "CLARION",
+    "lat":  153883,
+    "lon":  -337536,
+    "freq": "387"
+  },
+  {
+    "id":   "FN",
+    "name": "HILLZ",
+    "lat":  150305,
+    "lon":  -325405,
+    "freq": "517"
+  },
+  {
+    "id":   "CRZ",
+    "name": "CORNING",
+    "lat":  147586,
+    "lon":  -341124,
+    "freq": "278"
+  },
+  {
+    "id":   "CJJ",
+    "name": "CRESCO",
+    "lat":  156117,
+    "lon":  -331671,
+    "freq": "293"
+  },
+  {
+    "id":   "UNE",
+    "name": "UNION COUNTY",
+    "lat":  147446,
+    "lon":  -339650,
+    "freq": "379"
+  },
+  {
+    "id":   "DNS",
+    "name": "DENISON",
+    "lat":  151142,
+    "lon":  -343365,
+    "freq": "350"
+  },
+  {
+    "id":   "DB",
+    "name": "ZILOM",
+    "lat":  152362,
+    "lon":  -326155,
+    "freq": "341"
+  },
+  {
+    "id":   "EGQ",
+    "name": "EMMETSBURG",
+    "lat":  155162,
+    "lon":  -340949,
+    "freq": "410"
+  },
+  {
+    "id":   "PUF",
+    "name": "PUFF",
+    "lat":  156065,
+    "lon":  -341056,
+    "freq": "345"
+  },
+  {
+    "id":   "FFL",
+    "name": "FAIRFIELD",
+    "lat":  147639,
+    "lon":  -331157,
+    "freq": "332"
+  },
+  {
+    "id":   "FXY",
+    "name": "FOREST CITY",
+    "lat":  155648,
+    "lon":  -337035,
+    "freq": "359"
+  },
+  {
+    "id":   "FO",
+    "name": "BARRO",
+    "lat":  153052,
+    "lon":  -339500,
+    "freq": "341"
+  },
+  {
+    "id":   "HNR",
+    "name": "HARLAN",
+    "lat":  149684,
+    "lon":  -343227,
+    "freq": "272"
+  },
+  {
+    "id":   "IIB",
+    "name": "WAPSIE",
+    "lat":  152832,
+    "lon":  -331021,
+    "freq": "206"
+  },
+  {
+    "id":   "EFW",
+    "name": "JEFFERSON",
+    "lat":  151248,
+    "lon":  -339633,
+    "freq": "391"
+  },
+  {
+    "id":   "EOK",
+    "name": "KEOKUK",
+    "lat":  145672,
+    "lon":  -329160,
+    "freq": "366"
+  },
+  {
+    "id":   "MEY",
+    "name": "MAPLETON",
+    "lat":  151849,
+    "lon":  -344861,
+    "freq": "335"
+  },
+  {
+    "id":   "MC",
+    "name": "SURFF",
+    "lat":  154989,
+    "lon":  -335979,
+    "freq": "348"
+  },
+  {
+    "id":   "MPZ",
+    "name": "MOUNT PLEASANT",
+    "lat":  147416,
+    "lon":  -329454,
+    "freq": "212"
+  },
+  {
+    "id":   "ORC",
+    "name": "ORANGE CITY",
+    "lat":  154762,
+    "lon":  -345818,
+    "freq": "521"
+  },
+  {
+    "id":   "OOA",
+    "name": "OSKALOOSA",
+    "lat":  148411,
+    "lon":  -332954,
+    "freq": "414"
+  },
+  {
+    "id":   "PEA",
+    "name": "PELLA",
+    "lat":  149056,
+    "lon":  -334600,
+    "freq": "257"
+  },
+  {
+    "id":   "POH",
+    "name": "POCAHONTAS",
+    "lat":  153886,
+    "lon":  -340737,
+    "freq": "428"
+  },
+  {
+    "id":   "RDK",
+    "name": "RED OAK",
+    "lat":  147654,
+    "lon":  -342920,
+    "freq": "230"
+  },
+  {
+    "id":   "SKI",
+    "name": "SAC CITY",
+    "lat":  152570,
+    "lon":  -341938,
+    "freq": "356"
+  },
+  {
+    "id":   "SHL",
+    "name": "SHELDON",
+    "lat":  155570,
+    "lon":  -345001,
+    "freq": "338"
+  },
+  {
+    "id":   "SDA",
+    "name": "SHENANDOAH",
+    "lat":  146706,
+    "lon":  -343467,
+    "freq": "411"
+  },
+  {
+    "id":   "ISB",
+    "name": "SIBLEY",
+    "lat":  156124,
+    "lon":  -344709,
+    "freq": "269"
+  },
+  {
+    "id":   "SOY",
+    "name": "SIOUX CENTER",
+    "lat":  155278,
+    "lon":  -346283,
+    "freq": "368"
+  },
+  {
+    "id":   "SU",
+    "name": "SALIX",
+    "lat":  152379,
+    "lon":  -346645,
+    "freq": "414"
+  },
+  {
+    "id":   "GAK",
+    "name": "SIOUX GATEWAY",
+    "lat":  152669,
+    "lon":  -346989,
+    "freq": "233"
+  },
+  {
+    "id":   "LTU",
+    "name": "LITTLE SIOUX",
+    "lat":  155257,
+    "lon":  -342478,
+    "freq": "326"
+  },
+  {
+    "id":   "SP",
+    "name": "SNORE",
+    "lat":  155642,
+    "lon":  -343180,
+    "freq": "394"
+  },
+  {
+    "id":   "SLB",
+    "name": "STORM LAKE",
+    "lat":  153361,
+    "lon":  -342879,
+    "freq": "434"
+  },
+  {
+    "id":   "AWG",
+    "name": "WASHINGTON",
+    "lat":  148607,
+    "lon":  -330022,
+    "freq": "219"
+  },
+  {
+    "id":   "EBS",
+    "name": "WEBSTER CITY",
+    "lat":  152788,
+    "lon":  -337929,
+    "freq": "323"
+  },
+  {
+    "id":   "BO",
+    "name": "USTIK",
+    "lat":  156948,
+    "lon":  -418734,
+    "freq": "359"
+  },
+  {
+    "id":   "LEN",
+    "name": "POST FALLS",
+    "lat":  171874,
+    "lon":  -421059,
+    "freq": "347"
+  },
+  {
+    "id":   "HDG",
+    "name": "STEELHEAD",
+    "lat":  154498,
+    "lon":  -412826,
+    "freq": "211"
+  },
+  {
+    "id":   "SWU",
+    "name": "SWEDEN",
+    "lat":  156355,
+    "lon":  -403785,
+    "freq": "350"
+  },
+  {
+    "id":   "ID",
+    "name": "UCONN",
+    "lat":  156952,
+    "lon":  -403129,
+    "freq": "324"
+  },
+  {
+    "id":   "STI",
+    "name": "STURGEON",
+    "lat":  155207,
+    "lon":  -416370,
+    "freq": "333"
+  },
+  {
+    "id":   "MPA",
+    "name": "MERIDIAN",
+    "lat":  156972,
+    "lon":  -419540,
+    "freq": "238"
+  },
+  {
+    "id":   "PI",
+    "name": "TYHEE",
+    "lat":  154669,
+    "lon":  -405058,
+    "freq": "383"
+  },
+  {
+    "id":   "SZT",
+    "name": "SANDPOE",
+    "lat":  173846,
+    "lon":  -419627,
+    "freq": "264"
+  },
+  {
+    "id":   "TW",
+    "name": "STRIK",
+    "lat":  152923,
+    "lon":  -411675,
+    "freq": "389"
+  },
+  {
+    "id":   "CVM",
+    "name": "CIVIC MEMORIAL",
+    "lat":  140012,
+    "lon":  -324202,
+    "freq": "263"
+  },
+  {
+    "id":   "AL",
+    "name": "ALPOS",
+    "lat":  139878,
+    "lon":  -323777,
+    "freq": "218"
+  },
+  {
+    "id":   "BL",
+    "name": "BELLEVILLE",
+    "lat":  138473,
+    "lon":  -323122,
+    "freq": "362"
+  },
+  {
+    "id":   "JD",
+    "name": "GOOEY",
+    "lat":  138520,
+    "lon":  -323056,
+    "freq": "385"
+  },
+  {
+    "id":   "LH",
+    "name": "EGROW",
+    "lat":  146017,
+    "lon":  -319948,
+    "freq": "334"
+  },
+  {
+    "id":   "BDD",
+    "name": "BELLGRADE",
+    "lat":  133723,
+    "lon":  -319213,
+    "freq": "254"
+  },
+  {
+    "id":   "CP",
+    "name": "ACORE",
+    "lat":  138671,
+    "lon":  -324213,
+    "freq": "350"
+  },
+  {
+    "id":   "CIR",
+    "name": "CAIRO",
+    "lat":  133419,
+    "lon":  -321203,
+    "freq": "397"
+  },
+  {
+    "id":   "CTK",
+    "name": "CANTON",
+    "lat":  146036,
+    "lon":  -324277,
+    "freq": "236"
+  },
+  {
+    "id":   "MD",
+    "name": "CABBI",
+    "lat":  136332,
+    "lon":  -321283,
+    "freq": "388"
+  },
+  {
+    "id":   "CZB",
+    "name": "CASEY",
+    "lat":  141498,
+    "lon":  -316807,
+    "freq": "359"
+  },
+  {
+    "id":   "CM",
+    "name": "VEALS",
+    "lat":  143878,
+    "lon":  -317456,
+    "freq": "407"
+  },
+  {
+    "id":   "ME",
+    "name": "DEANA",
+    "lat":  151083,
+    "lon":  -316896,
+    "freq": "350"
+  },
+  {
+    "id":   "HK",
+    "name": "ERMIN",
+    "lat":  150188,
+    "lon":  -316210,
+    "freq": "332"
+  },
+  {
+    "id":   "MX",
+    "name": "KEDZI",
+    "lat":  150269,
+    "lon":  -315682,
+    "freq": "248"
+  },
+  {
+    "id":   "RF",
+    "name": "GILMY",
+    "lat":  151611,
+    "lon":  -320755,
+    "freq": "275"
+  },
+  {
+    "id":   "UG",
+    "name": "WAUKE",
+    "lat":  152870,
+    "lon":  -316084,
+    "freq": "379"
+  },
+  {
+    "id":   "DN",
+    "name": "JULIP",
+    "lat":  145042,
+    "lon":  -315107,
+    "freq": "332"
+  },
+  {
+    "id":   "DE",
+    "name": "ELWIN",
+    "lat":  143245,
+    "lon":  -320233,
+    "freq": "275"
+  },
+  {
+    "id":   "FWC",
+    "name": "WAYNE COUNTY",
+    "lat":  138168,
+    "lon":  -318273,
+    "freq": "257"
+  },
+  {
+    "id":   "HSB",
+    "name": "HARRISBURG-RALEIGH",
+    "lat":  136121,
+    "lon":  -318763,
+    "freq": "230"
+  },
+  {
+    "id":   "HMJ",
+    "name": "HOMER",
+    "lat":  144095,
+    "lon":  -316631,
+    "freq": "281"
+  },
+  {
+    "id":   "IK",
+    "name": "LUKOW",
+    "lat":  147664,
+    "lon":  -316453,
+    "freq": "272"
+  },
+  {
+    "id":   "AAA",
+    "name": "ABRAHAM",
+    "lat":  144576,
+    "lon":  -321616,
+    "freq": "329"
+  },
+  {
+    "id":   "JZY",
+    "name": "MACOMB",
+    "lat":  145865,
+    "lon":  -326017,
+    "freq": "251"
+  },
+  {
+    "id":   "MW",
+    "name": "JONNY",
+    "lat":  136220,
+    "lon":  -320294,
+    "freq": "382"
+  },
+  {
+    "id":   "MT",
+    "name": "ZEBRE",
+    "lat":  141992,
+    "lon":  -317424,
+    "freq": "347"
+  },
+  {
+    "id":   "OLY",
+    "name": "OLNEY",
+    "lat":  139385,
+    "lon":  -317421,
+    "freq": "272"
+  },
+  {
+    "id":   "OIX",
+    "name": "OTTAWA",
+    "lat":  148905,
+    "lon":  -319875,
+    "freq": "266"
+  },
+  {
+    "id":   "PI",
+    "name": "TUNGG",
+    "lat":  146180,
+    "lon":  -322535,
+    "freq": "356"
+  },
+  {
+    "id":   "UI",
+    "name": "QUINCY",
+    "lat":  143592,
+    "lon":  -328513,
+    "freq": "293"
+  },
+  {
+    "id":   "PLX",
+    "name": "PALESTINE",
+    "lat":  140450,
+    "lon":  -315509,
+    "freq": "391"
+  },
+  {
+    "id":   "SLO",
+    "name": "SALEM",
+    "lat":  139118,
+    "lon":  -320282,
+    "freq": "400"
+  },
+  {
+    "id":   "SYZ",
+    "name": "SHELBYVILLE",
+    "lat":  141863,
+    "lon":  -319836,
+    "freq": "365"
+  },
+  {
+    "id":   "CJ",
+    "name": "CALDE",
+    "lat":  143259,
+    "lon":  -322532,
+    "freq": "240"
+  },
+  {
+    "id":   "SP",
+    "name": "HUSKK",
+    "lat":  143183,
+    "lon":  -323135,
+    "freq": "382"
+  },
+  {
+    "id":   "LQ",
+    "name": "LICOL",
+    "lat":  143682,
+    "lon":  -322571,
+    "freq": "375"
+  },
+  {
+    "id":   "BOZ",
+    "name": "WHITESIDE",
+    "lat":  150159,
+    "lon":  -323228,
+    "freq": "254"
+  },
+  {
+    "id":   "TAZ",
+    "name": "TAYLORVILLE",
+    "lat":  142329,
+    "lon":  -321564,
+    "freq": "395"
+  },
+  {
+    "id":   "AI",
+    "name": "VIDEO",
+    "lat":  144250,
+    "lon":  -307838,
+    "freq": "394"
+  },
+  {
+    "id":   "ANQ",
+    "name": "ANGOLA",
+    "lat":  149902,
+    "lon":  -306313,
+    "freq": "347"
+  },
+  {
+    "id":   "GW",
+    "name": "SHENK",
+    "lat":  148709,
+    "lon":  -305798,
+    "freq": "227"
+  },
+  {
+    "id":   "HLB",
+    "name": "BATESVILLE",
+    "lat":  141646,
+    "lon":  -306931,
+    "freq": "254"
+  },
+  {
+    "id":   "BFR",
+    "name": "BEDFORD",
+    "lat":  139822,
+    "lon":  -311170,
+    "freq": "344"
+  },
+  {
+    "id":   "BA",
+    "name": "CLIFS",
+    "lat":  141559,
+    "lon":  -308946,
+    "freq": "410"
+  },
+  {
+    "id":   "SQ",
+    "name": "PNTHR",
+    "lat":  143197,
+    "lon":  -306467,
+    "freq": "227"
+  },
+  {
+    "id":   "CFJ",
+    "name": "CRAWFORDSVILLE",
+    "lat":  143931,
+    "lon":  -312896,
+    "freq": "388"
+  },
+  {
+    "id":   "CPB",
+    "name": "CULVER",
+    "lat":  148380,
+    "lon":  -310985,
+    "freq": "391"
+  },
+  {
+    "id":   "PDW",
+    "name": "EVANSVILLE",
+    "lat":  136944,
+    "lon":  -315111,
+    "freq": "284"
+  },
+  {
+    "id":   "FKR",
+    "name": "FRANKFORT",
+    "lat":  144973,
+    "lon":  -311626,
+    "freq": "278"
+  },
+  {
+    "id":   "TVX",
+    "name": "GREENCASTLE",
+    "lat":  142970,
+    "lon":  -312501,
+    "freq": "521"
+  },
+  {
+    "id":   "HHG",
+    "name": "HUNTINGTON",
+    "lat":  147079,
+    "lon":  -307668,
+    "freq": "417"
+  },
+  {
+    "id":   "HFY",
+    "name": "GREENWOOD",
+    "lat":  142677,
+    "lon":  -309926,
+    "freq": "398"
+  },
+  {
+    "id":   "UMP",
+    "name": "METROPOLITAN",
+    "lat":  143775,
+    "lon":  -309780,
+    "freq": "338"
+  },
+  {
+    "id":   "JV",
+    "name": "CATCH",
+    "lat":  138506,
+    "lon":  -308654,
+    "freq": "331"
+  },
+  {
+    "id":   "IUL",
+    "name": "LA PORTE",
+    "lat":  149396,
+    "lon":  -312376,
+    "freq": "356"
+  },
+  {
+    "id":   "LA",
+    "name": "EARLE",
+    "lat":  145535,
+    "lon":  -313387,
+    "freq": "401"
+  },
+  {
+    "id":   "JN",
+    "name": "BALLL",
+    "lat":  144651,
+    "lon":  -307155,
+    "freq": "365"
+  },
+  {
+    "id":   "UWL",
+    "name": "NEW CASTLE",
+    "lat":  143567,
+    "lon":  -307147,
+    "freq": "385"
+  },
+  {
+    "id":   "EQZ",
+    "name": "CAPTAIN",
+    "lat":  139922,
+    "lon":  -309502,
+    "freq": "308"
+  },
+  {
+    "id":   "SB",
+    "name": "MISHA",
+    "lat":  150140,
+    "lon":  -310388,
+    "freq": "341"
+  },
+  {
+    "id":   "SIV",
+    "name": "SULLIVAN",
+    "lat":  140808,
+    "lon":  -314808,
+    "freq": "326"
+  },
+  {
+    "id":   "TEL",
+    "name": "TELL CITY",
+    "lat":  136850,
+    "lon":  -312084,
+    "freq": "206"
+  },
+  {
+    "id":   "HU",
+    "name": "YINNO",
+    "lat":  141796,
+    "lon":  -314631,
+    "freq": "245"
+  },
+  {
+    "id":   "VP",
+    "name": "SEDLY",
+    "lat":  149224,
+    "lon":  -312758,
+    "freq": "212"
+  },
+  {
+    "id":   "OEA",
+    "name": "VINCENNES",
+    "lat":  139286,
+    "lon":  -315200,
+    "freq": "251"
+  },
+  {
+    "id":   "IWH",
+    "name": "WABASH",
+    "lat":  146749,
+    "lon":  -308871,
+    "freq": "329"
+  },
+  {
+    "id":   "RWN",
+    "name": "WINAMAC/DCMSND",
+    "lat":  147938,
+    "lon":  -311776,
+    "freq": "335"
+  },
+  {
+    "id":   "RPB",
+    "name": "REPUBLICAN",
+    "lat":  143327,
+    "lon":  -351568,
+    "freq": "414"
+  },
+  {
+    "id":   "UKL",
+    "name": "BOYD",
+    "lat":  137879,
+    "lon":  -344597,
+    "freq": "245"
+  },
+  {
+    "id":   "CYW",
+    "name": "CLAY CENTER",
+    "lat":  141770,
+    "lon":  -349780,
+    "freq": "362"
+  },
+  {
+    "id":   "CFV",
+    "name": "COFFEYVILLE",
+    "lat":  133535,
+    "lon":  -344057,
+    "freq": "212"
+  },
+  {
+    "id":   "JDM",
+    "name": "WHEATFIELD",
+    "lat":  142235,
+    "lon":  -363771,
+    "freq": "408"
+  },
+  {
+    "id":   "CNK",
+    "name": "CONCORDIA",
+    "lat":  142391,
+    "lon":  -351544,
+    "freq": "335"
+  },
+  {
+    "id":   "EHA",
+    "name": "ELKHART",
+    "lat":  133204,
+    "lon":  -366784,
+    "freq": "377"
+  },
+  {
+    "id":   "CVY",
+    "name": "CAVALRY",
+    "lat":  140493,
+    "lon":  -348460,
+    "freq": "314"
+  },
+  {
+    "id":   "FSK",
+    "name": "FORT SCOTT",
+    "lat":  136068,
+    "lon":  -341156,
+    "freq": "379"
+  },
+  {
+    "id":   "GC",
+    "name": "PIEVE",
+    "lat":  136183,
+    "lon":  -362607,
+    "freq": "347"
+  },
+  {
+    "id":   "GL",
+    "name": "SHUGR",
+    "lat":  141457,
+    "lon":  -365761,
+    "freq": "414"
+  },
+  {
+    "id":   "GB",
+    "name": "BABSY",
+    "lat":  137705,
+    "lon":  -355881,
+    "freq": "419"
+  },
+  {
+    "id":   "HIL",
+    "name": "HILYN",
+    "lat":  138092,
+    "lon":  -356050,
+    "freq": "338"
+  },
+  {
+    "id":   "HY",
+    "name": "NETTE",
+    "lat":  139569,
+    "lon":  -357304,
+    "freq": "374"
+  },
+  {
+    "id":   "HRU",
+    "name": "HERINGTON",
+    "lat":  139293,
+    "lon":  -348519,
+    "freq": "407"
+  },
+  {
+    "id":   "HQG",
+    "name": "HUGOTON",
+    "lat":  133789,
+    "lon":  -364948,
+    "freq": "365"
+  },
+  {
+    "id":   "HU",
+    "name": "SALTT",
+    "lat":  137245,
+    "lon":  -352536,
+    "freq": "404"
+  },
+  {
+    "id":   "MSB",
+    "name": "MONARCH",
+    "lat":  136049,
+    "lon":  -343493,
+    "freq": "410"
+  },
+  {
+    "id":   "JHN",
+    "name": "BEAR CREEK",
+    "lat":  135488,
+    "lon":  -366244,
+    "freq": "341"
+  },
+  {
+    "id":   "LQR",
+    "name": "LARNED",
+    "lat":  137535,
+    "lon":  -356716,
+    "freq": "296"
+  },
+  {
+    "id":   "JZ",
+    "name": "NEWBN",
+    "lat":  140089,
+    "lon":  -342553,
+    "freq": "338"
+  },
+  {
+    "id":   "LYO",
+    "name": "LYONS",
+    "lat":  138048,
+    "lon":  -353616,
+    "freq": "386"
+  },
+  {
+    "id":   "MPR",
+    "name": "MC PHERSON",
+    "lat":  138054,
+    "lon":  -351674,
+    "freq": "227"
+  },
+  {
+    "id":   "CA",
+    "name": "HARVS",
+    "lat":  137321,
+    "lon":  -350194,
+    "freq": "395"
+  },
+  {
+    "id":   "EWK",
+    "name": "NEWTON",
+    "lat":  137030,
+    "lon":  -350184,
+    "freq": "281"
+  },
+  {
+    "id":   "NRN",
+    "name": "NORTON",
+    "lat":  143479,
+    "lon":  -359605,
+    "freq": "230"
+  },
+  {
+    "id":   "OEL",
+    "name": "OAKLEY",
+    "lat":  140805,
+    "lon":  -362935,
+    "freq": "380"
+  },
+  {
+    "id":   "OIN",
+    "name": "OBERLIN",
+    "lat":  143386,
+    "lon":  -361935,
+    "freq": "341"
+  },
+  {
+    "id":   "PK",
+    "name": "HERBB",
+    "lat":  139511,
+    "lon":  -341052,
+    "freq": "420"
+  },
+  {
+    "id":   "PHG",
+    "name": "PHILLIPSBURG",
+    "lat":  142940,
+    "lon":  -357436,
+    "freq": "368"
+  },
+  {
+    "id":   "PTS",
+    "name": "PITTSBURG",
+    "lat":  134792,
+    "lon":  -341015,
+    "freq": "365"
+  },
+  {
+    "id":   "PTT",
+    "name": "PRATT",
+    "lat":  135814,
+    "lon":  -355489,
+    "freq": "356"
+  },
+  {
+    "id":   "SL",
+    "name": "FLORY",
+    "lat":  139253,
+    "lon":  -351522,
+    "freq": "344"
+  },
+  {
+    "id":   "TQK",
+    "name": "SCOTT CITY",
+    "lat":  138528,
+    "lon":  -363198,
+    "freq": "256"
+  },
+  {
+    "id":   "SYF",
+    "name": "ST FRANCIS",
+    "lat":  143021,
+    "lon":  -366360,
+    "freq": "386"
+  },
+  {
+    "id":   "TO",
+    "name": "BILOY",
+    "lat":  140833,
+    "lon":  -344473,
+    "freq": "521"
+  },
+  {
+    "id":   "FO",
+    "name": "RIPLY",
+    "lat":  139985,
+    "lon":  -344093,
+    "freq": "326"
+  },
+  {
+    "id":   "ULS",
+    "name": "ULYSSES",
+    "lat":  135349,
+    "lon":  -364924,
+    "freq": "395"
+  },
+  {
+    "id":   "EGT",
+    "name": "WELLINGTON",
+    "lat":  134365,
+    "lon":  -350604,
+    "freq": "414"
+  },
+  {
+    "id":   "IC",
+    "name": "PICHE",
+    "lat":  135281,
+    "lon":  -350841,
+    "freq": "332"
+  },
+  {
+    "id":   "SO",
+    "name": "SAWCY",
+    "lat":  133522,
+    "lon":  -349330,
+    "freq": "353"
+  },
+  {
+    "id":   "BRY",
+    "name": "BARDSTOWN/DCMSND",
+    "lat":  136252,
+    "lon":  -307738,
+    "freq": "248"
+  },
+  {
+    "id":   "BW",
+    "name": "NOORA",
+    "lat":  132768,
+    "lon":  -311333,
+    "freq": "236"
+  },
+  {
+    "id":   "TYC",
+    "name": "TAYLOR COUNTY",
+    "lat":  134646,
+    "lon":  -306877,
+    "freq": "272"
+  },
+  {
+    "id":   "UR",
+    "name": "BURLN",
+    "lat":  140565,
+    "lon":  -305183,
+    "freq": "321"
+  },
+  {
+    "id":   "DVK",
+    "name": "GOODALL",
+    "lat":  135275,
+    "lon":  -305150,
+    "freq": "311"
+  },
+  {
+    "id":   "XW",
+    "name": "FLMNG",
+    "lat":  138864,
+    "lon":  -301129,
+    "freq": "400"
+  },
+  {
+    "id":   "GOI",
+    "name": "GODMAN",
+    "lat":  136651,
+    "lon":  -309516,
+    "freq": "396"
+  },
+  {
+    "id":   "BVQ",
+    "name": "BEAVER CREEK",
+    "lat":  133263,
+    "lon":  -309632,
+    "freq": "260"
+  },
+  {
+    "id":   "GMH",
+    "name": "MUHLENBERG",
+    "lat":  134017,
+    "lon":  -313772,
+    "freq": "362"
+  },
+  {
+    "id":   "FK",
+    "name": "AIRBE",
+    "lat":  132253,
+    "lon":  -314689,
+    "freq": "273"
+  },
+  {
+    "id":   "HIX",
+    "name": "HONEY GROVE",
+    "lat":  132770,
+    "lon":  -314415,
+    "freq": "356"
+  },
+  {
+    "id":   "XYC",
+    "name": "SECO",
+    "lat":  135928,
+    "lon":  -302508,
+    "freq": "393"
+  },
+  {
+    "id":   "LE",
+    "name": "BLAYD",
+    "lat":  136753,
+    "lon":  -304777,
+    "freq": "242"
+  },
+  {
+    "id":   "GN",
+    "name": "BRIDL",
+    "lat":  137248,
+    "lon":  -304225,
+    "freq": "340"
+  },
+  {
+    "id":   "LK",
+    "name": "LAANG",
+    "lat":  137321,
+    "lon":  -308279,
+    "freq": "414"
+  },
+  {
+    "id":   "IOB",
+    "name": "MOUNT STERLING",
+    "lat":  137015,
+    "lon":  -302333,
+    "freq": "210"
+  },
+  {
+    "id":   "OW",
+    "name": "HIGUY",
+    "lat":  135487,
+    "lon":  -313785,
+    "freq": "341"
+  },
+  {
+    "id":   "CDX",
+    "name": "CUMBERLAND RIVER",
+    "lat":  133186,
+    "lon":  -304852,
+    "freq": "388"
+  },
+  {
+    "id":   "IKY",
+    "name": "SPRINGFIELD",
+    "lat":  135484,
+    "lon":  -306851,
+    "freq": "429"
+  },
+  {
+    "id":   "BNZ",
+    "name": "ABBEVILLE",
+    "lat":  108220,
+    "lon":  -331643,
+    "freq": "230"
+  },
+  {
+    "id":   "BQP",
+    "name": "BASTROP",
+    "lat":  117916,
+    "lon":  -330780,
+    "freq": "329"
+  },
+  {
+    "id":   "BT",
+    "name": "RUNDI",
+    "lat":  110098,
+    "lon":  -328359,
+    "freq": "284"
+  },
+  {
+    "id":   "GVB",
+    "name": "BOGALUSA",
+    "lat":  111173,
+    "lon":  -323503,
+    "freq": "353"
+  },
+  {
+    "id":   "BWK",
+    "name": "BUNKIE",
+    "lat":  111115,
+    "lon":  -332042,
+    "freq": "397"
+  },
+  {
+    "id":   "DQU",
+    "name": "DE QUINCY",
+    "lat":  109567,
+    "lon":  -336481,
+    "freq": "410"
+  },
+  {
+    "id":   "DXB",
+    "name": "DE RIDDER",
+    "lat":  110707,
+    "lon":  -336004,
+    "freq": "385"
+  },
+  {
+    "id":   "ECY",
+    "name": "DURALDE",
+    "lat":  110015,
+    "lon":  -332813,
+    "freq": "263"
+  },
+  {
+    "id":   "GUV",
+    "name": "GATOR",
+    "lat":  111701,
+    "lon":  -335465,
+    "freq": "359"
+  },
+  {
+    "id":   "HP",
+    "name": "ANGER",
+    "lat":  110182,
+    "lon":  -325516,
+    "freq": "212"
+  },
+  {
+    "id":   "JBL",
+    "name": "HODGE",
+    "lat":  115934,
+    "lon":  -333805,
+    "freq": "256"
+  },
+  {
+    "id":   "LF",
+    "name": "LAFFS",
+    "lat":  109041,
+    "lon":  -330868,
+    "freq": "375"
+  },
+  {
+    "id":   "CW",
+    "name": "MOSSY",
+    "lat":  109103,
+    "lon":  -335506,
+    "freq": "418"
+  },
+  {
+    "id":   "BLE",
+    "name": "LAKE PROVIDENCE",
+    "lat":  118190,
+    "lon":  -328284,
+    "freq": "278"
+  },
+  {
+    "id":   "VED",
+    "name": "LEESVILLE",
+    "lat":  111968,
+    "lon":  -336031,
+    "freq": "247"
+  },
+  {
+    "id":   "MSD",
+    "name": "MANSFIELD",
+    "lat":  115431,
+    "lon":  -337552,
+    "freq": "414"
+  },
+  {
+    "id":   "MMY",
+    "name": "MANY",
+    "lat":  113656,
+    "lon":  -336749,
+    "freq": "272"
+  },
+  {
+    "id":   "MKV",
+    "name": "MARKSVILLE",
+    "lat":  111940,
+    "lon":  -331461,
+    "freq": "347"
+  },
+  {
+    "id":   "ML",
+    "name": "SABAR",
+    "lat":  116834,
+    "lon":  -331575,
+    "freq": "392"
+  },
+  {
+    "id":   "OOC",
+    "name": "NATCHITOCHES",
+    "lat":  113966,
+    "lon":  -335079,
+    "freq": "407"
+  },
+  {
+    "id":   "AR",
+    "name": "ACADI",
+    "lat":  107842,
+    "lon":  -330708,
+    "freq": "269"
+  },
+  {
+    "id":   "MS",
+    "name": "KINTE",
+    "lat":  108090,
+    "lon":  -325439,
+    "freq": "338"
+  },
+  {
+    "id":   "FWX",
+    "name": "NEW ROADS",
+    "lat":  110279,
+    "lon":  -329361,
+    "freq": "356"
+  },
+  {
+    "id":   "LRR",
+    "name": "OAKDALE",
+    "lat":  110308,
+    "lon":  -333680,
+    "freq": "379"
+  },
+  {
+    "id":   "OPL",
+    "name": "ST LANDRY",
+    "lat":  110358,
+    "lon":  -331555,
+    "freq": "335"
+  },
+  {
+    "id":   "PTN",
+    "name": "PATTERSON",
+    "lat":  106972,
+    "lon":  -328812,
+    "freq": "245"
+  },
+  {
+    "id":   "MRK",
+    "name": "MOLLY RIDGE",
+    "lat":  116673,
+    "lon":  -330400,
+    "freq": "338"
+  },
+  {
+    "id":   "ROQ",
+    "name": "RUSTON",
+    "lat":  117391,
+    "lon":  -333318,
+    "freq": "368"
+  },
+  {
+    "id":   "TUF",
+    "name": "STUCKEY",
+    "lat":  116671,
+    "lon":  -333322,
+    "freq": "350"
+  },
+  {
+    "id":   "AUR",
+    "name": "SULPHUR",
+    "lat":  108714,
+    "lon":  -336314,
+    "freq": "278"
+  },
+  {
+    "id":   "TKH",
+    "name": "TALLULAH",
+    "lat":  116083,
+    "lon":  -327692,
+    "freq": "344"
+  },
+  {
+    "id":   "VIV",
+    "name": "VIVIAN",
+    "lat":  118294,
+    "lon":  -338436,
+    "freq": "284"
+  },
+  {
+    "id":   "BE",
+    "name": "BEDDS",
+    "lat":  152927,
+    "lon":  -256999,
+    "freq": "332"
+  },
+  {
+    "id":   "SKR",
+    "name": "SHAKER HILL",
+    "lat":  152840,
+    "lon":  -256242,
+    "freq": "251"
+  },
+  {
+    "id":   "LQ",
+    "name": "LYNDY",
+    "lat":  152827,
+    "lon":  -255467,
+    "freq": "382"
+  },
+  {
+    "id":   "CQX",
+    "name": "NAUSET",
+    "lat":  150090,
+    "lon":  -251955,
+    "freq": "279"
+  },
+  {
+    "id":   "FM",
+    "name": "BOMDE",
+    "lat":  150236,
+    "lon":  -253589,
+    "freq": "362"
+  },
+  {
+    "id":   "FIT",
+    "name": "FITCHBURG",
+    "lat":  153183,
+    "lon":  -258325,
+    "freq": "365"
+  },
+  {
+    "id":   "GBR",
+    "name": "GREAT BARRINGTON",
+    "lat":  151858,
+    "lon":  -264254,
+    "freq": "395"
+  },
+  {
+    "id":   "LW",
+    "name": "HAGET",
+    "lat":  153519,
+    "lon":  -256309,
+    "freq": "402"
+  },
+  {
+    "id":   "IHM",
+    "name": "MANSFIELD",
+    "lat":  151209,
+    "lon":  -256309,
+    "freq": "220"
+  },
+  {
+    "id":   "IMR",
+    "name": "MARSHFIELD",
+    "lat":  151552,
+    "lon":  -254432,
+    "freq": "368"
+  },
+  {
+    "id":   "OW",
+    "name": "STOGE",
+    "lat":  151631,
+    "lon":  -256062,
+    "freq": "397"
+  },
+  {
+    "id":   "ORE",
+    "name": "ORANGE",
+    "lat":  153247,
+    "lon":  -260230,
+    "freq": "205"
+  },
+  {
+    "id":   "PVC",
+    "name": "PROVINCETOWN",
+    "lat":  151447,
+    "lon":  -252804,
+    "freq": "389"
+  },
+  {
+    "id":   "TAN",
+    "name": "TAUNTON",
+    "lat":  150751,
+    "lon":  -255658,
+    "freq": "227"
+  },
+  {
+    "id":   "APG",
+    "name": "ABERDEEN",
+    "lat":  142329,
+    "lon":  -273982,
+    "freq": "349"
+  },
+  {
+    "id":   "FND",
+    "name": "ELLICOTT",
+    "lat":  141434,
+    "lon":  -276397,
+    "freq": "371"
+  },
+  {
+    "id":   "IUB",
+    "name": "INSTITUTE",
+    "lat":  141433,
+    "lon":  -275850,
+    "freq": "404"
+  },
+  {
+    "id":   "CGE",
+    "name": "CAMBRIDGE",
+    "lat":  138734,
+    "lon":  -273710,
+    "freq": "355"
+  },
+  {
+    "id":   "CBE",
+    "name": "CUMBERLAND",
+    "lat":  142733,
+    "lon":  -283490,
+    "freq": "317"
+  },
+  {
+    "id":   "BUH",
+    "name": "ANNE ARUNDEL",
+    "lat":  140702,
+    "lon":  -276336,
+    "freq": "260"
+  },
+  {
+    "id":   "GAI",
+    "name": "GAITHERSBURG",
+    "lat":  141011,
+    "lon":  -277797,
+    "freq": "385"
+  },
+  {
+    "id":   "OX",
+    "name": "LANDY",
+    "lat":  138105,
+    "lon":  -270712,
+    "freq": "407"
+  },
+  {
+    "id":   "NHK",
+    "name": "PATUXENT",
+    "lat":  137829,
+    "lon":  -275051,
+    "freq": "400"
+  },
+  {
+    "id":   "LE",
+    "name": "LEWIE",
+    "lat":  158264,
+    "lon":  -253216,
+    "freq": "240"
+  },
+  {
+    "id":   "AU",
+    "name": "DUNNS",
+    "lat":  159879,
+    "lon":  -251498,
+    "freq": "366"
+  },
+  {
+    "id":   "BH",
+    "name": "SURRY",
+    "lat":  160339,
+    "lon":  -245903,
+    "freq": "330"
+  },
+  {
+    "id":   "BST",
+    "name": "BELFAST",
+    "lat":  159880,
+    "lon":  -248439,
+    "freq": "278"
+  },
+  {
+    "id":   "EPM",
+    "name": "EASTPORT",
+    "lat":  161685,
+    "lon":  -241244,
+    "freq": "260"
+  },
+  {
+    "id":   "SZO",
+    "name": "SEBAGO",
+    "lat":  158054,
+    "lon":  -254816,
+    "freq": "227"
+  },
+  {
+    "id":   "XQA",
+    "name": "SQUAW",
+    "lat":  163878,
+    "lon":  -250828,
+    "freq": "236"
+  },
+  {
+    "id":   "LNT",
+    "name": "MILNOT",
+    "lat":  164334,
+    "lon":  -246781,
+    "freq": "344"
+  },
+  {
+    "id":   "OLD",
+    "name": "OLD TOWN",
+    "lat":  162020,
+    "lon":  -247083,
+    "freq": "272"
+  },
+  {
+    "id":   "SUH",
+    "name": "SPRUCEHEAD",
+    "lat":  158580,
+    "lon":  -248778,
+    "freq": "356"
+  },
+  {
+    "id":   "BUP",
+    "name": "BURNHAM",
+    "lat":  160911,
+    "lon":  -249690,
+    "freq": "348"
+  },
+  {
+    "id":   "PQ",
+    "name": "EXCAL",
+    "lat":  167797,
+    "lon":  -244867,
+    "freq": "278"
+  },
+  {
+    "id":   "RQM",
+    "name": "RANGELEY",
+    "lat":  161764,
+    "lon":  -254704,
+    "freq": "221"
+  },
+  {
+    "id":   "RM",
+    "name": "NOXKS",
+    "lat":  158736,
+    "lon":  -249188,
+    "freq": "334"
+  },
+  {
+    "id":   "RL",
+    "name": "BRACY",
+    "lat":  160056,
+    "lon":  -251045,
+    "freq": "399"
+  },
+  {
+    "id":   "ADG",
+    "name": "ADRIAN",
+    "lat":  150731,
+    "lon":  -302678,
+    "freq": "278"
+  },
+  {
+    "id":   "AP",
+    "name": "FELPS",
+    "lat":  161858,
+    "lon":  -300815,
+    "freq": "206"
+  },
+  {
+    "id":   "BT",
+    "name": "BATOL",
+    "lat":  152503,
+    "lon":  -306663,
+    "freq": "272"
+  },
+  {
+    "id":   "SJX",
+    "name": "ST JAMES",
+    "lat":  164495,
+    "lon":  -308010,
+    "freq": "382"
+  },
+  {
+    "id":   "BE",
+    "name": "MALLY",
+    "lat":  151656,
+    "lon":  -310727,
+    "freq": "397"
+  },
+  {
+    "id":   "MA",
+    "name": "WEXOR",
+    "lat":  159253,
+    "lon":  -307970,
+    "freq": "336"
+  },
+  {
+    "id":   "CVX",
+    "name": "CHARLEVOIX",
+    "lat":  163086,
+    "lon":  -306972,
+    "freq": "392"
+  },
+  {
+    "id":   "JZJ",
+    "name": "ALAINA",
+    "lat":  151992,
+    "lon":  -299531,
+    "freq": "223"
+  },
+  {
+    "id":   "VQ",
+    "name": "CARGL",
+    "lat":  152482,
+    "lon":  -298635,
+    "freq": "230"
+  },
+  {
+    "id":   "DE",
+    "name": "MADDS",
+    "lat":  152981,
+    "lon":  -299135,
+    "freq": "338"
+  },
+  {
+    "id":   "RYS",
+    "name": "GROSSE ILE",
+    "lat":  151564,
+    "lon":  -299350,
+    "freq": "419"
+  },
+  {
+    "id":   "ES",
+    "name": "PIKLE",
+    "lat":  164601,
+    "lon":  -314009,
+    "freq": "344"
+  },
+  {
+    "id":   "FN",
+    "name": "PETLI",
+    "lat":  154685,
+    "lon":  -302004,
+    "freq": "269"
+  },
+  {
+    "id":   "GL",
+    "name": "BANGU",
+    "lat":  162052,
+    "lon":  -305308,
+    "freq": "375"
+  },
+  {
+    "id":   "GDW",
+    "name": "WIGGINS",
+    "lat":  158292,
+    "lon":  -304110,
+    "freq": "209"
+  },
+  {
+    "id":   "GR",
+    "name": "KNOBS",
+    "lat":  154424,
+    "lon":  -307363,
+    "freq": "263"
+  },
+  {
+    "id":   "GYG",
+    "name": "GRAYLING",
+    "lat":  161099,
+    "lon":  -305381,
+    "freq": "359"
+  },
+  {
+    "id":   "CM",
+    "name": "GALEY",
+    "lat":  169616,
+    "lon":  -318244,
+    "freq": "275"
+  },
+  {
+    "id":   "OZW",
+    "name": "HOWELL",
+    "lat":  153480,
+    "lon":  -302337,
+    "freq": "243"
+  },
+  {
+    "id":   "JX",
+    "name": "JAKSO",
+    "lat":  152344,
+    "lon":  -303716,
+    "freq": "212"
+  },
+  {
+    "id":   "AZ",
+    "name": "AUSTN",
+    "lat":  151672,
+    "lon":  -307907,
+    "freq": "371"
+  },
+  {
+    "id":   "LDM",
+    "name": "LUDINGTON",
+    "lat":  158266,
+    "lon":  -311074,
+    "freq": "341"
+  },
+  {
+    "id":   "MB",
+    "name": "JEPOT",
+    "lat":  159374,
+    "lon":  -310113,
+    "freq": "254"
+  },
+  {
+    "id":   "TN",
+    "name": "TRIBE",
+    "lat":  162221,
+    "lon":  -315706,
+    "freq": "239"
+  },
+  {
+    "id":   "OGM",
+    "name": "ONTONAGON",
+    "lat":  168660,
+    "lon":  -321718,
+    "freq": "375"
+  },
+  {
+    "id":   "PH",
+    "name": "PHURN",
+    "lat":  154234,
+    "lon":  -297347,
+    "freq": "332"
+  },
+  {
+    "id":   "PZQ",
+    "name": "ROGERS CITY",
+    "lat":  163455,
+    "lon":  -301746,
+    "freq": "215"
+  },
+  {
+    "id":   "MB",
+    "name": "OLSTE",
+    "lat":  156461,
+    "lon":  -303047,
+    "freq": "257"
+  },
+  {
+    "id":   "CI",
+    "name": "KOLOE",
+    "lat":  166797,
+    "lon":  -304352,
+    "freq": "400"
+  },
+  {
+    "id":   "IRS",
+    "name": "STURGIS",
+    "lat":  150527,
+    "lon":  -307561,
+    "freq": "382"
+  },
+  {
+    "id":   "TCU",
+    "name": "TECUMSEH",
+    "lat":  151322,
+    "lon":  -301990,
+    "freq": "239"
+  },
+  {
+    "id":   "HAI",
+    "name": "THREE RIVERS",
+    "lat":  151050,
+    "lon":  -308129,
+    "freq": "407"
+  },
+  {
+    "id":   "TV",
+    "name": "GWENN",
+    "lat":  161044,
+    "lon":  -307544,
+    "freq": "365"
+  },
+  {
+    "id":   "RXW",
+    "name": "WATERSMEET",
+    "lat":  166637,
+    "lon":  -321403,
+    "freq": "407"
+  },
+  {
+    "id":   "AIT",
+    "name": "AITKIN",
+    "lat":  167573,
+    "lon":  -337231,
+    "freq": "397"
+  },
+  {
+    "id":   "EE",
+    "name": "TAMIE",
+    "lat":  164850,
+    "lon":  -343099,
+    "freq": "374"
+  },
+  {
+    "id":   "AQP",
+    "name": "APPLETON",
+    "lat":  162822,
+    "lon":  -345634,
+    "freq": "356"
+  },
+  {
+    "id":   "MD",
+    "name": "BUNAN",
+    "lat":  170801,
+    "lon":  -341405,
+    "freq": "371"
+  },
+  {
+    "id":   "BBB",
+    "name": "BENSON",
+    "lat":  163177,
+    "lon":  -344343,
+    "freq": "239"
+  },
+  {
+    "id":   "FOZ",
+    "name": "BIGFORK",
+    "lat":  172020,
+    "lon":  -337151,
+    "freq": "345"
+  },
+  {
+    "id":   "SBU",
+    "name": "BLUE EARTH",
+    "lat":  156949,
+    "lon":  -338748,
+    "freq": "332"
+  },
+  {
+    "id":   "BR",
+    "name": "LAREW",
+    "lat":  167243,
+    "lon":  -338480,
+    "freq": "251"
+  },
+  {
+    "id":   "CBG",
+    "name": "CAMBRIDGE",
+    "lat":  164007,
+    "lon":  -335743,
+    "freq": "350"
+  },
+  {
+    "id":   "COQ",
+    "name": "CLOQUET",
+    "lat":  168109,
+    "lon":  -333010,
+    "freq": "335"
+  },
+  {
+    "id":   "SCG",
+    "name": "SCOTT",
+    "lat":  173735,
+    "lon":  -332908,
+    "freq": "385"
+  },
+  {
+    "id":   "CKN",
+    "name": "CROOKSTON",
+    "lat":  172225,
+    "lon":  -347819,
+    "freq": "400"
+  },
+  {
+    "id":   "DL",
+    "name": "PYKLA",
+    "lat":  168644,
+    "lon":  -332477,
+    "freq": "379"
+  },
+  {
+    "id":   "FQ",
+    "name": "MONTZ",
+    "lat":  156865,
+    "lon":  -339544,
+    "freq": "420"
+  },
+  {
+    "id":   "FF",
+    "name": "HAMRE",
+    "lat":  166391,
+    "lon":  -345807,
+    "freq": "337"
+  },
+  {
+    "id":   "FSE",
+    "name": "FOSSTON",
+    "lat":  171320,
+    "lon":  -344770,
+    "freq": "224"
+  },
+  {
+    "id":   "GYL",
+    "name": "GLENCOE",
+    "lat":  161138,
+    "lon":  -338711,
+    "freq": "407"
+  },
+  {
+    "id":   "GHW",
+    "name": "GLENWOOD",
+    "lat":  164319,
+    "lon":  -343145,
+    "freq": "346"
+  },
+  {
+    "id":   "CKC",
+    "name": "COOK COUNTY",
+    "lat":  172224,
+    "lon":  -325388,
+    "freq": "358"
+  },
+  {
+    "id":   "GP",
+    "name": "GALEX",
+    "lat":  169668,
+    "lon":  -336532,
+    "freq": "272"
+  },
+  {
+    "id":   "IN",
+    "name": "RAIZE",
+    "lat":  174532,
+    "lon":  -335801,
+    "freq": "353"
+  },
+  {
+    "id":   "LXL",
+    "name": "LITTLE FALLS",
+    "lat":  165420,
+    "lon":  -339629,
+    "freq": "359"
+  },
+  {
+    "id":   "XCR",
+    "name": "RIPLEY",
+    "lat":  165885,
+    "lon":  -339636,
+    "freq": "404"
+  },
+  {
+    "id":   "XVG",
+    "name": "LONGVILLE",
+    "lat":  169179,
+    "lon":  -339141,
+    "freq": "392"
+  },
+  {
+    "id":   "DXX",
+    "name": "DAWSON/MADISON",
+    "lat":  161942,
+    "lon":  -346244,
+    "freq": "341"
+  },
+  {
+    "id":   "GB",
+    "name": "GARNO",
+    "lat":  160207,
+    "lon":  -345279,
+    "freq": "253"
+  },
+  {
+    "id":   "MS",
+    "name": "NARCO",
+    "lat":  161372,
+    "lon":  -335128,
+    "freq": "266"
+  },
+  {
+    "id":   "MZH",
+    "name": "MOOSE LAKE",
+    "lat":  167099,
+    "lon":  -334097,
+    "freq": "362"
+  },
+  {
+    "id":   "JMR",
+    "name": "MORA",
+    "lat":  165205,
+    "lon":  -335769,
+    "freq": "327"
+  },
+  {
+    "id":   "ORB",
+    "name": "ORR",
+    "lat":  172867,
+    "lon":  -334302,
+    "freq": "341"
+  },
+  {
+    "id":   "VVV",
+    "name": "ORTONVILLE",
+    "lat":  163086,
+    "lon":  -347114,
+    "freq": "332"
+  },
+  {
+    "id":   "OW",
+    "name": "TONNA",
+    "lat":  158665,
+    "lon":  -335358,
+    "freq": "379"
+  },
+  {
+    "id":   "PK",
+    "name": "SPIDA",
+    "lat":  168602,
+    "lon":  -341912,
+    "freq": "269"
+  },
+  {
+    "id":   "PWC",
+    "name": "PINE RIVER",
+    "lat":  168217,
+    "lon":  -339786,
+    "freq": "330"
+  },
+  {
+    "id":   "PFT",
+    "name": "PINEY PINECREEK",
+    "lat":  176379,
+    "lon":  -345531,
+    "freq": "342"
+  },
+  {
+    "id":   "PNM",
+    "name": "PRINCETON",
+    "lat":  164032,
+    "lon":  -336987,
+    "freq": "368"
+  },
+  {
+    "id":   "RG",
+    "name": "REGUE",
+    "lat":  160552,
+    "lon":  -333530,
+    "freq": "274"
+  },
+  {
+    "id":   "ROS",
+    "name": "RUSH CITY",
+    "lat":  164504,
+    "lon":  -334636,
+    "freq": "282"
+  },
+  {
+    "id":   "BFW",
+    "name": "SILVER BAY",
+    "lat":  170102,
+    "lon":  -329090,
+    "freq": "350"
+  },
+  {
+    "id":   "ST",
+    "name": "HUSSK",
+    "lat":  163724,
+    "lon":  -338287,
+    "freq": "342"
+  },
+  {
+    "id":   "JYG",
+    "name": "ST JAMES",
+    "lat":  158347,
+    "lon":  -340389,
+    "freq": "260"
+  },
+  {
+    "id":   "BA",
+    "name": "BABCO",
+    "lat":  161484,
+    "lon":  -334744,
+    "freq": "385"
+  },
+  {
+    "id":   "PPI",
+    "name": "HOPEY",
+    "lat":  161544,
+    "lon":  -334591,
+    "freq": "400"
+  },
+  {
+    "id":   "SAZ",
+    "name": "STAPLES",
+    "lat":  166976,
+    "lon":  -341297,
+    "freq": "257"
+  },
+  {
+    "id":   "HY",
+    "name": "HARVI",
+    "lat":  172823,
+    "lon":  -345943,
+    "freq": "260"
+  },
+  {
+    "id":   "SW",
+    "name": "ROADD",
+    "lat":  175905,
+    "lon":  -342870,
+    "freq": "360"
+  },
+  {
+    "id":   "ETH",
+    "name": "WHEATON",
+    "lat":  164819,
+    "lon":  -347568,
+    "freq": "326"
+  },
+  {
+    "id":   "MWM",
+    "name": "WINDOM",
+    "lat":  158073,
+    "lon":  -342392,
+    "freq": "203"
+  },
+  {
+    "id":   "ON",
+    "name": "BOLLN",
+    "lat":  158519,
+    "lon":  -329770,
+    "freq": "264"
+  },
+  {
+    "id":   "OT",
+    "name": "WONDD",
+    "lat":  157022,
+    "lon":  -343670,
+    "freq": "277"
+  },
+  {
+    "id":   "BZK",
+    "name": "BROOKFIELD",
+    "lat":  143151,
+    "lon":  -335192,
+    "freq": "383"
+  },
+  {
+    "id":   "CG",
+    "name": "DUTCH",
+    "lat":  134112,
+    "lon":  -322921,
+    "freq": "248"
+  },
+  {
+    "id":   "CHQ",
+    "name": "CHARLESTON",
+    "lat":  132642,
+    "lon":  -321684,
+    "freq": "208"
+  },
+  {
+    "id":   "CHT",
+    "name": "CHILLICOTHE",
+    "lat":  143197,
+    "lon":  -336579,
+    "freq": "375"
+  },
+  {
+    "id":   "GLY",
+    "name": "GOLDEN VALLEY",
+    "lat":  138091,
+    "lon":  -337264,
+    "freq": "388"
+  },
+  {
+    "id":   "PRI",
+    "name": "PERRINE",
+    "lat":  135950,
+    "lon":  -325543,
+    "freq": "367"
+  },
+  {
+    "id":   "FES",
+    "name": "FESTUS",
+    "lat":  137505,
+    "lon":  -325395,
+    "freq": "269"
+  },
+  {
+    "id":   "BHN",
+    "name": "BUCKHORN",
+    "lat":  135711,
+    "lon":  -331573,
+    "freq": "391"
+  },
+  {
+    "id":   "JE",
+    "name": "ALGOA",
+    "lat":  138772,
+    "lon":  -331457,
+    "freq": "397"
+  },
+  {
+    "id":   "JL",
+    "name": "LUNNS",
+    "lat":  133931,
+    "lon":  -340410,
+    "freq": "344"
+  },
+  {
+    "id":   "AIZ",
+    "name": "KAISER",
+    "lat":  137147,
+    "lon":  -333191,
+    "freq": "377"
+  },
+  {
+    "id":   "DO",
+    "name": "DOTTE",
+    "lat":  141195,
+    "lon":  -341099,
+    "freq": "359"
+  },
+  {
+    "id":   "GQ",
+    "name": "NORGE",
+    "lat":  140620,
+    "lon":  -340760,
+    "freq": "517"
+  },
+  {
+    "id":   "LLU",
+    "name": "SPRING RIVER",
+    "lat":  134958,
+    "lon":  -339514,
+    "freq": "356"
+  },
+  {
+    "id":   "IEB",
+    "name": "LEBANON",
+    "lat":  135256,
+    "lon":  -333568,
+    "freq": "414"
+  },
+  {
+    "id":   "PUR",
+    "name": "MARSHALL",
+    "lat":  140551,
+    "lon":  -335504,
+    "freq": "371"
+  },
+  {
+    "id":   "MNF",
+    "name": "MOUNTAIN VIEW",
+    "lat":  133179,
+    "lon":  -330160,
+    "freq": "365"
+  },
+  {
+    "id":   "FD",
+    "name": "EARLI",
+    "lat":  132008,
+    "lon":  -325182,
+    "freq": "278"
+  },
+  {
+    "id":   "DMO",
+    "name": "SEDALIA",
+    "lat":  139335,
+    "lon":  -335435,
+    "freq": "281"
+  },
+  {
+    "id":   "AZN",
+    "name": "AMAZON",
+    "lat":  143581,
+    "lon":  -341669,
+    "freq": "233"
+  },
+  {
+    "id":   "ST",
+    "name": "TARIO",
+    "lat":  142832,
+    "lon":  -341664,
+    "freq": "260"
+  },
+  {
+    "id":   "FZ",
+    "name": "EAVES",
+    "lat":  139238,
+    "lon":  -325970,
+    "freq": "227"
+  },
+  {
+    "id":   "LM",
+    "name": "OBLIO",
+    "lat":  139681,
+    "lon":  -325709,
+    "freq": "338"
+  },
+  {
+    "id":   "SU",
+    "name": "SNOOP",
+    "lat":  139100,
+    "lon":  -326761,
+    "freq": "326"
+  },
+  {
+    "id":   "ST",
+    "name": "ZUMAY",
+    "lat":  139636,
+    "lon":  -325003,
+    "freq": "404"
+  },
+  {
+    "id":   "UUV",
+    "name": "SULLIVAN",
+    "lat":  137647,
+    "lon":  -328190,
+    "freq": "356"
+  },
+  {
+    "id":   "TRX",
+    "name": "TRENTON",
+    "lat":  144289,
+    "lon":  -336934,
+    "freq": "400"
+  },
+  {
+    "id":   "UNO",
+    "name": "POMONA",
+    "lat":  132760,
+    "lon":  -330843,
+    "freq": "335"
+  },
+  {
+    "id":   "GRO",
+    "name": "ROTA",
+    "lat":  51017,
+    "lon":  -522863,
+    "freq": "332"
+  },
+  {
+    "id":   "SN",
+    "name": "SAIPAN",
+    "lat":  54401,
+    "lon":  -524557,
+    "freq": "312"
+  },
+  {
+    "id":   "HS",
+    "name": "HANCO",
+    "lat":  109624,
+    "lon":  -322039,
+    "freq": "221"
+  },
+  {
+    "id":   "UU",
+    "name": "SEYER",
+    "lat":  126055,
+    "lon":  -319016,
+    "freq": "334"
+  },
+  {
+    "id":   "MTQ",
+    "name": "METCALF",
+    "lat":  120331,
+    "lon":  -327535,
+    "freq": "359"
+  },
+  {
+    "id":   "GW",
+    "name": "TEOCK",
+    "lat":  120931,
+    "lon":  -324303,
+    "freq": "349"
+  },
+  {
+    "id":   "SBQ",
+    "name": "SCOBEY",
+    "lat":  122007,
+    "lon":  -323548,
+    "freq": "245"
+  },
+  {
+    "id":   "GP",
+    "name": "BAYOU",
+    "lat":  109748,
+    "lon":  -320984,
+    "freq": "360"
+  },
+  {
+    "id":   "JA",
+    "name": "ALLEN",
+    "lat":  116685,
+    "lon":  -324430,
+    "freq": "365"
+  },
+  {
+    "id":   "JH",
+    "name": "BRENZ",
+    "lat":  116686,
+    "lon":  -324940,
+    "freq": "260"
+  },
+  {
+    "id":   "THJ",
+    "name": "TALLAHALA",
+    "lat":  114074,
+    "lon":  -321083,
+    "freq": "346"
+  },
+  {
+    "id":   "MC",
+    "name": "FERNI",
+    "lat":  112516,
+    "lon":  -325837,
+    "freq": "413"
+  },
+  {
+    "id":   "ME",
+    "name": "SAVOY",
+    "lat":  116090,
+    "lon":  -319577,
+    "freq": "356"
+  },
+  {
+    "id":   "HAH",
+    "name": "NATCHEZ-ADAMS COUNTY",
+    "lat":  114085,
+    "lon":  -328655,
+    "freq": "388"
+  },
+  {
+    "id":   "UV",
+    "name": "TUNNG",
+    "lat":  123786,
+    "lon":  -322653,
+    "freq": "426"
+  },
+  {
+    "id":   "RYB",
+    "name": "RAYMOND",
+    "lat":  116283,
+    "lon":  -325478,
+    "freq": "375"
+  },
+  {
+    "id":   "TU",
+    "name": "VERON",
+    "lat":  123049,
+    "lon":  -319567,
+    "freq": "420"
+  },
+  {
+    "id":   "BKU",
+    "name": "TIMBER",
+    "lat":  166852,
+    "lon":  -375322,
+    "freq": "344"
+  },
+  {
+    "id":   "BI",
+    "name": "SAIGE",
+    "lat":  165067,
+    "lon":  -391300,
+    "freq": "251"
+  },
+  {
+    "id":   "BZ",
+    "name": "MANNI",
+    "lat":  165139,
+    "lon":  -400628,
+    "freq": "266"
+  },
+  {
+    "id":   "BDX",
+    "name": "BROADUS",
+    "lat":  163568,
+    "lon":  -379479,
+    "freq": "335"
+  },
+  {
+    "id":   "LTY",
+    "name": "CHESTER",
+    "lat":  174629,
+    "lon":  -399531,
+    "freq": "323"
+  },
+  {
+    "id":   "CII",
+    "name": "CHOTEAU",
+    "lat":  172160,
+    "lon":  -403815,
+    "freq": "269"
+  },
+  {
+    "id":   "CRR",
+    "name": "CIRCLE",
+    "lat":  170712,
+    "lon":  -380036,
+    "freq": "245"
+  },
+  {
+    "id":   "CRD",
+    "name": "CONRAD",
+    "lat":  173468,
+    "lon":  -402890,
+    "freq": "293"
+  },
+  {
+    "id":   "EKS",
+    "name": "ENNIS",
+    "lat":  162964,
+    "lon":  -401949,
+    "freq": "286"
+  },
+  {
+    "id":   "EUR",
+    "name": "EUREKA",
+    "lat":  176277,
+    "lon":  -414303,
+    "freq": "392"
+  },
+  {
+    "id":   "FOR",
+    "name": "FORSYTH",
+    "lat":  166563,
+    "lon":  -383454,
+    "freq": "236"
+  },
+  {
+    "id":   "MKR",
+    "name": "MILK RIVER",
+    "lat":  173548,
+    "lon":  -383854,
+    "freq": "339"
+  },
+  {
+    "id":   "GDV",
+    "name": "GLENDIVE",
+    "lat":  169680,
+    "lon":  -377297,
+    "freq": "410"
+  },
+  {
+    "id":   "ITU",
+    "name": "TRULY",
+    "lat":  170517,
+    "lon":  -400942,
+    "freq": "371"
+  },
+  {
+    "id":   "HWQ",
+    "name": "HARLOWTON",
+    "lat":  167165,
+    "lon":  -395396,
+    "freq": "242"
+  },
+  {
+    "id":   "CVP",
+    "name": "CAPITOL",
+    "lat":  167784,
+    "lon":  -402973,
+    "freq": "335"
+  },
+  {
+    "id":   "HAU",
+    "name": "HAUSER",
+    "lat":  167648,
+    "lon":  -402329,
+    "freq": "386"
+  },
+  {
+    "id":   "JDN",
+    "name": "JORDAN",
+    "lat":  170400,
+    "lon":  -384977,
+    "freq": "263"
+  },
+  {
+    "id":   "SAK",
+    "name": "SMITH LAKE",
+    "lat":  173189,
+    "lon":  -412060,
+    "freq": "515"
+  },
+  {
+    "id":   "LYI",
+    "name": "LIBBY",
+    "lat":  173897,
+    "lon":  -415788,
+    "freq": "414"
+  },
+  {
+    "id":   "MLK",
+    "name": "MALTA",
+    "lat":  174127,
+    "lon":  -388502,
+    "freq": "272"
+  },
+  {
+    "id":   "INE",
+    "name": "KONNA",
+    "lat":  169539,
+    "lon":  -411828,
+    "freq": "521"
+  },
+  {
+    "id":   "PWD",
+    "name": "PLENTYWOOD",
+    "lat":  175639,
+    "lon":  -376310,
+    "freq": "251"
+  },
+  {
+    "id":   "RPX",
+    "name": "ROUNDUP",
+    "lat":  167296,
+    "lon":  -390784,
+    "freq": "362"
+  },
+  {
+    "id":   "SCO",
+    "name": "SCOBEY",
+    "lat":  175705,
+    "lon":  -379558,
+    "freq": "283"
+  },
+  {
+    "id":   "SBX",
+    "name": "SHELBY",
+    "lat":  174747,
+    "lon":  -402704,
+    "freq": "347"
+  },
+  {
+    "id":   "SDY",
+    "name": "SIDNEY",
+    "lat":  171761,
+    "lon":  -375054,
+    "freq": "359"
+  },
+  {
+    "id":   "LO",
+    "name": "TARGY",
+    "lat":  160471,
+    "lon":  -400311,
+    "freq": "415"
+  },
+  {
+    "id":   "ESY",
+    "name": "YELLOWSTONE",
+    "lat":  160882,
+    "lon":  -400035,
+    "freq": "338"
+  },
+  {
+    "id":   "OLF",
+    "name": "WOLF POINT",
+    "lat":  173176,
+    "lon":  -380166,
+    "freq": "404"
+  },
+  {
+    "id":   "VU",
+    "name": "ALLER",
+    "lat":  127760,
+    "lon":  -288300,
+    "freq": "346"
+  },
+  {
+    "id":   "BRA",
+    "name": "BROAD RIVER",
+    "lat":  126981,
+    "lon":  -296895,
+    "freq": "379"
+  },
+  {
+    "id":   "IM",
+    "name": "KEANS",
+    "lat":  127918,
+    "lon":  -297314,
+    "freq": "357"
+  },
+  {
+    "id":   "BAR",
+    "name": "HEMLOCK",
+    "lat":  130152,
+    "lon":  -294767,
+    "freq": "320"
+  },
+  {
+    "id":   "MRH",
+    "name": "MOREHEAD",
+    "lat":  125033,
+    "lon":  -275984,
+    "freq": "269"
+  },
+  {
+    "id":   "HB",
+    "name": "ALAMM",
+    "lat":  129521,
+    "lon":  -286505,
+    "freq": "361"
+  },
+  {
+    "id":   "HFF",
+    "name": "MACKALL",
+    "lat":  126100,
+    "lon":  -286148,
+    "freq": "278"
+  },
+  {
+    "id":   "RNW",
+    "name": "CHOCOWINITY",
+    "lat":  127834,
+    "lon":  -277583,
+    "freq": "388"
+  },
+  {
+    "id":   "CTZ",
+    "name": "CLINTON",
+    "lat":  125910,
+    "lon":  -282102,
+    "freq": "412"
+  },
+  {
+    "id":   "HQT",
+    "name": "HARNETT",
+    "lat":  127558,
+    "lon":  -283229,
+    "freq": "417"
+  },
+  {
+    "id":   "DIW",
+    "name": "DIXON",
+    "lat":  124446,
+    "lon":  -278830,
+    "freq": "198"
+  },
+  {
+    "id":   "EDE",
+    "name": "EDENTON",
+    "lat":  129691,
+    "lon":  -275639,
+    "freq": "265"
+  },
+  {
+    "id":   "LLW",
+    "name": "WOODVILLE",
+    "lat":  130546,
+    "lon":  -274672,
+    "freq": "254"
+  },
+  {
+    "id":   "TGQ",
+    "name": "ELIZABETHTOWN",
+    "lat":  124303,
+    "lon":  -282657,
+    "freq": "398"
+  },
+  {
+    "id":   "ZEF",
+    "name": "ZEPHYR",
+    "lat":  130716,
+    "lon":  -290614,
+    "freq": "326"
+  },
+  {
+    "id":   "POB",
+    "name": "POPE",
+    "lat":  126816,
+    "lon":  -284235,
+    "freq": "338"
+  },
+  {
+    "id":   "FGP",
+    "name": "FORT BRAGG",
+    "lat":  126500,
+    "lon":  -283726,
+    "freq": "393"
+  },
+  {
+    "id":   "GHJ",
+    "name": "STONIA",
+    "lat":  126689,
+    "lon":  -292168,
+    "freq": "260"
+  },
+  {
+    "id":   "AQE",
+    "name": "ALWOOD",
+    "lat":  128544,
+    "lon":  -278538,
+    "freq": "230"
+  },
+  {
+    "id":   "HK",
+    "name": "TAWBA",
+    "lat":  128831,
+    "lon":  -292699,
+    "freq": "332"
+  },
+  {
+    "id":   "OA",
+    "name": "ELLAS",
+    "lat":  125101,
+    "lon":  -279736,
+    "freq": "261"
+  },
+  {
+    "id":   "JUH",
+    "name": "ASHEE",
+    "lat":  131162,
+    "lon":  -292758,
+    "freq": "410"
+  },
+  {
+    "id":   "DKA",
+    "name": "KENAN",
+    "lat":  126260,
+    "lon":  -280507,
+    "freq": "332"
+  },
+  {
+    "id":   "IS",
+    "name": "STALS",
+    "lat":  126877,
+    "lon":  -279714,
+    "freq": "276"
+  },
+  {
+    "id":   "IZN",
+    "name": "LINCOLNTON",
+    "lat":  127935,
+    "lon":  -291911,
+    "freq": "432"
+  },
+  {
+    "id":   "JB",
+    "name": "JIGEL",
+    "lat":  124364,
+    "lon":  -284898,
+    "freq": "384"
+  },
+  {
+    "id":   "RSY",
+    "name": "ROBESON",
+    "lat":  124612,
+    "lon":  -284619,
+    "freq": "359"
+  },
+  {
+    "id":   "MQI",
+    "name": "MANTEO",
+    "lat":  129295,
+    "lon":  -272502,
+    "freq": "370"
+  },
+  {
+    "id":   "ME",
+    "name": "MAXTN",
+    "lat":  125039,
+    "lon":  -285997,
+    "freq": "257"
+  },
+  {
+    "id":   "TWL",
+    "name": "WESLEY",
+    "lat":  125830,
+    "lon":  -290538,
+    "freq": "204"
+  },
+  {
+    "id":   "FIQ",
+    "name": "FIDDLERS",
+    "lat":  128556,
+    "lon":  -294016,
+    "freq": "391"
+  },
+  {
+    "id":   "AZW",
+    "name": "MOUNT AIRY",
+    "lat":  130971,
+    "lon":  -289944,
+    "freq": "223"
+  },
+  {
+    "id":   "EW",
+    "name": "KATFI",
+    "lat":  126077,
+    "lon":  -277486,
+    "freq": "362"
+  },
+  {
+    "id":   "UKF",
+    "name": "WILKI",
+    "lat":  130006,
+    "lon":  -291953,
+    "freq": "209"
+  },
+  {
+    "id":   "HXO",
+    "name": "HUNTSBORO",
+    "lat":  130684,
+    "lon":  -283026,
+    "freq": "271"
+  },
+  {
+    "id":   "LE",
+    "name": "LEEVY",
+    "lat":  129338,
+    "lon":  -283398,
+    "freq": "350"
+  },
+  {
+    "id":   "SIF",
+    "name": "SLAMMER",
+    "lat":  130974,
+    "lon":  -287146,
+    "freq": "423"
+  },
+  {
+    "id":   "RZZ",
+    "name": "RAPIDS",
+    "lat":  131187,
+    "lon":  -279749,
+    "freq": "407"
+  },
+  {
+    "id":   "HUR",
+    "name": "PERSON",
+    "lat":  130439,
+    "lon":  -284637,
+    "freq": "220"
+  },
+  {
+    "id":   "RU",
+    "name": "ROVDY",
+    "lat":  128639,
+    "lon":  -289762,
+    "freq": "275"
+  },
+  {
+    "id":   "EEJ",
+    "name": "LEE COUNTY/DCMSND",
+    "lat":  127343,
+    "lon":  -285203,
+    "freq": "428"
+  },
+  {
+    "id":   "TT",
+    "name": "LEECO",
+    "lat":  127790,
+    "lon":  -284903,
+    "freq": "406"
+  },
+  {
+    "id":   "SLP",
+    "name": "FIRST RIVER",
+    "lat":  126909,
+    "lon":  -293755,
+    "freq": "417"
+  },
+  {
+    "id":   "JN",
+    "name": "JURLY",
+    "lat":  127710,
+    "lon":  -282331,
+    "freq": "263"
+  },
+  {
+    "id":   "ETC",
+    "name": "TARBORO",
+    "lat":  129368,
+    "lon":  -279166,
+    "freq": "257"
+  },
+  {
+    "id":   "CPC",
+    "name": "CAMP",
+    "lat":  123383,
+    "lon":  -283363,
+    "freq": "227"
+  },
+  {
+    "id":   "MCZ",
+    "name": "WILLIAMSTON",
+    "lat":  129092,
+    "lon":  -277840,
+    "freq": "336"
+  },
+  {
+    "id":   "CLB",
+    "name": "CAROLINA BEACH",
+    "lat":  122782,
+    "lon":  -280660,
+    "freq": "216"
+  },
+  {
+    "id":   "GM",
+    "name": "WILZE",
+    "lat":  123614,
+    "lon":  -280122,
+    "freq": "205"
+  },
+  {
+    "id":   "IL",
+    "name": "AIRLI",
+    "lat":  123088,
+    "lon":  -280318,
+    "freq": "281"
+  },
+  {
+    "id":   "IN",
+    "name": "REENO",
+    "lat":  129855,
+    "lon":  -288600,
+    "freq": "317"
+  },
+  {
+    "id":   "BI",
+    "name": "JADAN",
+    "lat":  168112,
+    "lon":  -362331,
+    "freq": "230"
+  },
+  {
+    "id":   "BOD",
+    "name": "BOWMAN",
+    "lat":  166266,
+    "lon":  -372343,
+    "freq": "374"
+  },
+  {
+    "id":   "DI",
+    "name": "NOSON",
+    "lat":  168077,
+    "lon":  -369764,
+    "freq": "353"
+  },
+  {
+    "id":   "AA",
+    "name": "KENIE",
+    "lat":  169232,
+    "lon":  -348534,
+    "freq": "365"
+  },
+  {
+    "id":   "GF",
+    "name": "HISER",
+    "lat":  172247,
+    "lon":  -349853,
+    "freq": "345"
+  },
+  {
+    "id":   "GWR",
+    "name": "GWINNER",
+    "lat":  166405,
+    "lon":  -351513,
+    "freq": "278"
+  },
+  {
+    "id":   "JM",
+    "name": "SABON",
+    "lat":  168706,
+    "lon":  -354890,
+    "freq": "395"
+  },
+  {
+    "id":   "BWP",
+    "name": "BRECKENRIDGE-WAHPETON",
+    "lat":  166481,
+    "lon":  -347773,
+    "freq": "233"
+  },
+  {
+    "id":   "ISN",
+    "name": "WILLISTON",
+    "lat":  173325,
+    "lon":  -372901,
+    "freq": "275"
+  },
+  {
+    "id":   "SF",
+    "name": "YUSON",
+    "lat":  173225,
+    "lon":  -372641,
+    "freq": "275"
+  },
+  {
+    "id":   "BVN",
+    "name": "ALABY",
+    "lat":  150226,
+    "lon":  -352989,
+    "freq": "332"
+  },
+  {
+    "id":   "ALU",
+    "name": "ALLIANCE",
+    "lat":  151355,
+    "lon":  -370078,
+    "freq": "380"
+  },
+  {
+    "id":   "RBE",
+    "name": "ROCK COUNTY",
+    "lat":  153264,
+    "lon":  -358480,
+    "freq": "341"
+  },
+  {
+    "id":   "BUB",
+    "name": "BURWELL",
+    "lat":  150388,
+    "lon":  -356923,
+    "freq": "377"
+  },
+  {
+    "id":   "CSB",
+    "name": "HARRY STRUNK",
+    "lat":  145095,
+    "lon":  -360567,
+    "freq": "389"
+  },
+  {
+    "id":   "CD",
+    "name": "DAWES",
+    "lat":  153918,
+    "lon":  -371428,
+    "freq": "362"
+  },
+  {
+    "id":   "HIN",
+    "name": "WHITNEY",
+    "lat":  154183,
+    "lon":  -371137,
+    "freq": "275"
+  },
+  {
+    "id":   "CNP",
+    "name": "CHAPPELL",
+    "lat":  147875,
+    "lon":  -368851,
+    "freq": "383"
+  },
+  {
+    "id":   "PLT",
+    "name": "PLATTE CENTER",
+    "lat":  149387,
+    "lon":  -350574,
+    "freq": "407"
+  },
+  {
+    "id":   "FBY",
+    "name": "FAIRBURY",
+    "lat":  144636,
+    "lon":  -349796,
+    "freq": "293"
+  },
+  {
+    "id":   "FMZ",
+    "name": "BEKLOF",
+    "lat":  146123,
+    "lon":  -351244,
+    "freq": "392"
+  },
+  {
+    "id":   "FNB",
+    "name": "BRENNER",
+    "lat":  144274,
+    "lon":  -344112,
+    "freq": "404"
+  },
+  {
+    "id":   "GRN",
+    "name": "GORDON",
+    "lat":  154083,
+    "lon":  -367845,
+    "freq": "414"
+  },
+  {
+    "id":   "DWL",
+    "name": "WILLOW",
+    "lat":  147142,
+    "lon":  -360261,
+    "freq": "353"
+  },
+  {
+    "id":   "GR",
+    "name": "SANCY",
+    "lat":  147142,
+    "lon":  -353933,
+    "freq": "380"
+  },
+  {
+    "id":   "GGF",
+    "name": "GRANT",
+    "lat":  147135,
+    "lon":  -366229,
+    "freq": "359"
+  },
+  {
+    "id":   "PSS",
+    "name": "PROSSER",
+    "lat":  146470,
+    "lon":  -354519,
+    "freq": "338"
+  },
+  {
+    "id":   "HJH",
+    "name": "HEBRON",
+    "lat":  144541,
+    "lon":  -351315,
+    "freq": "323"
+  },
+  {
+    "id":   "OI",
+    "name": "TOMMI",
+    "lat":  152856,
+    "lon":  -347264,
+    "freq": "305"
+  },
+  {
+    "id":   "EA",
+    "name": "ANOKE",
+    "lat":  146254,
+    "lon":  -356492,
+    "freq": "422"
+  },
+  {
+    "id":   "RRX",
+    "name": "DARR",
+    "lat":  147040,
+    "lon":  -359482,
+    "freq": "326"
+  },
+  {
+    "id":   "LN",
+    "name": "POTTS",
+    "lat":  146689,
+    "lon":  -348344,
+    "freq": "385"
+  },
+  {
+    "id":   "AFK",
+    "name": "NEBRASKA CITY",
+    "lat":  146179,
+    "lon":  -345099,
+    "freq": "347"
+  },
+  {
+    "id":   "OF",
+    "name": "CARSY",
+    "lat":  150795,
+    "lon":  -350928,
+    "freq": "510"
+  },
+  {
+    "id":   "LB",
+    "name": "PANBE",
+    "lat":  147845,
+    "lon":  -362060,
+    "freq": "416"
+  },
+  {
+    "id":   "OM",
+    "name": "GERFI",
+    "lat":  148920,
+    "lon":  -345442,
+    "freq": "320"
+  },
+  {
+    "id":   "MLE",
+    "name": "MILLARD",
+    "lat":  148301,
+    "lon":  -346010,
+    "freq": "371"
+  },
+  {
+    "id":   "EN",
+    "name": "RIKKY",
+    "lat":  148390,
+    "lon":  -344944,
+    "freq": "426"
+  },
+  {
+    "id":   "ODX",
+    "name": "ORD",
+    "lat":  149845,
+    "lon":  -356212,
+    "freq": "356"
+  },
+  {
+    "id":   "OKS",
+    "name": "OSHKOSH",
+    "lat":  149044,
+    "lon":  -368463,
+    "freq": "233"
+  },
+  {
+    "id":   "PMV",
+    "name": "PLATTSMOUTH",
+    "lat":  147397,
+    "lon":  -345284,
+    "freq": "329"
+  },
+  {
+    "id":   "BF",
+    "name": "CREVE",
+    "lat":  150489,
+    "lon":  -372595,
+    "freq": "263"
+  },
+  {
+    "id":   "SWT",
+    "name": "SEWARD",
+    "lat":  147100,
+    "lon":  -349602,
+    "freq": "269"
+  },
+  {
+    "id":   "VTN",
+    "name": "VALENTINE",
+    "lat":  154301,
+    "lon":  -361978,
+    "freq": "314"
+  },
+  {
+    "id":   "AHQ",
+    "name": "WAHOO",
+    "lat":  148461,
+    "lon":  -347754,
+    "freq": "400"
+  },
+  {
+    "id":   "JYR",
+    "name": "YORK",
+    "lat":  147231,
+    "lon":  -351421,
+    "freq": "257"
+  },
+  {
+    "id":   "CNH",
+    "name": "CLAREMONT",
+    "lat":  156129,
+    "lon":  -260536,
+    "freq": "233"
+  },
+  {
+    "id":   "CO",
+    "name": "EPSOM",
+    "lat":  155227,
+    "lon":  -257228,
+    "freq": "216"
+  },
+  {
+    "id":   "LC",
+    "name": "BLNAP",
+    "lat":  156731,
+    "lon":  -257533,
+    "freq": "328"
+  },
+  {
+    "id":   "LAH",
+    "name": "HANOVER",
+    "lat":  157328,
+    "lon":  -259838,
+    "freq": "276"
+  },
+  {
+    "id":   "IVV",
+    "name": "WHITE RIVER",
+    "lat":  156816,
+    "lon":  -260876,
+    "freq": "379"
+  },
+  {
+    "id":   "MJ",
+    "name": "FITZY",
+    "lat":  154311,
+    "lon":  -257503,
+    "freq": "209"
+  },
+  {
+    "id":   "AS",
+    "name": "CHERN",
+    "lat":  154164,
+    "lon":  -257767,
+    "freq": "359"
+  },
+  {
+    "id":   "ESG",
+    "name": "ROLLINS",
+    "lat":  155592,
+    "lon":  -254982,
+    "freq": "260"
+  },
+  {
+    "id":   "GMA",
+    "name": "MAHN",
+    "lat":  159704,
+    "lon":  -258069,
+    "freq": "386"
+  },
+  {
+    "id":   "CAT",
+    "name": "CHATHAM",
+    "lat":  146666,
+    "lon":  -267947,
+    "freq": "254"
+  },
+  {
+    "id":   "NEL",
+    "name": "LAKEHURST",
+    "lat":  144161,
+    "lon":  -267607,
+    "freq": "396"
+  },
+  {
+    "id":   "RNB",
+    "name": "RAINBOW",
+    "lat":  141905,
+    "lon":  -270486,
+    "freq": "363"
+  },
+  {
+    "id":   "TE",
+    "name": "TORBY",
+    "lat":  146895,
+    "lon":  -266876,
+    "freq": "214"
+  },
+  {
+    "id":   "AE",
+    "name": "DUDLE",
+    "lat":  126782,
+    "lon":  -384166,
+    "freq": "351"
+  },
+  {
+    "id":   "ATS",
+    "name": "ARTESIA",
+    "lat":  118269,
+    "lon":  -376057,
+    "freq": "414"
+  },
+  {
+    "id":   "CV",
+    "name": "CARLZ",
+    "lat":  116160,
+    "lon":  -375618,
+    "freq": "402"
+  },
+  {
+    "id":   "CAO",
+    "name": "CLAYTON",
+    "lat":  131198,
+    "lon":  -371337,
+    "freq": "332"
+  },
+  {
+    "id":   "CV",
+    "name": "HISAN",
+    "lat":  123662,
+    "lon":  -371427,
+    "freq": "335"
+  },
+  {
+    "id":   "RO",
+    "name": "TOPAN",
+    "lat":  120115,
+    "lon":  -375992,
+    "freq": "305"
+  },
+  {
+    "id":   "CEP",
+    "name": "CAPITAN",
+    "lat":  120563,
+    "lon":  -379455,
+    "freq": "278"
+  },
+  {
+    "id":   "SG",
+    "name": "DOMAN",
+    "lat":  127999,
+    "lon":  -382104,
+    "freq": "341"
+  },
+  {
+    "id":   "SV",
+    "name": "COZEY",
+    "lat":  117475,
+    "lon":  -389028,
+    "freq": "251"
+  },
+  {
+    "id":   "BBN",
+    "name": "BABYLON",
+    "lat":  146421,
+    "lon":  -264183,
+    "freq": "275"
+  },
+  {
+    "id":   "BG",
+    "name": "SMITE",
+    "lat":  151576,
+    "lon":  -273208,
+    "freq": "332"
+  },
+  {
+    "id":   "BU",
+    "name": "KLUMP",
+    "lat":  154801,
+    "lon":  -283142,
+    "freq": "231"
+  },
+  {
+    "id":   "GB",
+    "name": "PLAZZ",
+    "lat":  154345,
+    "lon":  -283739,
+    "freq": "204"
+  },
+  {
+    "id":   "ALP",
+    "name": "ALPINE",
+    "lat":  152059,
+    "lon":  -276350,
+    "freq": "245"
+  },
+  {
+    "id":   "FR",
+    "name": "FRIKK",
+    "lat":  146795,
+    "lon":  -264536,
+    "freq": "407"
+  },
+  {
+    "id":   "GTB",
+    "name": "DRUM",
+    "lat":  158653,
+    "lon":  -272653,
+    "freq": "257"
+  },
+  {
+    "id":   "FZ",
+    "name": "FALLN",
+    "lat":  155835,
+    "lon":  -274696,
+    "freq": "220"
+  },
+  {
+    "id":   "GF",
+    "name": "GANSE",
+    "lat":  155718,
+    "lon":  -264978,
+    "freq": "209"
+  },
+  {
+    "id":   "PFH",
+    "name": "PHILMONT",
+    "lat":  152111,
+    "lon":  -265404,
+    "freq": "272"
+  },
+  {
+    "id":   "IT",
+    "name": "VRNAH",
+    "lat":  152748,
+    "lon":  -274924,
+    "freq": "266"
+  },
+  {
+    "id":   "JJH",
+    "name": "JOHNSTOWN",
+    "lat":  154797,
+    "lon":  -267593,
+    "freq": "523"
+  },
+  {
+    "id":   "MS",
+    "name": "MISSE",
+    "lat":  161474,
+    "lon":  -269696,
+    "freq": "278"
+  },
+  {
+    "id":   "MS",
+    "name": "MONGA",
+    "lat":  150360,
+    "lon":  -269498,
+    "freq": "359"
+  },
+  {
+    "id":   "OGY",
+    "name": "BRIDGE",
+    "lat":  146045,
+    "lon":  -265978,
+    "freq": "414"
+  },
+  {
+    "id":   "IS",
+    "name": "LOKKS",
+    "lat":  146624,
+    "lon":  -263484,
+    "freq": "366"
+  },
+  {
+    "id":   "SW",
+    "name": "NEELY",
+    "lat":  149348,
+    "lon":  -267220,
+    "freq": "335"
+  },
+  {
+    "id":   "SKU",
+    "name": "STANWYCK",
+    "lat":  149500,
+    "lon":  -266561,
+    "freq": "261"
+  },
+  {
+    "id":   "IA",
+    "name": "KATHI",
+    "lat":  155192,
+    "lon":  -283817,
+    "freq": "329"
+  },
+  {
+    "id":   "OG",
+    "name": "OGIVE",
+    "lat":  160925,
+    "lon":  -271270,
+    "freq": "358"
+  },
+  {
+    "id":   "OP",
+    "name": "OLD FIELD POINT LIGHT",
+    "lat":  147517,
+    "lon":  -263226,
+    "freq": "316"
+  },
+  {
+    "id":   "LYS",
+    "name": "OLEAN",
+    "lat":  152220,
+    "lon":  -282005,
+    "freq": "360"
+  },
+  {
+    "id":   "OZ",
+    "name": "KRING",
+    "lat":  153304,
+    "lon":  -269951,
+    "freq": "279"
+  },
+  {
+    "id":   "PYA",
+    "name": "PENN YAN",
+    "lat":  153518,
+    "lon":  -277402,
+    "freq": "260"
+  },
+  {
+    "id":   "PTD",
+    "name": "POTSDAM",
+    "lat":  161004,
+    "lon":  -269577,
+    "freq": "400"
+  },
+  {
+    "id":   "PO",
+    "name": "MEIER",
+    "lat":  149670,
+    "lon":  -266273,
+    "freq": "403"
+  },
+  {
+    "id":   "AVN",
+    "name": "AVON",
+    "lat":  154835,
+    "lon":  -279969,
+    "freq": "344"
+  },
+  {
+    "id":   "SL",
+    "name": "BRIEL",
+    "lat":  160116,
+    "lon":  -266846,
+    "freq": "395"
+  },
+  {
+    "id":   "SLK",
+    "name": "BRIEL",
+    "lat":  160116,
+    "lon":  -266846,
+    "freq": "395"
+  },
+  {
+    "id":   "HEU",
+    "name": "HUNTER",
+    "lat":  154275,
+    "lon":  -266160,
+    "freq": "356"
+  },
+  {
+    "id":   "FO",
+    "name": "SQUIR",
+    "lat":  147256,
+    "lon":  -261203,
+    "freq": "400"
+  },
+  {
+    "id":   "AK",
+    "name": "AKRON",
+    "lat":  147851,
+    "lon":  -292994,
+    "freq": "362"
+  },
+  {
+    "id":   "AAU",
+    "name": "ASHLAND",
+    "lat":  147468,
+    "lon":  -296112,
+    "freq": "329"
+  },
+  {
+    "id":   "UGS",
+    "name": "UNIVERSITY",
+    "lat":  141326,
+    "lon":  -295653,
+    "freq": "250"
+  },
+  {
+    "id":   "PWF",
+    "name": "SPORTYS",
+    "lat":  140676,
+    "lon":  -303175,
+    "freq": "245"
+  },
+  {
+    "id":   "RUV",
+    "name": "RUSHSYLVANIA",
+    "lat":  145652,
+    "lon":  -301204,
+    "freq": "326"
+  },
+  {
+    "id":   "CFX",
+    "name": "CADIZ",
+    "lat":  144852,
+    "lon":  -291647,
+    "freq": "239"
+  },
+  {
+    "id":   "CQA",
+    "name": "LAKEFIELD",
+    "lat":  145735,
+    "lon":  -304431,
+    "freq": "205"
+  },
+  {
+    "id":   "RZT",
+    "name": "ROSS COUNTY",
+    "lat":  141977,
+    "lon":  -298903,
+    "freq": "236"
+  },
+  {
+    "id":   "LUK",
+    "name": "CINCINNATI",
+    "lat":  140974,
+    "lon":  -303628,
+    "freq": "335"
+  },
+  {
+    "id":   "MDE",
+    "name": "MADEIRA",
+    "lat":  141201,
+    "lon":  -303679,
+    "freq": "379"
+  },
+  {
+    "id":   "BU",
+    "name": "BOUTN",
+    "lat":  143349,
+    "lon":  -299536,
+    "freq": "230"
+  },
+  {
+    "id":   "DD",
+    "name": "COBBS",
+    "lat":  143074,
+    "lon":  -298872,
+    "freq": "253"
+  },
+  {
+    "id":   "OS",
+    "name": "FULER",
+    "lat":  144265,
+    "lon":  -299513,
+    "freq": "515"
+  },
+  {
+    "id":   "CHC",
+    "name": "GRENS",
+    "lat":  144036,
+    "lon":  -298904,
+    "freq": "272"
+  },
+  {
+    "id":   "LC",
+    "name": "PICKL",
+    "lat":  143571,
+    "lon":  -298209,
+    "freq": "376"
+  },
+  {
+    "id":   "CM",
+    "name": "SUMIE",
+    "lat":  143950,
+    "lon":  -297915,
+    "freq": "391"
+  },
+  {
+    "id":   "AT",
+    "name": "BRUNY",
+    "lat":  143448,
+    "lon":  -303605,
+    "freq": "315"
+  },
+  {
+    "id":   "BNR",
+    "name": "BENTON RIDGE",
+    "lat":  147677,
+    "lon":  -301208,
+    "freq": "334"
+  },
+  {
+    "id":   "FZI",
+    "name": "FOSTORIA",
+    "lat":  148281,
+    "lon":  -300229,
+    "freq": "379"
+  },
+  {
+    "id":   "HAO",
+    "name": "HAMILTON",
+    "lat":  141742,
+    "lon":  -304459,
+    "freq": "260"
+  },
+  {
+    "id":   "HOC",
+    "name": "HILLSBORO",
+    "lat":  141064,
+    "lon":  -300754,
+    "freq": "278"
+  },
+  {
+    "id":   "HBD",
+    "name": "HUBBARD",
+    "lat":  148150,
+    "lon":  -289913,
+    "freq": "408"
+  },
+  {
+    "id":   "MF",
+    "name": "MANNS",
+    "lat":  146758,
+    "lon":  -296802,
+    "freq": "372"
+  },
+  {
+    "id":   "HKF",
+    "name": "HOOK FIELD",
+    "lat":  142195,
+    "lon":  -304010,
+    "freq": "239"
+  },
+  {
+    "id":   "MW",
+    "name": "ONIDA",
+    "lat":  142481,
+    "lon":  -303564,
+    "freq": "223"
+  },
+  {
+    "id":   "MLR",
+    "name": "MILLERSBURG/DCMSND",
+    "lat":  145950,
+    "lon":  -294741,
+    "freq": "382"
+  },
+  {
+    "id":   "HEH",
+    "name": "NEWARK",
+    "lat":  144093,
+    "lon":  -296868,
+    "freq": "524"
+  },
+  {
+    "id":   "OXD",
+    "name": "OXFORD",
+    "lat":  142227,
+    "lon":  -305210,
+    "freq": "282"
+  },
+  {
+    "id":   "PZO",
+    "name": "PEEBLES",
+    "lat":  140116,
+    "lon":  -299976,
+    "freq": "329"
+  },
+  {
+    "id":   "PCW",
+    "name": "PORT CLINTON",
+    "lat":  149467,
+    "lon":  -298327,
+    "freq": "423"
+  },
+  {
+    "id":   "CCJ",
+    "name": "CLARK COUNTY",
+    "lat":  143545,
+    "lon":  -301606,
+    "freq": "341"
+  },
+  {
+    "id":   "TII",
+    "name": "TIFFIN",
+    "lat":  147940,
+    "lon":  -299573,
+    "freq": "269"
+  },
+  {
+    "id":   "TO",
+    "name": "TOPHR",
+    "lat":  149592,
+    "lon":  -302116,
+    "freq": "219"
+  },
+  {
+    "id":   "VFU",
+    "name": "STANLEY",
+    "lat":  147105,
+    "lon":  -304612,
+    "freq": "411"
+  },
+  {
+    "id":   "CSS",
+    "name": "COURT HOUSE",
+    "lat":  142563,
+    "lon":  -300209,
+    "freq": "414"
+  },
+  {
+    "id":   "USE",
+    "name": "FULTON",
+    "lat":  149792,
+    "lon":  -302877,
+    "freq": "375"
+  },
+  {
+    "id":   "EOP",
+    "name": "WAVERLY",
+    "lat":  141002,
+    "lon":  -298553,
+    "freq": "385"
+  },
+  {
+    "id":   "AMT",
+    "name": "WEST UNION",
+    "lat":  139879,
+    "lon":  -300829,
+    "freq": "359"
+  },
+  {
+    "id":   "LQL",
+    "name": "LAKELAND",
+    "lat":  150056,
+    "lon":  -292964,
+    "freq": "263"
+  },
+  {
+    "id":   "HW",
+    "name": "CUBLA",
+    "lat":  141672,
+    "lon":  -301952,
+    "freq": "299"
+  },
+  {
+    "id":   "IL",
+    "name": "AIRBO",
+    "lat":  142174,
+    "lon":  -301457,
+    "freq": "407"
+  },
+  {
+    "id":   "YN",
+    "name": "FETCH",
+    "lat":  148321,
+    "lon":  -290146,
+    "freq": "338"
+  },
+  {
+    "id":   "HRA",
+    "name": "ZANESVILLE",
+    "lat":  143662,
+    "lon":  -294909,
+    "freq": "204"
+  },
+  {
+    "id":   "AI",
+    "name": "ADDMO",
+    "lat":  123236,
+    "lon":  -348959,
+    "freq": "400"
+  },
+  {
+    "id":   "BV",
+    "name": "DEWIE",
+    "lat":  132622,
+    "lon":  -345650,
+    "freq": "201"
+  },
+  {
+    "id":   "BFK",
+    "name": "BUFFALO",
+    "lat":  132711,
+    "lon":  -358632,
+    "freq": "215"
+  },
+  {
+    "id":   "CQB",
+    "name": "TILGHMAN",
+    "lat":  128610,
+    "lon":  -348547,
+    "freq": "396"
+  },
+  {
+    "id":   "BZ",
+    "name": "FOSSI",
+    "lat":  127622,
+    "lon":  -357125,
+    "freq": "393"
+  },
+  {
+    "id":   "CUH",
+    "name": "CUSHING",
+    "lat":  129204,
+    "lon":  -348384,
+    "freq": "242"
+  },
+  {
+    "id":   "EI",
+    "name": "GARFY",
+    "lat":  130590,
+    "lon":  -352046,
+    "freq": "341"
+  },
+  {
+    "id":   "PFL",
+    "name": "POST",
+    "lat":  124591,
+    "lon":  -354253,
+    "freq": "425"
+  },
+  {
+    "id":   "OFZ",
+    "name": "TRAIL",
+    "lat":  125212,
+    "lon":  -354248,
+    "freq": "388"
+  },
+  {
+    "id":   "GUY",
+    "name": "GUYMON",
+    "lat":  132139,
+    "lon":  -365418,
+    "freq": "275"
+  },
+  {
+    "id":   "HET",
+    "name": "HENRYETTA",
+    "lat":  127456,
+    "lon":  -345649,
+    "freq": "267"
+  },
+  {
+    "id":   "HHW",
+    "name": "HUGO",
+    "lat":  122542,
+    "lon":  -343942,
+    "freq": "323"
+  },
+  {
+    "id":   "HMY",
+    "name": "MULDROW",
+    "lat":  126104,
+    "lon":  -350029,
+    "freq": "512"
+  },
+  {
+    "id":   "ML",
+    "name": "WAMPA",
+    "lat":  125271,
+    "lon":  -344954,
+    "freq": "344"
+  },
+  {
+    "id":   "MDF",
+    "name": "MOORELAND",
+    "lat":  131351,
+    "lon":  -357094,
+    "freq": "284"
+  },
+  {
+    "id":   "OUN",
+    "name": "NORMAN",
+    "lat":  126893,
+    "lon":  -350891,
+    "freq": "370"
+  },
+  {
+    "id":   "RG",
+    "name": "GALLY",
+    "lat":  127062,
+    "lon":  -351319,
+    "freq": "350"
+  },
+  {
+    "id":   "OK",
+    "name": "TULOO",
+    "lat":  127697,
+    "lon":  -351379,
+    "freq": "406"
+  },
+  {
+    "id":   "OK",
+    "name": "PRESO",
+    "lat":  128718,
+    "lon":  -345415,
+    "freq": "388"
+  },
+  {
+    "id":   "PVJ",
+    "name": "PAULS VALLEY",
+    "lat":  124975,
+    "lon":  -350024,
+    "freq": "384"
+  },
+  {
+    "id":   "PN",
+    "name": "PONCA",
+    "lat":  132570,
+    "lon":  -349561,
+    "freq": "515"
+  },
+  {
+    "id":   "GGU",
+    "name": "PRAGUE",
+    "lat":  127860,
+    "lon":  -348187,
+    "freq": "314"
+  },
+  {
+    "id":   "IQS",
+    "name": "SALLISAW",
+    "lat":  127434,
+    "lon":  -341259,
+    "freq": "520"
+  },
+  {
+    "id":   "OWP",
+    "name": "WILLIAM POGUE",
+    "lat":  130222,
+    "lon":  -346155,
+    "freq": "362"
+  },
+  {
+    "id":   "SRE",
+    "name": "SEMINOLE",
+    "lat":  126978,
+    "lon":  -348029,
+    "freq": "278"
+  },
+  {
+    "id":   "HN",
+    "name": "SUYBE",
+    "lat":  127619,
+    "lon":  -348994,
+    "freq": "264"
+  },
+  {
+    "id":   "SW",
+    "name": "BLAKI",
+    "lat":  130450,
+    "lon":  -349514,
+    "freq": "255"
+  },
+  {
+    "id":   "TQH",
+    "name": "TAHLEQUAH",
+    "lat":  129338,
+    "lon":  -342023,
+    "freq": "215"
+  },
+  {
+    "id":   "TU",
+    "name": "OILLR",
+    "lat":  129950,
+    "lon":  -345199,
+    "freq": "338"
+  },
+  {
+    "id":   "PEN",
+    "name": "KARPEN",
+    "lat":  166102,
+    "lon":  -444914,
+    "freq": "201"
+  },
+  {
+    "id":   "LWG",
+    "name": "LEWISBURG",
+    "lat":  160608,
+    "lon":  -443774,
+    "freq": "225"
+  },
+  {
+    "id":   "EU",
+    "name": "FRAKK",
+    "lat":  159166,
+    "lon":  -443593,
+    "freq": "260"
+  },
+  {
+    "id":   "LGD",
+    "name": "LA GRANDE",
+    "lat":  163232,
+    "lon":  -424665,
+    "freq": "296"
+  },
+  {
+    "id":   "RMD",
+    "name": "MC DERMITT STATE",
+    "lat":  151241,
+    "lon":  -423795,
+    "freq": "204"
+  },
+  {
+    "id":   "MEF",
+    "name": "MEDFORD",
+    "lat":  152609,
+    "lon":  -442363,
+    "freq": "356"
+  },
+  {
+    "id":   "OT",
+    "name": "EMIRE",
+    "lat":  156220,
+    "lon":  -447516,
+    "freq": "378"
+  },
+  {
+    "id":   "ONO",
+    "name": "ONTARIO",
+    "lat":  158471,
+    "lon":  -421230,
+    "freq": "305"
+  },
+  {
+    "id":   "PD",
+    "name": "FORIS",
+    "lat":  164503,
+    "lon":  -427429,
+    "freq": "230"
+  },
+  {
+    "id":   "PND",
+    "name": "BANKS",
+    "lat":  164268,
+    "lon":  -442964,
+    "freq": "356"
+  },
+  {
+    "id":   "LBH",
+    "name": "LAKER",
+    "lat":  163947,
+    "lon":  -440864,
+    "freq": "332"
+  },
+  {
+    "id":   "RD",
+    "name": "BODEY",
+    "lat":  159508,
+    "lon":  -435668,
+    "freq": "411"
+  },
+  {
+    "id":   "RBG",
+    "name": "ROSEBURG",
+    "lat":  155646,
+    "lon":  -444088,
+    "freq": "400"
+  },
+  {
+    "id":   "SL",
+    "name": "TURNO",
+    "lat":  161450,
+    "lon":  -442623,
+    "freq": "266"
+  },
+  {
+    "id":   "ING",
+    "name": "AMBLER",
+    "lat":  144453,
+    "lon":  -271026,
+    "freq": "275"
+  },
+  {
+    "id":   "VV",
+    "name": "CAMOR",
+    "lat":  143577,
+    "lon":  -287080,
+    "freq": "299"
+  },
+  {
+    "id":   "ORJ",
+    "name": "CORRY",
+    "lat":  150885,
+    "lon":  -286734,
+    "freq": "258"
+  },
+  {
+    "id":   "CQD",
+    "name": "CASCADE",
+    "lat":  151629,
+    "lon":  -288376,
+    "freq": "372"
+  },
+  {
+    "id":   "ERI",
+    "name": "ESMER",
+    "lat":  151338,
+    "lon":  -288919,
+    "freq": "349"
+  },
+  {
+    "id":   "MD",
+    "name": "ENOLA",
+    "lat":  144886,
+    "lon":  -276842,
+    "freq": "204"
+  },
+  {
+    "id":   "CX",
+    "name": "LATLE",
+    "lat":  144641,
+    "lon":  -277220,
+    "freq": "219"
+  },
+  {
+    "id":   "INP",
+    "name": "INDIANA",
+    "lat":  146274,
+    "lon":  -284637,
+    "freq": "242"
+  },
+  {
+    "id":   "BZJ",
+    "name": "BELLGROVE",
+    "lat":  145568,
+    "lon":  -275590,
+    "freq": "328"
+  },
+  {
+    "id":   "BHU",
+    "name": "BENJE",
+    "lat":  145351,
+    "lon":  -285378,
+    "freq": "382"
+  },
+  {
+    "id":   "MKP",
+    "name": "MC KEESPORT",
+    "lat":  145279,
+    "lon":  -287211,
+    "freq": "287"
+  },
+  {
+    "id":   "UCP",
+    "name": "CASTLE",
+    "lat":  147682,
+    "lon":  -289497,
+    "freq": "272"
+  },
+  {
+    "id":   "PIX",
+    "name": "PICTURE ROCKS",
+    "lat":  148597,
+    "lon":  -276156,
+    "freq": "344"
+  },
+  {
+    "id":   "UKT",
+    "name": "QUAKERTOWN",
+    "lat":  145528,
+    "lon":  -271071,
+    "freq": "208"
+  },
+  {
+    "id":   "SYS",
+    "name": "STOYSTOWN",
+    "lat":  144308,
+    "lon":  -284099,
+    "freq": "209"
+  },
+  {
+    "id":   "UN",
+    "name": "PENUE",
+    "lat":  147276,
+    "lon":  -279870,
+    "freq": "388"
+  },
+  {
+    "id":   "EUD",
+    "name": "YORK",
+    "lat":  143712,
+    "lon":  -276759,
+    "freq": "254"
+  },
+  {
+    "id":   "MAZ",
+    "name": "MAYAGUEZ",
+    "lat":  65713,
+    "lon":  -241748,
+    "freq": "254"
+  },
+  {
+    "id":   "DDP",
+    "name": "DORADO",
+    "lat":  66485,
+    "lon":  -239084,
+    "freq": "391"
+  },
+  {
+    "id":   "SJ",
+    "name": "PATTY",
+    "lat":  66272,
+    "lon":  -237922,
+    "freq": "330"
+  },
+  {
+    "id":   "MDY",
+    "name": "MIDWAY",
+    "lat":  101534,
+    "lon":  -638565,
+    "freq": "400"
+  },
+  {
+    "id":   "AR",
+    "name": "ARMIN",
+    "lat":  150517,
+    "lon":  -256871,
+    "freq": "356"
+  },
+  {
+    "id":   "AIK",
+    "name": "AIKEN",
+    "lat":  121146,
+    "lon":  -294037,
+    "freq": "347"
+  },
+  {
+    "id":   "PHH",
+    "name": "ANDREWS",
+    "lat":  120425,
+    "lon":  -286298,
+    "freq": "255"
+  },
+  {
+    "id":   "BES",
+    "name": "BENNETTSVILLE",
+    "lat":  124632,
+    "lon":  -287039,
+    "freq": "230"
+  },
+  {
+    "id":   "CH",
+    "name": "ASHLY",
+    "lat":  118714,
+    "lon":  -288350,
+    "freq": "329"
+  },
+  {
+    "id":   "CQW",
+    "name": "CHERAW",
+    "lat":  125070,
+    "lon":  -287516,
+    "freq": "409"
+  },
+  {
+    "id":   "DCM",
+    "name": "CHESTER",
+    "lat":  125228,
+    "lon":  -292322,
+    "freq": "220"
+  },
+  {
+    "id":   "CEU",
+    "name": "CLEMSON",
+    "lat":  124825,
+    "lon":  -298392,
+    "freq": "257"
+  },
+  {
+    "id":   "CA",
+    "name": "MURRY",
+    "lat":  122281,
+    "lon":  -292481,
+    "freq": "362"
+  },
+  {
+    "id":   "HYW",
+    "name": "HORRY",
+    "lat":  121763,
+    "lon":  -284861,
+    "freq": "370"
+  },
+  {
+    "id":   "UDG",
+    "name": "DARLINGTON",
+    "lat":  123995,
+    "lon":  -287594,
+    "freq": "245"
+  },
+  {
+    "id":   "DLC",
+    "name": "DILLON",
+    "lat":  124020,
+    "lon":  -285727,
+    "freq": "274"
+  },
+  {
+    "id":   "FL",
+    "name": "ALCOT",
+    "lat":  123026,
+    "lon":  -287469,
+    "freq": "335"
+  },
+  {
+    "id":   "GGE",
+    "name": "GEORGETOWN",
+    "lat":  119935,
+    "lon":  -285568,
+    "freq": "242"
+  },
+  {
+    "id":   "GY",
+    "name": "DYANA",
+    "lat":  124888,
+    "lon":  -296797,
+    "freq": "338"
+  },
+  {
+    "id":   "GM",
+    "name": "JUDKY",
+    "lat":  125208,
+    "lon":  -296459,
+    "freq": "521"
+  },
+  {
+    "id":   "GIW",
+    "name": "CORONACA",
+    "lat":  123314,
+    "lon":  -295514,
+    "freq": "239"
+  },
+  {
+    "id":   "HVS",
+    "name": "HARTSVILLE",
+    "lat":  123863,
+    "lon":  -288431,
+    "freq": "341"
+  },
+  {
+    "id":   "HEK",
+    "name": "STUCKEY",
+    "lat":  121422,
+    "lon":  -286290,
+    "freq": "236"
+  },
+  {
+    "id":   "CKI",
+    "name": "KINGSTREE",
+    "lat":  121384,
+    "lon":  -287477,
+    "freq": "404"
+  },
+  {
+    "id":   "CFY",
+    "name": "EVANS",
+    "lat":  121880,
+    "lon":  -287157,
+    "freq": "420"
+  },
+  {
+    "id":   "LKR",
+    "name": "LANCASTER",
+    "lat":  125001,
+    "lon":  -291093,
+    "freq": "400"
+  },
+  {
+    "id":   "MNI",
+    "name": "MANNING",
+    "lat":  120916,
+    "lon":  -288742,
+    "freq": "381"
+  },
+  {
+    "id":   "MAO",
+    "name": "MARION",
+    "lat":  123066,
+    "lon":  -285601,
+    "freq": "388"
+  },
+  {
+    "id":   "EOE",
+    "name": "ENOREE",
+    "lat":  123519,
+    "lon":  -293890,
+    "freq": "278"
+  },
+  {
+    "id":   "PYG",
+    "name": "PAGELAND",
+    "lat":  125082,
+    "lon":  -289219,
+    "freq": "270"
+  },
+  {
+    "id":   "LQK",
+    "name": "LAKE KEOWEE",
+    "lat":  125320,
+    "lon":  -297732,
+    "freq": "408"
+  },
+  {
+    "id":   "UZ",
+    "name": "RALLY",
+    "lat":  125604,
+    "lon":  -291891,
+    "freq": "227"
+  },
+  {
+    "id":   "FRT",
+    "name": "FAIRMONT",
+    "lat":  125645,
+    "lon":  -295147,
+    "freq": "248"
+  },
+  {
+    "id":   "DYB",
+    "name": "DORCHESTER COUNTY",
+    "lat":  119021,
+    "lon":  -288997,
+    "freq": "365"
+  },
+  {
+    "id":   "SMS",
+    "name": "SUMTER",
+    "lat":  122366,
+    "lon":  -289296,
+    "freq": "252"
+  },
+  {
+    "id":   "UOT",
+    "name": "UNION COUNTY",
+    "lat":  124862,
+    "lon":  -293912,
+    "freq": "326"
+  },
+  {
+    "id":   "RBW",
+    "name": "WALTERBORO",
+    "lat":  118532,
+    "lon":  -290304,
+    "freq": "221"
+  },
+  {
+    "id":   "FDW",
+    "name": "WINNSBORO",
+    "lat":  123531,
+    "lon":  -292005,
+    "freq": "414"
+  },
+  {
+    "id":   "AB",
+    "name": "RENEY",
+    "lat":  163389,
+    "lon":  -353982,
+    "freq": "203"
+  },
+  {
+    "id":   "BK",
+    "name": "CHRLZ",
+    "lat":  159676,
+    "lon":  -349008,
+    "freq": "335"
+  },
+  {
+    "id":   "HO",
+    "name": "BEADY",
+    "lat":  159997,
+    "lon":  -354012,
+    "freq": "302"
+  },
+  {
+    "id":   "MDS",
+    "name": "WENTWORTH",
+    "lat":  158447,
+    "lon":  -349518,
+    "freq": "400"
+  },
+  {
+    "id":   "RA",
+    "name": "RANCH",
+    "lat":  158273,
+    "lon":  -370795,
+    "freq": "254"
+  },
+  {
+    "id":   "FS",
+    "name": "ROKKY",
+    "lat":  156578,
+    "lon":  -348584,
+    "freq": "245"
+  },
+  {
+    "id":   "SPF",
+    "name": "BLACK HILLS",
+    "lat":  160143,
+    "lon":  -373623,
+    "freq": "300"
+  },
+  {
+    "id":   "AGZ",
+    "name": "WAGNER",
+    "lat":  155028,
+    "lon":  -353855,
+    "freq": "392"
+  },
+  {
+    "id":   "AT",
+    "name": "LICAN",
+    "lat":  161291,
+    "lon":  -349740,
+    "freq": "215"
+  },
+  {
+    "id":   "YK",
+    "name": "CAGUR",
+    "lat":  154237,
+    "lon":  -350287,
+    "freq": "347"
+  },
+  {
+    "id":   "MMI",
+    "name": "MC MINN COUNTY",
+    "lat":  127420,
+    "lon":  -304421,
+    "freq": "242"
+  },
+  {
+    "id":   "BO",
+    "name": "BOOIE",
+    "lat":  131035,
+    "lon":  -296986,
+    "freq": "221"
+  },
+  {
+    "id":   "TR",
+    "name": "MOCCA",
+    "lat":  131599,
+    "lon":  -296344,
+    "freq": "299"
+  },
+  {
+    "id":   "CQN",
+    "name": "DAISY",
+    "lat":  126599,
+    "lon":  -306566,
+    "freq": "341"
+  },
+  {
+    "id":   "CK",
+    "name": "SNUFF",
+    "lat":  131497,
+    "lon":  -314592,
+    "freq": "335"
+  },
+  {
+    "id":   "HDI",
+    "name": "HARDWICK",
+    "lat":  126553,
+    "lon":  -305660,
+    "freq": "369"
+  },
+  {
+    "id":   "PBC",
+    "name": "MAURY COUNTY",
+    "lat":  128189,
+    "lon":  -313529,
+    "freq": "365"
+  },
+  {
+    "id":   "COO",
+    "name": "COVINGTON",
+    "lat":  128122,
+    "lon":  -322514,
+    "freq": "326"
+  },
+  {
+    "id":   "DTE",
+    "name": "MARK ANTON",
+    "lat":  127734,
+    "lon":  -305751,
+    "freq": "394"
+  },
+  {
+    "id":   "DMZ",
+    "name": "DICKSON",
+    "lat":  130058,
+    "lon":  -314756,
+    "freq": "203"
+  },
+  {
+    "id":   "EZT",
+    "name": "ELIZABETHTON",
+    "lat":  130737,
+    "lon":  -296173,
+    "freq": "275"
+  },
+  {
+    "id":   "TNY",
+    "name": "KELSO",
+    "lat":  126482,
+    "lon":  -311551,
+    "freq": "358"
+  },
+  {
+    "id":   "DYQ",
+    "name": "DULANEY",
+    "lat":  130089,
+    "lon":  -298405,
+    "freq": "263"
+  },
+  {
+    "id":   "JHG",
+    "name": "HOHENWALD",
+    "lat":  127664,
+    "lon":  -315469,
+    "freq": "257"
+  },
+  {
+    "id":   "HZD",
+    "name": "HUNTINGDON",
+    "lat":  129918,
+    "lon":  -318480,
+    "freq": "217"
+  },
+  {
+    "id":   "MKL",
+    "name": "MERSY",
+    "lat":  127856,
+    "lon":  -320245,
+    "freq": "394"
+  },
+  {
+    "id":   "APT",
+    "name": "JASPER",
+    "lat":  126214,
+    "lon":  -308102,
+    "freq": "382"
+  },
+  {
+    "id":   "LRT",
+    "name": "LAWRENCEBURG",
+    "lat":  126847,
+    "lon":  -314138,
+    "freq": "269"
+  },
+  {
+    "id":   "JUE",
+    "name": "LEBANON",
+    "lat":  130291,
+    "lon":  -310729,
+    "freq": "414"
+  },
+  {
+    "id":   "LUG",
+    "name": "VERONA",
+    "lat":  127801,
+    "lon":  -312515,
+    "freq": "251"
+  },
+  {
+    "id":   "MNV",
+    "name": "MADISONVILLE",
+    "lat":  127962,
+    "lon":  -303778,
+    "freq": "361"
+  },
+  {
+    "id":   "RN",
+    "name": "WARRI",
+    "lat":  128708,
+    "lon":  -308750,
+    "freq": "209"
+  },
+  {
+    "id":   "ME",
+    "name": "ELVIS",
+    "lat":  126221,
+    "lon":  -324257,
+    "freq": "287"
+  },
+  {
+    "id":   "SPQ",
+    "name": "SPAIN",
+    "lat":  126724,
+    "lon":  -324184,
+    "freq": "414"
+  },
+  {
+    "id":   "MIG",
+    "name": "MILLINGTON",
+    "lat":  127009,
+    "lon":  -323758,
+    "freq": "232"
+  },
+  {
+    "id":   "JXT",
+    "name": "JEFFERSON",
+    "lat":  129998,
+    "lon":  -300512,
+    "freq": "346"
+  },
+  {
+    "id":   "FQW",
+    "name": "WALTER HILL",
+    "lat":  129460,
+    "lon":  -310935,
+    "freq": "371"
+  },
+  {
+    "id":   "VI",
+    "name": "OPERY",
+    "lat":  130334,
+    "lon":  -311949,
+    "freq": "344"
+  },
+  {
+    "id":   "BPO",
+    "name": "PINEY GROVE",
+    "lat":  131542,
+    "lon":  -304113,
+    "freq": "403"
+  },
+  {
+    "id":   "TIQ",
+    "name": "TRAINER",
+    "lat":  130498,
+    "lon":  -318295,
+    "freq": "410"
+  },
+  {
+    "id":   "RVN",
+    "name": "ROGERSVILLE",
+    "lat":  131241,
+    "lon":  -298383,
+    "freq": "329"
+  },
+  {
+    "id":   "SZY",
+    "name": "SIBLEY",
+    "lat":  126853,
+    "lon":  -318657,
+    "freq": "386"
+  },
+  {
+    "id":   "SKN",
+    "name": "HURRICANE",
+    "lat":  129542,
+    "lon":  -308909,
+    "freq": "256"
+  },
+  {
+    "id":   "SWZ",
+    "name": "SEWART",
+    "lat":  129444,
+    "lon":  -311270,
+    "freq": "391"
+  },
+  {
+    "id":   "FYE",
+    "name": "SOMERVILLE",
+    "lat":  126740,
+    "lon":  -321814,
+    "freq": "255"
+  },
+  {
+    "id":   "HEM",
+    "name": "HUCHN",
+    "lat":  129556,
+    "lon":  -308110,
+    "freq": "233"
+  },
+  {
+    "id":   "ON",
+    "name": "MUSIC",
+    "lat":  131257,
+    "lon":  -313143,
+    "freq": "279"
+  },
+  {
+    "id":   "ULH",
+    "name": "BURWI",
+    "lat":  127661,
+    "lon":  -310470,
+    "freq": "332"
+  },
+  {
+    "id":   "UC",
+    "name": "OBION",
+    "lat":  130671,
+    "lon":  -320381,
+    "freq": "212"
+  },
+  {
+    "id":   "AEY",
+    "name": "WAVERLY",
+    "lat":  130018,
+    "lon":  -315868,
+    "freq": "329"
+  },
+  {
+    "id":   "BGF",
+    "name": "BOILING FORK",
+    "lat":  126640,
+    "lon":  -309845,
+    "freq": "263"
+  },
+  {
+    "id":   "AB",
+    "name": "TOMHI",
+    "lat":  116275,
+    "lon":  -358827,
+    "freq": "353"
+  },
+  {
+    "id":   "BWR",
+    "name": "BREWSTER COUNTY",
+    "lat":  109649,
+    "lon":  -373128,
+    "freq": "412"
+  },
+  {
+    "id":   "AM",
+    "name": "PANDE",
+    "lat":  126527,
+    "lon":  -366499,
+    "freq": "251"
+  },
+  {
+    "id":   "LB",
+    "name": "FREEP",
+    "lat":  105099,
+    "lon":  -343667,
+    "freq": "263"
+  },
+  {
+    "id":   "AHX",
+    "name": "ATHENS",
+    "lat":  115773,
+    "lon":  -344988,
+    "freq": "269"
+  },
+  {
+    "id":   "CSZ",
+    "name": "CROSSROADS",
+    "lat":  115428,
+    "lon":  -345447,
+    "freq": "215"
+  },
+  {
+    "id":   "ATA",
+    "name": "ATLANTA",
+    "lat":  119175,
+    "lon":  -339084,
+    "freq": "347"
+  },
+  {
+    "id":   "BS",
+    "name": "CREED",
+    "lat":  108322,
+    "lon":  -351634,
+    "freq": "255"
+  },
+  {
+    "id":   "RU",
+    "name": "GARYS",
+    "lat":  107851,
+    "lon":  -352616,
+    "freq": "272"
+  },
+  {
+    "id":   "UBC",
+    "name": "BALLINGER",
+    "lat":  114049,
+    "lon":  -359909,
+    "freq": "239"
+  },
+  {
+    "id":   "BYY",
+    "name": "BAY CITY",
+    "lat":  104301,
+    "lon":  -345092,
+    "freq": "344"
+  },
+  {
+    "id":   "GDE",
+    "name": "GOODHUE",
+    "lat":  108253,
+    "lon":  -339159,
+    "freq": "368"
+  },
+  {
+    "id":   "ABG",
+    "name": "AMBASSADOR",
+    "lat":  117307,
+    "lon":  -342407,
+    "freq": "404"
+  },
+  {
+    "id":   "GMZ",
+    "name": "GRINDSTONE MOUNTAIN",
+    "lat":  120979,
+    "lon":  -351985,
+    "freq": "356"
+  },
+  {
+    "id":   "BRX",
+    "name": "LA FONDA RANCH",
+    "lat":  105150,
+    "lon":  -362246,
+    "freq": "269"
+  },
+  {
+    "id":   "BBD",
+    "name": "BRADY",
+    "lat":  112240,
+    "lon":  -357561,
+    "freq": "380"
+  },
+  {
+    "id":   "BR",
+    "name": "DEPOO",
+    "lat":  93541,
+    "lon":  -351032,
+    "freq": "393"
+  },
+  {
+    "id":   "BMQ",
+    "name": "BURNET",
+    "lat":  110664,
+    "lon":  -353650,
+    "freq": "341"
+  },
+  {
+    "id":   "MII",
+    "name": "CADDO MILLS",
+    "lat":  118944,
+    "lon":  -346493,
+    "freq": "316"
+  },
+  {
+    "id":   "DMD",
+    "name": "DIMMIT COUNTY",
+    "lat":  102680,
+    "lon":  -359378,
+    "freq": "343"
+  },
+  {
+    "id":   "RPF",
+    "name": "CARTHAGE",
+    "lat":  115848,
+    "lon":  -339467,
+    "freq": "332"
+  },
+  {
+    "id":   "CZJ",
+    "name": "AMASON",
+    "lat":  114598,
+    "lon":  -338953,
+    "freq": "341"
+  },
+  {
+    "id":   "CL",
+    "name": "ROWDY",
+    "lat":  109777,
+    "lon":  -346816,
+    "freq": "260"
+  },
+  {
+    "id":   "CRS",
+    "name": "CORSICANA",
+    "lat":  115302,
+    "lon":  -347020,
+    "freq": "396"
+  },
+  {
+    "id":   "CGQ",
+    "name": "POWELL",
+    "lat":  115430,
+    "lon":  -347134,
+    "freq": "344"
+  },
+  {
+    "id":   "CZX",
+    "name": "CROSBYTON",
+    "lat":  121046,
+    "lon":  -364459,
+    "freq": "332"
+  },
+  {
+    "id":   "VLY",
+    "name": "MELISA",
+    "lat":  119742,
+    "lon":  -347719,
+    "freq": "421"
+  },
+  {
+    "id":   "DR",
+    "name": "KOTTI",
+    "lat":  105993,
+    "lon":  -363572,
+    "freq": "335"
+  },
+  {
+    "id":   "DT",
+    "name": "PINCK",
+    "lat":  119819,
+    "lon":  -349906,
+    "freq": "257"
+  },
+  {
+    "id":   "HHH",
+    "name": "DEVINE",
+    "lat":  104897,
+    "lon":  -356181,
+    "freq": "359"
+  },
+  {
+    "id":   "OIP",
+    "name": "OLD RIP",
+    "lat":  116634,
+    "lon":  -355717,
+    "freq": "410"
+  },
+  {
+    "id":   "EL",
+    "name": "VALTR",
+    "lat":  114697,
+    "lon":  -382743,
+    "freq": "242"
+  },
+  {
+    "id":   "PYF",
+    "name": "PYRAMID",
+    "lat":  114705,
+    "lon":  -346310,
+    "freq": "418"
+  },
+  {
+    "id":   "BKS",
+    "name": "BROOKS COUNTY",
+    "lat":  97944,
+    "lon":  -353238,
+    "freq": "353"
+  },
+  {
+    "id":   "HLR",
+    "name": "HOOD",
+    "lat":  112065,
+    "lon":  -351757,
+    "freq": "347"
+  },
+  {
+    "id":   "GR",
+    "name": "STARN",
+    "lat":  112204,
+    "lon":  -352361,
+    "freq": "323"
+  },
+  {
+    "id":   "FT",
+    "name": "MUFIN",
+    "lat":  118414,
+    "lon":  -350544,
+    "freq": "365"
+  },
+  {
+    "id":   "GLS",
+    "name": "GALVESTON",
+    "lat":  105602,
+    "lon":  -341122,
+    "freq": "206"
+  },
+  {
+    "id":   "GUO",
+    "name": "GEORGETOWN",
+    "lat":  110463,
+    "lon":  -351647,
+    "freq": "332"
+  },
+  {
+    "id":   "GHX",
+    "name": "GRAHAM",
+    "lat":  119397,
+    "lon":  -354587,
+    "freq": "371"
+  },
+  {
+    "id":   "SYW",
+    "name": "CASH",
+    "lat":  118734,
+    "lon":  -345842,
+    "freq": "428"
+  },
+  {
+    "id":   "MNZ",
+    "name": "HAMILTON",
+    "lat":  113837,
+    "lon":  -353336,
+    "freq": "251"
+  },
+  {
+    "id":   "HR",
+    "name": "SEBAS",
+    "lat":  94698,
+    "lon":  -351567,
+    "freq": "338"
+  },
+  {
+    "id":   "AKL",
+    "name": "HASKELL",
+    "lat":  119487,
+    "lon":  -358992,
+    "freq": "407"
+  },
+  {
+    "id":   "HBV",
+    "name": "HEBBRONVILLE",
+    "lat":  98474,
+    "lon":  -355478,
+    "freq": "266"
+  },
+  {
+    "id":   "HNO",
+    "name": "HENDERSON",
+    "lat":  115875,
+    "lon":  -341499,
+    "freq": "371"
+  },
+  {
+    "id":   "HRX",
+    "name": "HEREFORD",
+    "lat":  125484,
+    "lon":  -368367,
+    "freq": "341"
+  },
+  {
+    "id":   "HMA",
+    "name": "HONDO",
+    "lat":  105744,
+    "lon":  -357019,
+    "freq": "329"
+  },
+  {
+    "id":   "CX",
+    "name": "ALIBI",
+    "lat":  109555,
+    "lon":  -343714,
+    "freq": "281"
+  },
+  {
+    "id":   "DWH",
+    "name": "DAVID HOOKS",
+    "lat":  108451,
+    "lon":  -344037,
+    "freq": "521"
+  },
+  {
+    "id":   "BVP",
+    "name": "NIXIN",
+    "lat":  107976,
+    "lon":  -342774,
+    "freq": "326"
+  },
+  {
+    "id":   "EYQ",
+    "name": "WEISER",
+    "lat":  107761,
+    "lon":  -344307,
+    "freq": "286"
+  },
+  {
+    "id":   "UTS",
+    "name": "HUNTSVILLE",
+    "lat":  110666,
+    "lon":  -344127,
+    "freq": "308"
+  },
+  {
+    "id":   "JSO",
+    "name": "CHEROKEE COUNTY",
+    "lat":  114732,
+    "lon":  -342775,
+    "freq": "263"
+  },
+  {
+    "id":   "XAA",
+    "name": "KENT",
+    "lat":  111650,
+    "lon":  -375144,
+    "freq": "225"
+  },
+  {
+    "id":   "IL",
+    "name": "IRESH",
+    "lat":  111686,
+    "lon":  -351749,
+    "freq": "278"
+  },
+  {
+    "id":   "TKB",
+    "name": "KLEBERG COUNTY",
+    "lat":  99382,
+    "lon":  -353109,
+    "freq": "347"
+  },
+  {
+    "id":   "HRD",
+    "name": "HARDIN COUNTY",
+    "lat":  109210,
+    "lon":  -339337,
+    "freq": "524"
+  },
+  {
+    "id":   "JPA",
+    "name": "SANJAC",
+    "lat":  106806,
+    "lon":  -342251,
+    "freq": "347"
+  },
+  {
+    "id":   "CPZ",
+    "name": "CHAPARROSA RANCH",
+    "lat":  103962,
+    "lon":  -359979,
+    "freq": "385"
+  },
+  {
+    "id":   "LKX",
+    "name": "LA PRYOR",
+    "lat":  104147,
+    "lon":  -359477,
+    "freq": "223"
+  },
+  {
+    "id":   "LSA",
+    "name": "LAMESA",
+    "lat":  117930,
+    "lon":  -366897,
+    "freq": "338"
+  },
+  {
+    "id":   "AGH",
+    "name": "ARDYTH",
+    "lat":  99512,
+    "lon":  -358049,
+    "freq": "405"
+  },
+  {
+    "id":   "LLN",
+    "name": "LEVELLAND",
+    "lat":  120800,
+    "lon":  -368550,
+    "freq": "266"
+  },
+  {
+    "id":   "LIU",
+    "name": "LITTLEFIELD",
+    "lat":  122109,
+    "lon":  -368592,
+    "freq": "212"
+  },
+  {
+    "id":   "GG",
+    "name": "VEELS",
+    "lat":  116839,
+    "lon":  -341271,
+    "freq": "410"
+  },
+  {
+    "id":   "LD",
+    "name": "LUBBI",
+    "lat":  121185,
+    "lon":  -366203,
+    "freq": "272"
+  },
+  {
+    "id":   "LF",
+    "name": "FLUFY",
+    "lat":  112387,
+    "lon":  -341370,
+    "freq": "350"
+  },
+  {
+    "id":   "IMP",
+    "name": "MARATHON",
+    "lat":  108950,
+    "lon":  -371653,
+    "freq": "388"
+  },
+  {
+    "id":   "MF",
+    "name": "MISSI",
+    "lat":  94513,
+    "lon":  -353917,
+    "freq": "330"
+  },
+  {
+    "id":   "PQF",
+    "name": "MESQUITE",
+    "lat":  118113,
+    "lon":  -347504,
+    "freq": "248"
+  },
+  {
+    "id":   "LXY",
+    "name": "MEXIA",
+    "lat":  113902,
+    "lon":  -347444,
+    "freq": "329"
+  },
+  {
+    "id":   "MA",
+    "name": "FARLY",
+    "lat":  115157,
+    "lon":  -368370,
+    "freq": "326"
+  },
+  {
+    "id":   "GXD",
+    "name": "NACOGDOCHES",
+    "lat":  113934,
+    "lon":  -340939,
+    "freq": "391"
+  },
+  {
+    "id":   "OC",
+    "name": "NADOS",
+    "lat":  113348,
+    "lon":  -340992,
+    "freq": "253"
+  },
+  {
+    "id":   "ORG",
+    "name": "ORANGE",
+    "lat":  108253,
+    "lon":  -337661,
+    "freq": "211"
+  },
+  {
+    "id":   "PSN",
+    "name": "PALESTINE",
+    "lat":  114410,
+    "lon":  -344522,
+    "freq": "375"
+  },
+  {
+    "id":   "PPA",
+    "name": "PAMPA",
+    "lat":  128205,
+    "lon":  -363570,
+    "freq": "368"
+  },
+  {
+    "id":   "PYX",
+    "name": "PERRYTON",
+    "lat":  131084,
+    "lon":  -362691,
+    "freq": "266"
+  },
+  {
+    "id":   "MNO",
+    "name": "MELLON RANCH",
+    "lat":  101808,
+    "lon":  -349940,
+    "freq": "375"
+  },
+  {
+    "id":   "SJ",
+    "name": "WOOLE",
+    "lat":  112607,
+    "lon":  -362074,
+    "freq": "356"
+  },
+  {
+    "id":   "AN",
+    "name": "ALAMO",
+    "lat":  106587,
+    "lon":  -354851,
+    "freq": "368"
+  },
+  {
+    "id":   "SNE",
+    "name": "SANTA ELENA",
+    "lat":  96188,
+    "lon":  -354824,
+    "freq": "260"
+  },
+  {
+    "id":   "JUG",
+    "name": "JECCA",
+    "lat":  117605,
+    "lon":  -347516,
+    "freq": "388"
+  },
+  {
+    "id":   "GNC",
+    "name": "GAINES COUNTY",
+    "lat":  117618,
+    "lon":  -369524,
+    "freq": "344"
+  },
+  {
+    "id":   "DNI",
+    "name": "DENISON",
+    "lat":  121775,
+    "lon":  -348008,
+    "freq": "341"
+  },
+  {
+    "id":   "SDR",
+    "name": "SNYDER",
+    "lat":  117725,
+    "lon":  -363406,
+    "freq": "359"
+  },
+  {
+    "id":   "SOA",
+    "name": "SONORA",
+    "lat":  110094,
+    "lon":  -362328,
+    "freq": "371"
+  },
+  {
+    "id":   "PFO",
+    "name": "SPOFFORD",
+    "lat":  104922,
+    "lon":  -361539,
+    "freq": "356"
+  },
+  {
+    "id":   "SWW",
+    "name": "SWEETWATER",
+    "lat":  116861,
+    "lon":  -361676,
+    "freq": "275"
+  },
+  {
+    "id":   "AVZ",
+    "name": "TRAVIS",
+    "lat":  117936,
+    "lon":  -346496,
+    "freq": "260"
+  },
+  {
+    "id":   "TY",
+    "name": "INDOO",
+    "lat":  116695,
+    "lon":  -343689,
+    "freq": "320"
+  },
+  {
+    "id":   "UVA",
+    "name": "UVALDE",
+    "lat":  105039,
+    "lon":  -359012,
+    "freq": "281"
+  },
+  {
+    "id":   "VHN",
+    "name": "VAN HORN",
+    "lat":  111822,
+    "lon":  -377232,
+    "freq": "233"
+  },
+  {
+    "id":   "ROB",
+    "name": "ROBINSON",
+    "lat":  113413,
+    "lon":  -349450,
+    "freq": "400"
+  },
+  {
+    "id":   "ARM",
+    "name": "WHARTON",
+    "lat":  105316,
+    "lon":  -346147,
+    "freq": "245"
+  },
+  {
+    "id":   "ICF",
+    "name": "MADISON",
+    "lat":  122078,
+    "lon":  -354436,
+    "freq": "296"
+  },
+  {
+    "id":   "SKB",
+    "name": "SCOTLAND",
+    "lat":  121616,
+    "lon":  -354557,
+    "freq": "344"
+  },
+  {
+    "id":   "OKT",
+    "name": "YOAKUM",
+    "lat":  105523,
+    "lon":  -349699,
+    "freq": "350"
+  },
+  {
+    "id":   "BMC",
+    "name": "BRIGHAM CITY",
+    "lat":  149456,
+    "lon":  -403481,
+    "freq": "294"
+  },
+  {
+    "id":   "TVY",
+    "name": "TOOELE",
+    "lat":  146198,
+    "lon":  -404451,
+    "freq": "371"
+  },
+  {
+    "id":   "VJ",
+    "name": "WHINE",
+    "lat":  132241,
+    "lon":  -295012,
+    "freq": "236"
+  },
+  {
+    "id":   "TEC",
+    "name": "TECH",
+    "lat":  133950,
+    "lon":  -289452,
+    "freq": "368"
+  },
+  {
+    "id":   "BKT",
+    "name": "BLACKSTONE",
+    "lat":  133658,
+    "lon":  -280960,
+    "freq": "326"
+  },
+  {
+    "id":   "AZS",
+    "name": "AZALEA PARK",
+    "lat":  136836,
+    "lon":  -282665,
+    "freq": "336"
+  },
+  {
+    "id":   "EY",
+    "name": "CHESI",
+    "lat":  131759,
+    "lon":  -274974,
+    "freq": "233"
+  },
+  {
+    "id":   "CF",
+    "name": "PUBBS",
+    "lat":  134399,
+    "lon":  -278832,
+    "freq": "392"
+  },
+  {
+    "id":   "MSQ",
+    "name": "NAILR",
+    "lat":  138435,
+    "lon":  -280459,
+    "freq": "351"
+  },
+  {
+    "id":   "ELQ",
+    "name": "EMPORIA",
+    "lat":  131824,
+    "lon":  -278731,
+    "freq": "261"
+  },
+  {
+    "id":   "LY",
+    "name": "BOJAR",
+    "lat":  134144,
+    "lon":  -285275,
+    "freq": "385"
+  },
+  {
+    "id":   "FVX",
+    "name": "FARMVILLE",
+    "lat":  134470,
+    "lon":  -282375,
+    "freq": "367"
+  },
+  {
+    "id":   "APH",
+    "name": "A P HILL",
+    "lat":  137115,
+    "lon":  -278369,
+    "freq": "396"
+  },
+  {
+    "id":   "DAA",
+    "name": "DAVEE",
+    "lat":  139181,
+    "lon":  -277596,
+    "freq": "223"
+  },
+  {
+    "id":   "FAF",
+    "name": "FELKER",
+    "lat":  133699,
+    "lon":  -275827,
+    "freq": "226"
+  },
+  {
+    "id":   "EZF",
+    "name": "SHANNON",
+    "lat":  137758,
+    "lon":  -278821,
+    "freq": "237"
+  },
+  {
+    "id":   "HLX",
+    "name": "HILLSVILLE",
+    "lat":  132343,
+    "lon":  -290959,
+    "freq": "269"
+  },
+  {
+    "id":   "LUA",
+    "name": "CAVERNS",
+    "lat":  139317,
+    "lon":  -282500,
+    "freq": "245"
+  },
+  {
+    "id":   "MKJ",
+    "name": "SUZZE",
+    "lat":  132912,
+    "lon":  -292475,
+    "freq": "335"
+  },
+  {
+    "id":   "UV",
+    "name": "BALES",
+    "lat":  131724,
+    "lon":  -287702,
+    "freq": "396"
+  },
+  {
+    "id":   "BDB",
+    "name": "ACCOM",
+    "lat":  135253,
+    "lon":  -272873,
+    "freq": "336"
+  },
+  {
+    "id":   "PJS",
+    "name": "HENRY",
+    "lat":  133678,
+    "lon":  -275375,
+    "freq": "375"
+  },
+  {
+    "id":   "OR",
+    "name": "INGLE",
+    "lat":  132625,
+    "lon":  -274504,
+    "freq": "329"
+  },
+  {
+    "id":   "VIT",
+    "name": "VINTON",
+    "lat":  133934,
+    "lon":  -287573,
+    "freq": "277"
+  },
+  {
+    "id":   "AEA",
+    "name": "JONES",
+    "lat":  131812,
+    "lon":  -280991,
+    "freq": "373"
+  },
+  {
+    "id":   "MBV",
+    "name": "MECKLENBURG/DCMSND",
+    "lat":  132092,
+    "lon":  -281002,
+    "freq": "356"
+  },
+  {
+    "id":   "SH",
+    "name": "STAUT",
+    "lat":  137526,
+    "lon":  -284246,
+    "freq": "375"
+  },
+  {
+    "id":   "RK",
+    "name": "WALEY",
+    "lat":  131757,
+    "lon":  -275936,
+    "freq": "249"
+  },
+  {
+    "id":   "GDX",
+    "name": "GOODWIN LAKE",
+    "lat":  140234,
+    "lon":  -280191,
+    "freq": "227"
+  },
+  {
+    "id":   "AKQ",
+    "name": "WAKEFIELD",
+    "lat":  133138,
+    "lon":  -277203,
+    "freq": "274"
+  },
+  {
+    "id":   "ST",
+    "name": "PESTE",
+    "lat":  63690,
+    "lon":  -233584,
+    "freq": "241"
+  },
+  {
+    "id":   "BT",
+    "name": "HERRO",
+    "lat":  160316,
+    "lon":  -263698,
+    "freq": "382"
+  },
+  {
+    "id":   "LLX",
+    "name": "LYNDONVILLE",
+    "lat":  160214,
+    "lon":  -259305,
+    "freq": "353"
+  },
+  {
+    "id":   "DYO",
+    "name": "SMUTO",
+    "lat":  157342,
+    "lon":  -262643,
+    "freq": "221"
+  },
+  {
+    "id":   "SXD",
+    "name": "SPRINGFIELD",
+    "lat":  155771,
+    "lon":  -261310,
+    "freq": "265"
+  },
+  {
+    "id":   "VWD",
+    "name": "MOUNT SNOW",
+    "lat":  154539,
+    "lon":  -262310,
+    "freq": "224"
+  },
+  {
+    "id":   "AW",
+    "name": "WATON",
+    "lat":  173074,
+    "lon":  -439754,
+    "freq": "382"
+  },
+  {
+    "id":   "CAN",
+    "name": "CARNEY",
+    "lat":  170678,
+    "lon":  -442219,
+    "freq": "274"
+  },
+  {
+    "id":   "PWT",
+    "name": "KITSAP",
+    "lat":  170972,
+    "lon":  -441923,
+    "freq": "206"
+  },
+  {
+    "id":   "BVS",
+    "name": "SKAGIT/BAY VIEW",
+    "lat":  174486,
+    "lon":  -440706,
+    "freq": "240"
+  },
+  {
+    "id":   "DPY",
+    "name": "DEER PARK",
+    "lat":  172683,
+    "lon":  -422734,
+    "freq": "365"
+  },
+  {
+    "id":   "LAC",
+    "name": "LACOMAS",
+    "lat":  169228,
+    "lon":  -441204,
+    "freq": "328"
+  },
+  {
+    "id":   "GRF",
+    "name": "GRAYE",
+    "lat":  169741,
+    "lon":  -441376,
+    "freq": "216"
+  },
+  {
+    "id":   "FHR",
+    "name": "FRIDAY HARBOR",
+    "lat":  174643,
+    "lon":  -442885,
+    "freq": "284"
+  },
+  {
+    "id":   "ION",
+    "name": "IONE",
+    "lat":  175356,
+    "lon":  -422688,
+    "freq": "379"
+  },
+  {
+    "id":   "LSO",
+    "name": "KELSO",
+    "lat":  166159,
+    "lon":  -442486,
+    "freq": "256"
+  },
+  {
+    "id":   "OPZ",
+    "name": "LOPEZ ISLAND",
+    "lat":  174525,
+    "lon":  -442515,
+    "freq": "356"
+  },
+  {
+    "id":   "MW",
+    "name": "PELLY",
+    "lat":  169616,
+    "lon":  -429388,
+    "freq": "408"
+  },
+  {
+    "id":   "OMK",
+    "name": "OMAK",
+    "lat":  174432,
+    "lon":  -430261,
+    "freq": "219"
+  },
+  {
+    "id":   "NOW",
+    "name": "EDIZ HOOK",
+    "lat":  173303,
+    "lon":  -444252,
+    "freq": "338"
+  },
+  {
+    "id":   "CL",
+    "name": "ELWHA",
+    "lat":  173340,
+    "lon":  -445212,
+    "freq": "515"
+  },
+  {
+    "id":   "RNT",
+    "name": "RENTON",
+    "lat":  170983,
+    "lon":  -439973,
+    "freq": "353"
+  },
+  {
+    "id":   "BF",
+    "name": "NOLLA",
+    "lat":  171476,
+    "lon":  -440602,
+    "freq": "362"
+  },
+  {
+    "id":   "HPK",
+    "name": "PARKK",
+    "lat":  171116,
+    "lon":  -440305,
+    "freq": "281"
+  },
+  {
+    "id":   "MNC",
+    "name": "MASON COUNTY",
+    "lat":  170093,
+    "lon":  -443110,
+    "freq": "348"
+  },
+  {
+    "id":   "CRK",
+    "name": "CANYON",
+    "lat":  171637,
+    "lon":  -422820,
+    "freq": "388"
+  },
+  {
+    "id":   "AL",
+    "name": "TRINA",
+    "lat":  166232,
+    "lon":  -425506,
+    "freq": "353"
+  },
+  {
+    "id":   "YK",
+    "name": "DONNY",
+    "lat":  167492,
+    "lon":  -433339,
+    "freq": "371"
+  },
+  {
+    "id":   "AIG",
+    "name": "ANTIGO",
+    "lat":  162569,
+    "lon":  -320808,
+    "freq": "347"
+  },
+  {
+    "id":   "AT",
+    "name": "GAMIE",
+    "lat":  158984,
+    "lon":  -318906,
+    "freq": "230"
+  },
+  {
+    "id":   "AQ",
+    "name": "KOOKY",
+    "lat":  159177,
+    "lon":  -318236,
+    "freq": "407"
+  },
+  {
+    "id":   "BCK",
+    "name": "BLACK RIVER FALLS",
+    "lat":  159316,
+    "lon":  -327055,
+    "freq": "362"
+  },
+  {
+    "id":   "BDJ",
+    "name": "BOULDER JUNCTION",
+    "lat":  166081,
+    "lon":  -322760,
+    "freq": "206"
+  },
+  {
+    "id":   "CLI",
+    "name": "CLINTONVILLE",
+    "lat":  160627,
+    "lon":  -319439,
+    "freq": "209"
+  },
+  {
+    "id":   "LVV",
+    "name": "LAKE LAWN",
+    "lat":  153715,
+    "lon":  -318935,
+    "freq": "404"
+  },
+  {
+    "id":   "EA",
+    "name": "MAGGS",
+    "lat":  161800,
+    "lon":  -328946,
+    "freq": "239"
+  },
+  {
+    "id":   "SG",
+    "name": "DEPRE",
+    "lat":  159834,
+    "lon":  -317277,
+    "freq": "332"
+  },
+  {
+    "id":   "GR",
+    "name": "FAMIS",
+    "lat":  159985,
+    "lon":  -317662,
+    "freq": "356"
+  },
+  {
+    "id":   "HBW",
+    "name": "KICKAPOO",
+    "lat":  157158,
+    "lon":  -325199,
+    "freq": "251"
+  },
+  {
+    "id":   "JVL",
+    "name": "JANESVILLE",
+    "lat":  153414,
+    "lon":  -320548,
+    "freq": "375"
+  },
+  {
+    "id":   "UNU",
+    "name": "JUNEAU",
+    "lat":  156344,
+    "lon":  -319327,
+    "freq": "344"
+  },
+  {
+    "id":   "EN",
+    "name": "CODEE",
+    "lat":  153217,
+    "lon":  -316903,
+    "freq": "389"
+  },
+  {
+    "id":   "LS",
+    "name": "MINDI",
+    "lat":  158414,
+    "lon":  -328538,
+    "freq": "272"
+  },
+  {
+    "id":   "RCX",
+    "name": "RUSK COUNTY",
+    "lat":  163806,
+    "lon":  -327604,
+    "freq": "356"
+  },
+  {
+    "id":   "LNL",
+    "name": "LAND O LAKES",
+    "lat":  166139,
+    "lon":  -321157,
+    "freq": "396"
+  },
+  {
+    "id":   "MS",
+    "name": "MONAH",
+    "lat":  155025,
+    "lon":  -321645,
+    "freq": "400"
+  },
+  {
+    "id":   "MT",
+    "name": "MAWOC",
+    "lat":  159119,
+    "lon":  -315727,
+    "freq": "362"
+  },
+  {
+    "id":   "DU",
+    "name": "CALIN",
+    "lat":  160447,
+    "lon":  -324542,
+    "freq": "266"
+  },
+  {
+    "id":   "MFI",
+    "name": "MARSHFIELD",
+    "lat":  160707,
+    "lon":  -324680,
+    "freq": "391"
+  },
+  {
+    "id":   "MDZ",
+    "name": "MEDFORD",
+    "lat":  162379,
+    "lon":  -325111,
+    "freq": "335"
+  },
+  {
+    "id":   "RRL",
+    "name": "MERRILL",
+    "lat":  162714,
+    "lon":  -322935,
+    "freq": "257"
+  },
+  {
+    "id":   "GM",
+    "name": "TEELS",
+    "lat":  154472,
+    "lon":  -316947,
+    "freq": "242"
+  },
+  {
+    "id":   "BL",
+    "name": "YANKS",
+    "lat":  155016,
+    "lon":  -316356,
+    "freq": "260"
+  },
+  {
+    "id":   "MRJ",
+    "name": "MINERAL POINT",
+    "lat":  154396,
+    "lon":  -324815,
+    "freq": "365"
+  },
+  {
+    "id":   "DO",
+    "name": "DOUGY",
+    "lat":  165004,
+    "lon":  -323029,
+    "freq": "236"
+  },
+  {
+    "id":   "ARV",
+    "name": "ARBOR VITAE",
+    "lat":  165336,
+    "lon":  -323022,
+    "freq": "221"
+  },
+  {
+    "id":   "PH",
+    "name": "BAYYE",
+    "lat":  160835,
+    "lon":  -322732,
+    "freq": "351"
+  },
+  {
+    "id":   "VIQ",
+    "name": "NEILLSVILLE",
+    "lat":  160405,
+    "lon":  -325854,
+    "freq": "368"
+  },
+  {
+    "id":   "OCQ",
+    "name": "OCONTO",
+    "lat":  161553,
+    "lon":  -316484,
+    "freq": "388"
+  },
+  {
+    "id":   "OS",
+    "name": "POBER",
+    "lat":  157945,
+    "lon":  -318807,
+    "freq": "395"
+  },
+  {
+    "id":   "PKF",
+    "name": "PARK FALLS",
+    "lat":  165431,
+    "lon":  -325534,
+    "freq": "371"
+  },
+  {
+    "id":   "PBH",
+    "name": "PHILLIPS",
+    "lat":  164531,
+    "lon":  -325486,
+    "freq": "263"
+  },
+  {
+    "id":   "RA",
+    "name": "PASER",
+    "lat":  153657,
+    "lon":  -316438,
+    "freq": "206"
+  },
+  {
+    "id":   "RH",
+    "name": "ARSHA",
+    "lat":  164261,
+    "lon":  -322627,
+    "freq": "272"
+  },
+  {
+    "id":   "RP",
+    "name": "WICKR",
+    "lat":  163144,
+    "lon":  -330489,
+    "freq": "221"
+  },
+  {
+    "id":   "BXR",
+    "name": "BIG DOCTOR",
+    "lat":  164956,
+    "lon":  -332519,
+    "freq": "203"
+  },
+  {
+    "id":   "CMY",
+    "name": "MCCOY",
+    "lat":  158176,
+    "lon":  -326310,
+    "freq": "412"
+  },
+  {
+    "id":   "SUE",
+    "name": "STURGEON BAY",
+    "lat":  161412,
+    "lon":  -314720,
+    "freq": "414"
+  },
+  {
+    "id":   "RYV",
+    "name": "ROCK RIVER",
+    "lat":  155425,
+    "lon":  -319411,
+    "freq": "371"
+  },
+  {
+    "id":   "PCZ",
+    "name": "WAUPACA",
+    "lat":  159603,
+    "lon":  -320470,
+    "freq": "382"
+  },
+  {
+    "id":   "FZK",
+    "name": "WAUSAU",
+    "lat":  161740,
+    "lon":  -322650,
+    "freq": "243"
+  },
+  {
+    "id":   "EK",
+    "name": "NEPCO",
+    "lat":  159335,
+    "lon":  -323595,
+    "freq": "326"
+  },
+  {
+    "id":   "ISW",
+    "name": "WISCONSIN RAPIDS",
+    "lat":  159710,
+    "lon":  -323423,
+    "freq": "215"
+  },
+  {
+    "id":   "RQY",
+    "name": "RANDOLPH COUNTY",
+    "lat":  140018,
+    "lon":  -287493,
+    "freq": "284"
+  },
+  {
+    "id":   "LW",
+    "name": "BUSHI",
+    "lat":  136016,
+    "lon":  -289686,
+    "freq": "346"
+  },
+  {
+    "id":   "GTC",
+    "name": "GUYANDOT",
+    "lat":  136015,
+    "lon":  -294871,
+    "freq": "293"
+  },
+  {
+    "id":   "PK",
+    "name": "VERSI",
+    "lat":  141314,
+    "lon":  -293345,
+    "freq": "388"
+  },
+  {
+    "id":   "CP",
+    "name": "JOHNO",
+    "lat":  154465,
+    "lon":  -383651,
+    "freq": "375"
+  },
+  {
+    "id":   "HCY",
+    "name": "COWLEY",
+    "lat":  161690,
+    "lon":  -390395,
+    "freq": "257"
+  },
+  {
+    "id":   "GC",
+    "name": "DERYK",
+    "lat":  159375,
+    "lon":  -379880,
+    "freq": "380"
+  },
+  {
+    "id":   "GEY",
+    "name": "GREYBULL",
+    "lat":  160241,
+    "lon":  -389098,
+    "freq": "275"
+  },
+  {
+    "id":   "GYZ",
+    "name": "CAMP GUERNSEY",
+    "lat":  152063,
+    "lon":  -376971,
+    "freq": "280"
+  },
+  {
+    "id":   "PNA",
+    "name": "WENZ",
+    "lat":  154053,
+    "lon":  -395301,
+    "freq": "392"
+  },
+  {
+    "id":   "POY",
+    "name": "POWELL",
+    "lat":  161520,
+    "lon":  -391630,
+    "freq": "344"
+  },
+  {
+    "id":   "SAA",
+    "name": "SARATOGA",
+    "lat":  149201,
+    "lon":  -384595,
+    "freq": "266"
+  },
+  {
+    "id":   "TOR",
+    "name": "TORRINGTON",
+    "lat":  151436,
+    "lon":  -374952,
+    "freq": "293"
+  },
+  {
+    "id":   "XX",
+    "name": "ABBOTSFORD",
+    "lat":  176455,
+    "lon":  -440955,
+    "freq": "344"
+  },
+  {
+    "id":   "WC",
+    "name": "WHITE ROCK",
+    "lat":  176412,
+    "lon":  -441901,
+    "freq": "332"
+  },
+  {
+    "id":   "AP",
+    "name": "ACTIVE PASS",
+    "lat":  175945,
+    "lon":  -443844,
+    "freq": "378"
+  },
+  {
+    "id":   "IB",
+    "name": "ATIKOKAN",
+    "lat":  175770,
+    "lon":  -329679,
+    "freq": "209"
+  },
+  {
+    "id":   "YXQ",
+    "name": "BEAVER CREEK",
+    "lat":  224655,
+    "lon":  -507102,
+    "freq": "239"
+  },
+  {
+    "id":   "QQ",
+    "name": "COMOX",
+    "lat":  179114,
+    "lon":  -449848,
+    "freq": "400"
+  },
+  {
+    "id":   "YHD",
+    "name": "DRYDEN",
+    "lat":  179511,
+    "lon":  -334256,
+    "freq": "413"
+  },
+  {
+    "id":   "YEL",
+    "name": "ELLIOT LAKE",
+    "lat":  166938,
+    "lon":  -297461,
+    "freq": "276"
+  },
+  {
+    "id":   "ZFP",
+    "name": "FREEPORT",
+    "lat":  95466,
+    "lon":  -283590,
+    "freq": "209"
+  },
+  {
+    "id":   "GTK",
+    "name": "GRAND TURK",
+    "lat":  77172,
+    "lon":  -256127,
+    "freq": "232"
+  },
+  {
+    "id":   "ZIN",
+    "name": "GREAT INAGUA",
+    "lat":  75455,
+    "lon":  -265239,
+    "freq": "376"
+  },
+  {
+    "id":   "NDJ",
+    "name": "BUCHOLZ",
+    "lat":  31395,
+    "lon":  -603819,
+    "freq": "359"
+  },
+  {
+    "id":   "ZLS",
+    "name": "STELLA MARIS",
+    "lat":  84890,
+    "lon":  -270950,
+    "freq": "526"
+  },
+  {
+    "id":   "ZMH",
+    "name": "MARSH HARBOUR",
+    "lat":  95440,
+    "lon":  -277477,
+    "freq": "361"
+  },
+  {
+    "id":   "YCD",
+    "name": "NANAIMO",
+    "lat":  176860,
+    "lon":  -445937,
+    "freq": "251"
+  },
+  {
+    "id":   "YOC",
+    "name": "OLD CROW",
+    "lat":  243256,
+    "lon":  -503446,
+    "freq": "284"
+  },
+  {
+    "id":   "ZT",
+    "name": "PORT HARDY",
+    "lat":  182518,
+    "lon":  -458732,
+    "freq": "242"
+  },
+  {
+    "id":   "TRI",
+    "name": "PIARCO",
+    "lat":  38142,
+    "lon":  -221120,
+    "freq": "382"
+  },
+  {
+    "id":   "PR",
+    "name": "PRINCE RUPERT",
+    "lat":  195348,
+    "lon":  -469526,
+    "freq": "218"
+  },
+  {
+    "id":   "ZSJ",
+    "name": "SAN SALVADOR",
+    "lat":  86621,
+    "lon":  -268325,
+    "freq": "281"
+  },
+  {
+    "id":   "ZP",
+    "name": "SANDSPIT",
+    "lat":  191505,
+    "lon":  -474398,
+    "freq": "368"
+  },
+  {
+    "id":   "ZR",
+    "name": "SARNIA",
+    "lat":  154586,
+    "lon":  -296040,
+    "freq": "404"
+  },
+  {
+    "id":   "YXL",
+    "name": "SIOUX LOOKOUT",
+    "lat":  180425,
+    "lon":  -330832,
+    "freq": "346"
+  },
+  {
+    "id":   "YAZ",
+    "name": "TOFINO",
+    "lat":  176568,
+    "lon":  -452534,
+    "freq": "359"
+  },
+  {
+    "id":   "YJ",
+    "name": "VICTORIA",
+    "lat":  175119,
+    "lon":  -444237,
+    "freq": "200"
+  },
+  {
+    "id":   "PJ",
+    "name": "ROBINSON",
+    "lat":  217581,
+    "lon":  -485500,
+    "freq": "329"
+  },
+  {
+    "id":   "QI",
+    "name": "YARMOUTH",
+    "lat":  157656,
+    "lon":  -238054,
+    "freq": "206"
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "types": ["mocha", "chai"],
+  "include": ["**/*.ts", "**/*.tsx"]
+}

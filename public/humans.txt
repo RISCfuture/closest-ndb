@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Tim Morgan -- developer -- @RISCfuture
+
+# THANKS
+
+    FAA Aeronautical Information Services
+
+# TECHNOLOGY COLOPHON
+
+    Vue.js
+    CSS3, HTML5
+    Normalize.css

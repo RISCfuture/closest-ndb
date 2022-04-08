@@ -1,0 +1,42 @@
+@use './constants';
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: black;
+  }
+}
+
+* {
+  color: black;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
+}
+
+h1 {
+  font-family: Mulish, sans-serif;
+  font-weight: 700;
+  font-size: constants.$large-size;
+  text-align: center;
+}
+
+h2 {
+  font-family: Mulish, sans-serif;
+  font-weight: 500;
+  font-size: constants.$med-size;
+  text-align: center;
+}
+
+p,
+div,
+span {
+  font-family: Mulish, sans-serif;
+  font-size: constants.$med-size;
+}
