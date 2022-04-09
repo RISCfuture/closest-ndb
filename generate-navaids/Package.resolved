@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftnasr",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RISCfuture/SwiftNASR.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "5e40b51ded8448f10a6a5fb201670a00652504b7"
+      }
+    },
+    {
+      "identity" : "zipfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/weichsel/ZIPFoundation/",
+      "state" : {
+        "revision" : "7254c74b49cec2cb81520523ba993c671f71b066",
+        "version" : "0.9.14"
+      }
+    }
+  ],
+  "version" : 2
+}
