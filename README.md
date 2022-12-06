@@ -11,3 +11,5 @@ API.
 
 The ADF is an SVG yeeted from the FAA Pilot's Handbook of Aeronautical Knowledge
 (PHAK). The pointer polygon is animated to note the initial bearing to the NDB.
+
+Deployment is automatic using GitHub Actions.

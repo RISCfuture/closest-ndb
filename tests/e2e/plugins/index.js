@@ -1,4 +1,4 @@
-/* eslint-disable arrow-body-style */
+/* eslint-disable arrow-body-style,no-param-reassign */
 // https://docs.cypress.io/guides/guides/plugins-guide.html
 
 // if you need a custom webpack configuration you can uncomment the following import
@@ -9,16 +9,19 @@
 // /* eslint-disable import/no-extraneous-dependencies, global-require */
 // const webpack = require('@cypress/webpack-preprocessor')
 
+const { cypressBrowserPermissionsPlugin } = require('cypress-browser-permissions');
+
 module.exports = (on, config) => {
   // on('file:preprocessor', webpack({
   //  webpackOptions: require('@vue/cli-service/webpack.config'),
   //  watchOptions: {}
   // }))
 
+  config = cypressBrowserPermissionsPlugin(on, config);
+
   return {
     ...config,
     fixturesFolder: 'tests/e2e/fixtures',
-    integrationFolder: 'tests/e2e/specs',
     screenshotsFolder: 'tests/e2e/screenshots',
     videosFolder: 'tests/e2e/videos',
     supportFile: 'tests/e2e/support/index.js',
