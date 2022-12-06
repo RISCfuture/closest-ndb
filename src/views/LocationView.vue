@@ -6,9 +6,9 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
+import { Getter } from 'vuex-class';
 import DistanceView from '@/components/DistanceView.vue';
 import ADFView from '@/components/ADFView.vue';
-import { Getter } from 'vuex-class';
 import InfoView from '@/components/InfoView.vue';
 import { NDB } from '@/store/types';
 

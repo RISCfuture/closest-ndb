@@ -1,12 +1,12 @@
 <template>
   <div class="container full-height">
     <title-view />
-    <router-view/>
+    <router-view />
     <footer-view />
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import FooterView from '@/views/FooterView.vue';
 import { Options, Vue } from 'vue-class-component';
 import TitleView from '@/views/TitleView.vue';

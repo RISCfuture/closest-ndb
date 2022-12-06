@@ -1,8 +1,8 @@
 /* eslint-disable func-names */
 
 import { ActionContext, Module } from 'vuex';
-import { NDB, RootState } from '@/store/types';
 import { assign, isUndefined, minBy } from 'lodash-es';
+import { NDB, RootState } from '@/store/types';
 import { geoDistance, geoInitialBearing } from '@/util/geo';
 import * as allNDBs from '@/data/ndbs.json';
 
