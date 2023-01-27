@@ -7,8 +7,8 @@
 </template>
 
 <script lang="ts">
-import FooterView from '@/views/FooterView.vue';
 import { Options, Vue } from 'vue-class-component';
+import FooterView from '@/views/FooterView.vue';
 import TitleView from '@/views/TitleView.vue';
 
 @Options({
