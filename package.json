@@ -17,7 +17,7 @@
     "gsap": "^3.11.3",
     "husky": "^8.0.2",
     "lodash-es": "^4.17.21",
-    "ua-parser-js": "^1.0.32",
+    "ua-parser-js": "^1.0.33",
     "vue": "^3.2.45",
     "vue-class-component": "8.0.0-rc.1",
     "vue-router": "^4.1.6",
