@@ -64,7 +64,7 @@
     "stylelint-scss": "^4.3.0",
     "typescript": "<4.7.0",
     "vue-cli-plugin-compression": "^2.0.0",
-    "webpack": "^5.75.0"
+    "webpack": "^5.76.0"
   },
   "_id": "@",
   "packageManager": "yarn@3.4.1",
