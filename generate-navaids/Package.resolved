@@ -6,7 +6,7 @@
       "location" : "https://github.com/RISCfuture/SwiftNASR.git",
       "state" : {
         "branch" : "master",
-        "revision" : "b4f727b206a0a2dac218c4d42dc6ac17c042a6bc"
+        "revision" : "b7d60a0c8da3208ab8a3b6fa3c2dabffb56b86ea"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/weichsel/ZIPFoundation/",
       "state" : {
-        "revision" : "f6a22e7da26314b38bf9befce34ae8e4b2543090",
-        "version" : "0.9.15"
+        "revision" : "43ec568034b3731101dbf7670765d671c30f54f3",
+        "version" : "0.9.16"
       }
     }
   ],
