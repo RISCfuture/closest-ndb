@@ -11,6 +11,9 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 2020,
+    ecmaFeatures: {
+      jsx: false,
+    },
   },
   rules: {
     '@typescript-eslint/no-non-null-assertion': 'off',
