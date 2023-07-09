@@ -1,7 +1,7 @@
 <template>
   <div class="container full-height">
     <title-view />
-    <router-view />
+    <home-view />
     <footer-view />
   </div>
 </template>
@@ -10,9 +10,10 @@
 import { Options, Vue } from 'vue-class-component';
 import FooterView from '@/views/FooterView.vue';
 import TitleView from '@/views/TitleView.vue';
+import HomeView from '@/views/HomeView.vue';
 
 @Options({
-  components: { TitleView, FooterView },
+  components: { TitleView, FooterView, HomeView },
 })
 export default class App extends Vue {
 }

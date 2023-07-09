@@ -21,7 +21,6 @@
     "ua-parser-js": "^1.0.35",
     "vue": "^3.3.4",
     "vue-class-component": "^8.0.0-rc.1",
-    "vue-router": "^4.2.4",
     "vuex": "^4.1.0",
     "vuex-class": "^0.3.2"
   },
@@ -38,7 +37,6 @@
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-e2e-cypress": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
-    "@vue/cli-plugin-router": "^5.0.8",
     "@vue/cli-plugin-typescript": "^5.0.8",
     "@vue/cli-plugin-unit-mocha": "^5.0.8",
     "@vue/cli-plugin-vuex": "^5.0.8",
