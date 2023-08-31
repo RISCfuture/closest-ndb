@@ -1,8 +1,10 @@
 <template>
   <div class="no-location">
     <h2>Simply allow this web page to know your location, and you’ll have your answer.</h2>
-    <p>(Don’t make that face. How did you expect this to work if you aren’t willing to give up your
-      location?)</p>
+    <p>
+      (Don’t make that face. How did you expect this to work if you aren’t willing to give up your
+      location?)
+    </p>
   </div>
 </template>
 

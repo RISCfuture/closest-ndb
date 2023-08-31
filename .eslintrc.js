@@ -2,43 +2,76 @@ module.exports = {
   root: true,
   env: {
     node: true,
-    browser: true,
   },
   extends: [
-    'plugin:vue/vue3-essential',
-    '@vue/airbnb',
     '@vue/typescript/recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:vuejs-accessibility/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
     ecmaFeatures: {
       jsx: false,
     },
   },
   rules: {
-    '@typescript-eslint/no-non-null-assertion': 'off',
     'import/extensions': 'off',
     'max-classes-per-file': 'off',
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-undef': 'off',
+    'vue/no-multiple-template-root': 'off',
+    'vue/no-v-html': 'off',
+    'vue/script-indent': ['error', 2, { baseIndent: 1 }],
+    semi: ['error', 'never'],
   },
   overrides: [
     {
-      files: [
-        '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)',
-      ],
-      env: {
-        mocha: true,
+      files: ['*.vue'],
+      rules: {
+        indent: 'off',
       },
     },
     {
-      files: [
-        'src/components/ADFView.vue',
+      files: ['src/**/*.ts'],
+      extends: [
+        'plugin:@typescript-eslint/strict-type-checked',
+        'plugin:@typescript-eslint/stylistic-type-checked',
       ],
+      parserOptions: {
+        project: true,
+      },
+    },
+    {
+      files: ['tests/unit/**/*.ts'],
+      plugins: ['chai-expect', 'chai-friendly', 'mocha'],
+      env: {
+        mocha: true,
+      },
+      extends: [
+        'plugin:@typescript-eslint/strict-type-checked',
+        'plugin:@typescript-eslint/stylistic-type-checked',
+      ],
+      parserOptions: {
+        project: true,
+      },
+    },
+    {
+      files: ['tests/unit/**/*.spec.ts'],
       rules: {
-        'max-len': 'off',
+        'no-unused-expressions': 'off',
+      },
+    },
+    {
+      files: ['tests/e2e/**/*.ts'],
+      plugins: ['cypress'],
+      env: {
+        'cypress/globals': true,
+      },
+      extends: [
+        'plugin:cypress/recommended',
+        'plugin:@typescript-eslint/strict-type-checked',
+        'plugin:@typescript-eslint/stylistic-type-checked',
+      ],
+      parserOptions: {
+        project: true,
       },
     },
   ],
@@ -47,4 +80,4 @@ module.exports = {
       typescript: {},
     },
   },
-};
+}

@@ -1,19 +1,21 @@
 <template>
-  <div class="morse-char">{{normalizedChar}}</div>
+  <div class="morse-char">
+    {{ normalizedChar }}
+  </div>
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-class-component';
+  import { Vue } from 'vue-class-component'
 
-class Props {
-  char!: string;
-}
-
-export default class MorseCharacter extends Vue.with(Props) {
-  private get normalizedChar(): string {
-    return this.char[0].toUpperCase();
+  class Props {
+    char!: string
   }
-}
+
+  export default class MorseCharacter extends Vue.with(Props) {
+    private get normalizedChar(): string {
+      return this.char[0].toUpperCase()
+    }
+  }
 </script>
 
 <style lang="scss">

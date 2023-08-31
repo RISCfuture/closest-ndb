@@ -4,28 +4,28 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import { Action, Getter } from 'vuex-class';
-import TitleView from '@/views/TitleView.vue';
-import NoLocationView from '@/views/NoLocationView.vue';
-import LocationView from '@/views/LocationView.vue';
+  import { Options, Vue } from 'vue-class-component'
+  import { Action, Getter } from 'vuex-class'
+  import TitleView from '@/views/TitleView.vue'
+  import NoLocationView from '@/views/NoLocationView.vue'
+  import LocationView from '@/views/LocationView.vue'
 
-@Options({
-  components: { LocationView, NoLocationView, TitleView },
-})
-export default class HomeView extends Vue {
-  @Getter locationUnknown!: boolean;
+  @Options({
+    components: { LocationView, NoLocationView, TitleView },
+  })
+  export default class HomeView extends Vue {
+    @Getter locationUnknown!: boolean
 
-  @Getter bearingToClosestNDB!: number | undefined;
+    @Getter bearingToClosestNDB!: number | undefined
 
-  @Action setLocation!: () => void;
+    @Action setLocation!: () => void
 
-  mounted() {
-    this.setLocation();
+    mounted() {
+      this.setLocation()
+    }
+
+    get bearing(): number {
+      return this.bearingToClosestNDB!
+    }
   }
-
-  get bearing(): number {
-    return this.bearingToClosestNDB!;
-  }
-}
 </script>

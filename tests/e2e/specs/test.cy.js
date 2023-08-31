@@ -6,9 +6,9 @@ describe('My First Test', () => {
       // TEMP until I figure out why cypress geolocation permissions isn't working
       onBeforeLoad({ navigator }) {
         cy.stub(navigator.geolocation, 'getCurrentPosition')
-          .callsArgWith(0, { coords: { latitude: 36.0, longitude: -121.0 } });
+          .callsArgWith(0, { coords: { latitude: 36.0, longitude: -121.0 } })
       },
-    });
-    cy.contains('h1', 'Where’s the closest NDB to me right now?');
-  });
-});
+    })
+    cy.contains('h1', 'Where’s the closest NDB to me right now?')
+  })
+})

@@ -5,41 +5,41 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import { isUndefined } from 'lodash-es';
+  import { Options, Vue } from 'vue-class-component'
+  import { isUndefined } from 'lodash-es'
 
-class Props {
-  distance!: number;
+  class Props {
+    distance!: number
 
-  error?: GeolocationPositionError;
-}
-
-@Options({})
-export default class DistanceView extends Vue.with(Props) {
-  private formatter = Intl.NumberFormat(undefined, {
-    useGrouping: true,
-    maximumFractionDigits: 0,
-  });
-
-  get distanceText(): string {
-    if (!isUndefined(this.error)) return this.errorText;
-    return `${this.formatter.format(this.distance)} NM`;
+    error?: GeolocationPositionError
   }
 
-  private get errorText(): string {
-    if (isUndefined(this.error)) return '';
-    switch (this.error?.code) {
+  @Options({})
+  export default class DistanceView extends Vue.with(Props) {
+    private formatter = Intl.NumberFormat(undefined, {
+      useGrouping: true,
+      maximumFractionDigits: 0,
+    })
+
+    get distanceText(): string {
+      if (!isUndefined(this.error)) return this.errorText
+      return `${this.formatter.format(this.distance)} NM`
+    }
+
+    private get errorText(): string {
+      if (isUndefined(this.error)) return ''
+      switch (this.error?.code) {
       case GeolocationPositionError.POSITION_UNAVAILABLE:
-        return '???';
+        return '???'
       case GeolocationPositionError.PERMISSION_DENIED:
-        return 'Location permission denied :(';
+        return 'Location permission denied :('
       case GeolocationPositionError.TIMEOUT:
-        return '???';
+        return '???'
       default:
-        return this.error.message;
+        return this.error.message
+      }
     }
   }
-}
 </script>
 
 <style scoped lang="scss">

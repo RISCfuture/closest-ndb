@@ -1,25 +1,29 @@
 <template>
   <div class="morse-text">
-    <morse-character :char="char" v-for="(char, i) in chars" :key="i" />
+    <morse-character
+      v-for="(char, i) in chars"
+      :key="i"
+      :char="char"
+    />
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import MorseCharacter from '@/components/morse/MorseCharacter.vue';
+  import { Options, Vue } from 'vue-class-component'
+  import MorseCharacter from '@/components/morse/MorseCharacter.vue'
 
-class Props {
-  text!: string;
-}
-
-@Options({
-  components: { MorseCharacter },
-})
-export default class MorseView extends Vue.with(Props) {
-  get chars(): string[] {
-    return this.text.split('');
+  class Props {
+    text!: string
   }
-}
+
+  @Options({
+    components: { MorseCharacter },
+  })
+  export default class MorseView extends Vue.with(Props) {
+    get chars(): string[] {
+      return this.text.split('')
+    }
+  }
 </script>
 
 <style lang="scss">

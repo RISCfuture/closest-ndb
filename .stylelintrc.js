@@ -4,4 +4,4 @@ module.exports = {
     'stylelint-config-recommended-scss',
     'stylelint-config-recommended-vue/scss',
   ],
-};
+}

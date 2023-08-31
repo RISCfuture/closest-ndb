@@ -1,7 +1,9 @@
 <template>
   <header>
     <h1>Where’s the closest NDB to me right now?</h1>
-    <p class="subtitle">Don’t worry, we can help.</p>
+    <p class="subtitle">
+      Don’t worry, we can help.
+    </p>
   </header>
 </template>
 

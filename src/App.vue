@@ -7,16 +7,16 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import FooterView from '@/views/FooterView.vue';
-import TitleView from '@/views/TitleView.vue';
-import HomeView from '@/views/HomeView.vue';
+  import { Options, Vue } from 'vue-class-component'
+  import FooterView from '@/views/FooterView.vue'
+  import TitleView from '@/views/TitleView.vue'
+  import HomeView from '@/views/HomeView.vue'
 
-@Options({
-  components: { TitleView, FooterView, HomeView },
-})
-export default class App extends Vue {
-}
+  @Options({
+    components: { TitleView, FooterView, HomeView },
+  })
+  export default class App extends Vue {
+  }
 </script>
 
 <style lang="scss">
