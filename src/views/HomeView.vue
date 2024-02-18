@@ -3,29 +3,18 @@
   <location-view v-else />
 </template>
 
-<script lang="ts">
-  import { Options, Vue } from 'vue-class-component'
-  import { Action, Getter } from 'vuex-class'
-  import TitleView from '@/views/TitleView.vue'
-  import NoLocationView from '@/views/NoLocationView.vue'
-  import LocationView from '@/views/LocationView.vue'
+<script setup lang="ts">
+import LocationView from '@/views/LocationView.vue'
+import NoLocationView from '@/views/NoLocationView.vue'
+import { useNavaidsStore } from '@/stores/navaids'
+import { computed, onMounted } from 'vue'
 
-  @Options({
-    components: { LocationView, NoLocationView, TitleView },
-  })
-  export default class HomeView extends Vue {
-    @Getter locationUnknown!: boolean
+const navaidsStore = useNavaidsStore()
 
-    @Getter bearingToClosestNDB!: number | undefined
+const locationUnknown = computed(() => navaidsStore.locationUnknown)
 
-    @Action setLocation!: () => void
-
-    mounted() {
-      this.setLocation()
-    }
-
-    get bearing(): number {
-      return this.bearingToClosestNDB!
-    }
-  }
+onMounted(() => {
+  navaidsStore.loadNDBs()
+  navaidsStore.setLocation()
+})
 </script>

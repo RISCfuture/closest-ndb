@@ -1,52 +1,20 @@
 <template>
-  <adf-view
-    :bearing="bearing"
-    :distance="distance"
-  />
-  <distance-view
-    :distance="distance"
-    :error="locationError"
-  />
-  <info-view
-    v-if="closestNDB"
-    :ndb="closestNDB"
-  />
+  <a-d-f-view :bearing="bearing" :distance="distance" />
+  <distance-view v-if="distance || locationError" :distance="distance" :error="locationError" />
+  <info-view v-if="ndb" :ndb="ndb" />
 </template>
 
-<script lang="ts">
-  import { Options, Vue } from 'vue-class-component'
-  import { Getter } from 'vuex-class'
-  import DistanceView from '@/components/DistanceView.vue'
-  import ADFView from '@/components/ADFView.vue'
-  import InfoView from '@/components/InfoView.vue'
-  import { NDB } from '@/store/types'
+<script setup lang="ts">
+import ADFView from '@/components/ADFView.vue'
+import DistanceView from '@/components/DistanceView.vue'
+import InfoView from '@/components/InfoView.vue'
+import { useNavaidsStore } from '@/stores/navaids'
+import { computed } from 'vue'
 
-  @Options({
-    components: {
-      InfoView,
-      DistanceView,
-      'adf-view': ADFView,
-    },
-  })
-  export default class LocationView extends Vue {
-    @Getter closestNDB!: NDB | undefined
+const navaidsStore = useNavaidsStore()
 
-    @Getter bearingToClosestNDB!: number | undefined
-
-    @Getter distanceToClosestNDB!: number | undefined
-
-    @Getter locationError!: GeolocationPositionError
-
-    get bearing(): number {
-      return this.bearingToClosestNDB!
-    }
-
-    get distance(): number {
-      return this.distanceToClosestNDB!
-    }
-
-    get ndb(): NDB {
-      return this.closestNDB!
-    }
-  }
+const bearing = computed(() => navaidsStore.bearingToClosestNDB)
+const distance = computed(() => navaidsStore.distanceToClosestNDB)
+const locationError = computed(() => navaidsStore.locationError)
+const ndb = computed(() => navaidsStore.closestNDB)
 </script>
