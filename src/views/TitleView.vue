@@ -1,19 +1,22 @@
 <template>
   <header>
-    <h1>Where’s the closest NDB to me right now?</h1>
-    <p class="subtitle">
-      Don’t worry, we can help.
-    </p>
+    <h1>{{ t('title.header') }}</h1>
+    <p class="subtitle">{{ t('title.body') }}</p>
   </header>
 </template>
 
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>
+
 <style scoped lang="scss">
-@use '../styles/constants';
+@use '@/assets/styles/constants';
 
 header {
-  justify-self: stretch;
-  align-self: center;
   grid-area: header;
+  place-self: center stretch;
   padding: 0 1em;
 }
 
@@ -23,8 +26,8 @@ h1 {
 }
 
 .subtitle {
-  text-align: center;
-  font-size: constants.$med-size;
   margin: 6pt;
+  font-size: constants.$med-size;
+  text-align: center;
 }
 </style>

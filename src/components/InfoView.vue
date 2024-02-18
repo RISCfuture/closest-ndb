@@ -1,77 +1,67 @@
 <template>
   <div class="info-view">
-    <div class="name">
+    <div class="name" data-testid="ndb-name">
       {{ ndb.name }}
     </div>
     <div class="info-line">
-      <div>{{ ndb.freq }}</div>
-      <div>{{ ndb.id }}</div>
+      <div data-testid="ndb-freq">{{ ndb.freq }}</div>
+      <div data-testid="ndb-id">{{ ndb.id }}</div>
       <morse-view :text="ndb.id" />
     </div>
-    <div class="lat-lon">
+    <div class="lat-lon" data-testid="ndb-coords">
       {{ latLonText }}
     </div>
   </div>
 </template>
 
-<script lang="ts">
-  import { Options, Vue } from 'vue-class-component'
-  import { NDB } from '@/store/types'
-  import MorseView from '@/components/morse/MorseView.vue'
+<script setup lang="ts">
+import type { NDB } from '@/types'
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import MorseView from '@/components/morse/MorseView.vue'
 
-  class Props {
-    ndb!: NDB
-  }
+const { t, n } = useI18n()
 
-  @Options({
-    components: { MorseView },
+const props = defineProps<{ ndb: NDB }>()
+
+const latLonText = computed(() => {
+  const latDeg = Math.abs(props.ndb.lat) / 3600
+  const lonDeg = Math.abs(props.ndb.lon) / 3600
+  const latMin = (Math.abs(props.ndb.lat) % 3600) / 60
+  const lonMin = (Math.abs(props.ndb.lon) % 3600) / 60
+  const latSign = props.ndb.lat > 0 ? 'N' : 'S'
+  const lonSign = props.ndb.lon > 0 ? 'E' : 'W'
+
+  const latDegText = n(latDeg, 'coordinateDegrees')
+  const lonDegText = n(lonDeg, 'coordinateDegrees')
+  const latMinText = n(latMin, 'coordinateMinutes')
+  const lonMinText = n(lonMin, 'coordinateMinutes')
+
+  return t('coordinate', {
+    latDeg: latDegText,
+    latSign,
+    lonDeg: lonDegText,
+    lonSign,
+    latMin: latMinText,
+    lonMin: lonMinText
   })
-  export default class InfoView extends Vue.with(Props) {
-    declare ndb: NDB
-
-    private degFormatter = Intl.NumberFormat(undefined, {
-      maximumFractionDigits: 0,
-    })
-
-    private minFormatter = Intl.NumberFormat(undefined, {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-      minimumIntegerDigits: 2,
-    })
-
-    get latLonText(): string {
-      const latDeg = Math.abs(this.ndb.lat) / 3600
-      const lonDeg = Math.abs(this.ndb.lon) / 3600
-      const latMin = (Math.abs(this.ndb.lat) % 3600) / 60
-      const lonMin = (Math.abs(this.ndb.lon) % 3600) / 60
-      const latSign = this.ndb.lat > 0 ? 'N' : 'S'
-      const lonSign = this.ndb.lon > 0 ? 'E' : 'W'
-
-      const latDegText = this.degFormatter.format(latDeg)
-      const lonDegText = this.degFormatter.format(lonDeg)
-      const latMinText = this.minFormatter.format(latMin)
-      const lonMinText = this.minFormatter.format(lonMin)
-
-      return `${latSign}${latDegText}°${latMinText}′ ${lonSign}${lonDegText}°${lonMinText}′`
-    }
-  }
+})
 </script>
 
 <style scoped lang="scss">
-@use 'src/styles/constants';
+@use '@/assets/styles/constants';
 
 .info-view {
   @include constants.info-plate;
 
-  justify-self: center;
-  align-self: center;
   grid-area: info;
-  padding: 1vmin 1vmin;
+  place-self: center center;
+  padding: 1vmin;
   font-family: Mulish, sans-serif;
   font-size: constants.$small-size;
   color: constants.$ndb-color;
 
-  >* {
+  > * {
     padding-top: 1pt;
     padding-bottom: 1pt;
   }
@@ -82,11 +72,11 @@
 }
 
 .info-line {
-  font-size: constants.$med-size;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  font-size: constants.$med-size;
 
   * {
     margin: 0 0.125em;

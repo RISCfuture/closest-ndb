@@ -1,63 +1,57 @@
 <template>
-  <div class="distance-readout">
+  <div class="distance-readout" data-testid="ndb-distance">
     {{ distanceText }}
   </div>
 </template>
 
-<script lang="ts">
-  import { Options, Vue } from 'vue-class-component'
-  import { isUndefined } from 'lodash-es'
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { isUndefined } from 'lodash-es'
 
-  class Props {
-    distance!: number
+const { t, n } = useI18n()
 
-    error?: GeolocationPositionError
+const props = defineProps<{
+  distance?: number
+  error?: GeolocationPositionError
+}>()
+
+const distanceText = computed(() => {
+  if (props.error) return errorText.value
+  if (isUndefined(props.distance)) return t('geolocationError.positionUnknown')
+  return t('distanceNM', { distance: n(props.distance, 'distance') })
+})
+
+const errorText = computed(() => {
+  if (!props.error) return ''
+  switch (props.error.code) {
+    case GeolocationPositionError.POSITION_UNAVAILABLE:
+      return t('geolocationError.positionUnknown')
+    case GeolocationPositionError.PERMISSION_DENIED:
+      return t('geolocationError.permissionDenied')
+    case GeolocationPositionError.TIMEOUT:
+      return t('geolocationError.positionUnknown')
+    default:
+      return props.error.message
   }
-
-  @Options({})
-  export default class DistanceView extends Vue.with(Props) {
-    private formatter = Intl.NumberFormat(undefined, {
-      useGrouping: true,
-      maximumFractionDigits: 0,
-    })
-
-    get distanceText(): string {
-      if (!isUndefined(this.error)) return this.errorText
-      return `${this.formatter.format(this.distance)} NM`
-    }
-
-    private get errorText(): string {
-      if (isUndefined(this.error)) return ''
-      switch (this.error?.code) {
-      case GeolocationPositionError.POSITION_UNAVAILABLE:
-        return '???'
-      case GeolocationPositionError.PERMISSION_DENIED:
-        return 'Location permission denied :('
-      case GeolocationPositionError.TIMEOUT:
-        return '???'
-      default:
-        return this.error.message
-      }
-    }
-  }
+})
 </script>
 
 <style scoped lang="scss">
-@use 'src/styles/constants';
+@use '@/assets/styles/constants';
 
 .distance-readout {
   @include constants.info-plate;
 
-  justify-self: center;
-  align-self: center;
-  grid-area: adf;
   display: inline-block;
+  grid-area: adf;
+  place-self: center center;
   padding: 0.5em;
-  background-color: rgba(255 255 255 / 75%);
-  border-width: 0.5vmin;
-  font-family: 'Mulish', sans-serif;
+  font-family: Mulish, sans-serif;
   font-size: constants.$med-size;
   font-weight: 700;
   color: constants.$ndb-color;
+  background-color: rgba(255 255 255 / 75%);
+  border-width: 0.5vmin;
 }
 </style>

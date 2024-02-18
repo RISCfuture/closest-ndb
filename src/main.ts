@@ -1,15 +1,15 @@
-import './config/bugsnag'
+import bugsnagVue from '@/config/bugsnag'
 
-import './styles/normalize.css'
-import './styles/fonts.scss'
-import './styles/base.scss'
+import 'normalize.css/normalize.css'
+import './assets/styles/fonts.scss'
+import './assets/styles/base.scss'
 
 import { createApp } from 'vue'
-import Bugsnag from '@bugsnag/js'
+import { createPinia } from 'pinia'
 import UAParser from 'ua-parser-js'
 
 import App from './App.vue'
-import store from './store'
+import i18n from '@/i18n'
 
 const parser = new UAParser(navigator.userAgent)
 if (parser.getBrowser().name === 'Chrome') {
@@ -17,9 +17,10 @@ if (parser.getBrowser().name === 'Chrome') {
   document.body.classList.add('is-chrome')
 }
 
-const bugsnagVue = Bugsnag.getPlugin('vue')
-
 const app = createApp(App)
-app.use(store)
+
+app.use(createPinia())
+app.use(i18n)
 if (bugsnagVue) app.use(bugsnagVue)
+
 app.mount('#app')

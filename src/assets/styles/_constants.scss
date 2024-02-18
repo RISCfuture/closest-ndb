@@ -1,0 +1,15 @@
+$ndb-color: #7d5732;
+$tiny-size: 1.75vmin;
+$small-size: 2vmin;
+$med-size: 3vmin;
+$large-size: 4vmin;
+
+@mixin info-plate {
+  color: $ndb-color;
+  border: 2px solid $ndb-color;
+  border-radius: 2vmin;
+
+  * {
+    color: $ndb-color;
+  }
+}

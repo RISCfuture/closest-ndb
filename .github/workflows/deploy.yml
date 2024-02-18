@@ -1,4 +1,3 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy to GitHub Pages
 
 on:
@@ -30,10 +29,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: Enable Corepack
-      run: corepack enable
     - name: Setup pages
       uses: actions/configure-pages@v4
+    - name: Enable Corepack
+      run: corepack enable
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
@@ -47,6 +46,7 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: "dist/"
+
 
   # Deployment job
   deploy:
