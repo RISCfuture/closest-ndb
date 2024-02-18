@@ -4,29 +4,23 @@
   </div>
 </template>
 
-<script lang="ts">
-  import { Vue } from 'vue-class-component'
+<script setup lang="ts">
+import { computed } from 'vue'
 
-  class Props {
-    char!: string
-  }
-
-  export default class MorseCharacter extends Vue.with(Props) {
-    private get normalizedChar(): string {
-      return this.char[0].toUpperCase()
-    }
-  }
+const props = defineProps<{ char: string }>()
+const normalizedChar = computed(() => props.char.toUpperCase())
 </script>
 
 <style lang="scss">
-@use 'src/styles/constants';
+@use 'sass:math';
+@use '@/assets/styles/constants';
 
 .morse-char {
   display: flex;
   flex-flow: row wrap;
-  font-family: 'Morse', monospace;
-  color: constants.$ndb-color;
+  font-family: Morse, monospace;
   font-size: constants.$small-size;
-  line-height: constants.$small-size / 2;
+  line-height: math.div(constants.$small-size, 2);
+  color: constants.$ndb-color;
 }
 </style>

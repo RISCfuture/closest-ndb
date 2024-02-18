@@ -7,3 +7,6 @@ Bugsnag.start({
   plugins: [new BugsnagPluginVue()]
 })
 BugsnagPerformance.start({ apiKey: 'd214574b02750f3fbb4609cb8dda9a0a' })
+
+const bugsnagVue = Bugsnag.getPlugin('vue')
+export default bugsnagVue

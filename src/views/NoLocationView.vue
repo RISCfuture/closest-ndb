@@ -1,15 +1,18 @@
 <template>
   <div class="no-location">
-    <h2>Simply allow this web page to know your location, and you’ll have your answer.</h2>
-    <p>
-      (Don’t make that face. How did you expect this to work if you aren’t willing to give up your
-      location?)
-    </p>
+    <h2>{{ t('noLocation.header') }}</h2>
+    <p>{{ t('noLocation.body') }}</p>
   </div>
 </template>
 
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>
+
 <style scoped lang="scss">
-@use '../styles/constants';
+@use '@/assets/styles/constants';
 
 .no-location {
   grid-area: adf;
@@ -18,7 +21,7 @@
 
 p {
   font-size: constants.$small-size;
-  opacity: 35%;
   text-align: center;
+  opacity: 0.35;
 }
 </style>
