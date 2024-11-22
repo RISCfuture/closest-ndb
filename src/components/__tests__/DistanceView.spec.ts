@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import DistanceView from '../DistanceView.vue'
 import i18n from '../../i18n'
-import { render, screen } from '@testing-library/vue'
+import { render } from 'vitest-browser-vue'
+import { page } from '@vitest/browser/context'
 
 describe('DistanceView', () => {
   describe('with known distance', () => {
@@ -10,7 +11,7 @@ describe('DistanceView', () => {
         props: { distance: 10 },
         global: { plugins: [i18n] }
       })
-      expect(screen.getByTestId('ndb-distance').textContent).toBe('10 NM')
+      expect(page.getByTestId('ndb-distance').element().textContent).toBe('10 NM')
     })
   })
 
@@ -19,7 +20,7 @@ describe('DistanceView', () => {
       render(DistanceView, {
         global: { plugins: [i18n] }
       })
-      expect(screen.getByTestId('ndb-distance').textContent).toBe('???')
+      expect(page.getByTestId('ndb-distance').element().textContent).toBe('???')
     })
   })
 
@@ -34,7 +35,9 @@ describe('DistanceView', () => {
         props: { error },
         global: { plugins: [i18n] }
       })
-      expect(screen.getByTestId('ndb-distance').textContent).toBe('Location permission denied :(')
+      expect(page.getByTestId('ndb-distance').element().textContent).toBe(
+        'Location permission denied :('
+      )
     })
   })
 
@@ -49,7 +52,7 @@ describe('DistanceView', () => {
         props: { error },
         global: { plugins: [i18n] }
       })
-      expect(screen.getByTestId('ndb-distance').textContent).toBe('???')
+      expect(page.getByTestId('ndb-distance').element().textContent).toBe('???')
     })
   })
 
@@ -64,7 +67,7 @@ describe('DistanceView', () => {
         props: { error },
         global: { plugins: [i18n] }
       })
-      expect(screen.getByTestId('ndb-distance').textContent).toBe('Other error')
+      expect(page.getByTestId('ndb-distance').element().textContent).toBe('Other error')
     })
   })
 })

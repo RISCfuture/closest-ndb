@@ -4,7 +4,7 @@ import SwiftNASR
 
 @main
 struct GenerateNavaids {
-    static var workingURL: URL { URL(fileURLWithPath: FileManager.default.currentDirectoryPath) }
+    static var workingURL: URL { URL.currentDirectory() }
     static var distributionURL: URL { workingURL.appendingPathComponent("distribution.zip") }
     static var distributionPath: String { distributionURL.path }
     static var outputURL: URL { workingURL.appendingPathComponent("ndbs.json") }
@@ -15,13 +15,13 @@ struct GenerateNavaids {
             NASR.fromInternetToFile(distributionURL)!
 
         let _ = try await nasr.load()
-        let navaids = try await nasr.parseNavaids(errorHandler: {
+        try await nasr.parse(.navaids, errorHandler: {
             fputs($0.localizedDescription + "\n", stderr)
             return true
         })
         
         var jsonDict = Array<Dictionary<String, Encodable>>()
-        for navaid in navaids {
+        for navaid in await nasr.data.navaids! {
             if !navaid.isNDB || !navaid.isOperational { continue }
             guard let freq = navaid.frequency else { continue }
             

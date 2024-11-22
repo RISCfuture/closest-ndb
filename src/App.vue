@@ -24,7 +24,7 @@ import FooterView from '@/views/FooterView.vue'
     'footer footer footer' min-content /
     auto 1fr auto;
   grid-auto-columns: 1fr;
-  gap: 1em 1em;
+  gap: 1em;
   background-image: url('assets/images/background.svg');
   background-repeat: no-repeat;
   background-position: center;

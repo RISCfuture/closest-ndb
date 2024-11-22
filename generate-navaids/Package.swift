@@ -1,11 +1,11 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "generate-navaids",
-    platforms: [.macOS(.v14)],
+    platforms: [.macOS(.v15)],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/RISCfuture/SwiftNASR.git", branch: "master")
@@ -19,5 +19,6 @@ let package = Package(
         .testTarget(
             name: "generate-navaidsTests",
             dependencies: ["generate-navaids"]),
-    ]
+    ],
+    swiftLanguageModes: [.v6]
 )
