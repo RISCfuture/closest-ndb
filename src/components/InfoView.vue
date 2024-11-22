@@ -52,14 +52,14 @@ const latLonText = computed(() => {
 @use '@/assets/styles/constants';
 
 .info-view {
-  @include constants.info-plate;
-
   grid-area: info;
   place-self: center center;
   padding: 1vmin;
   font-family: Mulish, sans-serif;
   font-size: constants.$small-size;
   color: constants.$ndb-color;
+
+  @include constants.info-plate;
 
   > * {
     padding-top: 1pt;

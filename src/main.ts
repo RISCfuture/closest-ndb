@@ -6,7 +6,7 @@ import './assets/styles/base.scss'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import UAParser from 'ua-parser-js'
+import { UAParser } from 'ua-parser-js'
 
 import App from './App.vue'
 import i18n from '@/i18n'

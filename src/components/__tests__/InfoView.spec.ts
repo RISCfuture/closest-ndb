@@ -1,7 +1,8 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import InfoView from '../InfoView.vue'
 import i18n from '../../i18n'
-import { render, screen } from '@testing-library/vue'
+import { render } from 'vitest-browser-vue'
+import { page } from '@vitest/browser/context'
 
 describe('InfoView', () => {
   it('renders NDB information', () => {
@@ -20,9 +21,9 @@ describe('InfoView', () => {
       }
     })
 
-    expect(screen.getByTestId('ndb-name').textContent).toBe('TOPGUN')
-    expect(screen.getByTestId('ndb-freq').textContent).toBe('661')
-    expect(screen.getByTestId('ndb-id').textContent).toBe('TG')
-    expect(screen.getByTestId('ndb-coords').textContent).toBe('N33°52.55′ W117°08.25′')
+    expect(page.getByTestId('ndb-name').element().textContent).toBe('TOPGUN')
+    expect(page.getByTestId('ndb-freq').element().textContent).toBe('661')
+    expect(page.getByTestId('ndb-id').element().textContent).toBe('TG')
+    expect(page.getByTestId('ndb-coords').element().textContent).toBe('N33°52.55′ W117°08.25′')
   })
 })

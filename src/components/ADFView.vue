@@ -448,12 +448,13 @@
         />
       </g>
       <path
-        ref="pointer"
+        id="pointer"
+        :class="pointerClass"
         data-testid="pointer"
         fill="#F8E406"
         fill-rule="nonzero"
         d="m48.776 29.073 1.769-.089-2.485-8.056-2.023 8.28 1.755-.087.522 42.268.54 4.057.444-4.106z"
-        style="transform-origin: 49% 49.5%"
+        :style="pointerStyle"
         transform="translate(.993 .363)"
       />
       <g stroke="#E0851D" stroke-linejoin="round">
@@ -470,16 +471,16 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { isUndefined } from 'lodash-es'
-import { animate, type AnimationControls } from 'motion'
 
 const props = defineProps<{ bearing?: number; distance?: number }>()
 
 const animationTimeout = ref<ReturnType<typeof setInterval> | undefined>(undefined)
-const spin = ref<AnimationControls | undefined>(undefined)
-const displayedBearing = ref(props.bearing ?? 0)
-const pointer = ref<SVGPolygonElement | null>(null)
+const pointerClass = computed(() => (isUndefined(props.bearing) ? 'spin' : ''))
+const pointerStyle = ref<Record<string, string>>({
+  transform: `rotate(${props.bearing ?? 0}deg)`
+})
 
 const inaccuracy = computed(() => {
   if (isUndefined(props.distance)) return 0
@@ -492,7 +493,6 @@ const inaccuracy = computed(() => {
 
 onMounted(() => {
   animationTimeout.value = setInterval(() => animatePointer(), 500)
-  if (isUndefined(props.bearing)) spinPointer()
 })
 
 onUnmounted(() => {
@@ -500,55 +500,42 @@ onUnmounted(() => {
     clearInterval(animationTimeout.value)
     animationTimeout.value = undefined
   }
-  stopSpinning()
-})
-
-watch(
-  () => props.bearing,
-  (bearing) => {
-    if (isUndefined(bearing)) spinPointer()
-    else stopSpinning()
-  }
-)
-
-watch(displayedBearing, (bearing) => {
-  if (!pointer.value) return
-  animate(
-    pointer.value,
-    { transform: `rotate(${bearing}deg)` },
-    { duration: 0.5, easing: 'linear' }
-  )
 })
 
 function animatePointer() {
-  if (isUndefined(props.bearing)) return
-  let additive = Math.random() * inaccuracy.value
-  if (Math.random() < 0.5) additive *= -1
-  displayedBearing.value = props.bearing + additive
-}
-
-function spinPointer() {
-  if (!isUndefined(spin.value)) return
-  if (!pointer.value) return
-
-  spin.value = animate(
-    pointer.value,
-    { transform: 'rotate(360deg)' },
-    { duration: 2, repeat: Infinity, easing: 'linear' }
-  )
-}
-
-function stopSpinning() {
-  if (isUndefined(spin.value)) return
-
-  spin.value.stop()
-  spin.value = undefined
+  if (isUndefined(props.bearing)) {
+    pointerStyle.value = {}
+  } else {
+    let additive = Math.random() * inaccuracy.value
+    if (Math.random() < 0.5) additive *= -1
+    const newBearing = props.bearing + additive
+    pointerStyle.value = { transform: `rotate(${newBearing}deg)` }
+  }
 }
 </script>
 
 <style lang="scss">
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 svg {
   grid-area: adf;
   place-self: stretch stretch;
+
+  #pointer {
+    transition: transform 0.5s linear;
+    transform-origin: 49% 49.5%;
+
+    &.spin {
+      animation: spin 2s linear infinite;
+    }
+  }
 }
 </style>

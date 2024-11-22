@@ -41,8 +41,6 @@ const errorText = computed(() => {
 @use '@/assets/styles/constants';
 
 .distance-readout {
-  @include constants.info-plate;
-
   display: inline-block;
   grid-area: adf;
   place-self: center center;
@@ -53,5 +51,7 @@ const errorText = computed(() => {
   color: constants.$ndb-color;
   background-color: rgba(255 255 255 / 75%);
   border-width: 0.5vmin;
+
+  @include constants.info-plate;
 }
 </style>

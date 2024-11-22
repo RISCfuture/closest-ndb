@@ -1,12 +1,22 @@
 {
+  "originHash" : "2d14ca300124ba2b0887b4f8137bc65574b226fa3523c307375be29498f06e35",
   "pins" : [
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
+        "version" : "1.5.0"
+      }
+    },
     {
       "identity" : "swiftnasr",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RISCfuture/SwiftNASR.git",
       "state" : {
         "branch" : "master",
-        "revision" : "a60a237860f8a953cdbd0f5bff2d700240979fb8"
+        "revision" : "0eff04773866453d20fa4730359023c3c73f4947"
       }
     },
     {
@@ -19,5 +29,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
