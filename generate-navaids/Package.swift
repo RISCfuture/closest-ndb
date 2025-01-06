@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "generate-navaids",
-    platforms: [.macOS(.v15)],
+    platforms: [.macOS(.v13)],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/RISCfuture/SwiftNASR.git", branch: "master")
