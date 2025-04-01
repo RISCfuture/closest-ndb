@@ -1,5 +1,5 @@
 {
-  "originHash" : "13a82e2c728548acb0c187b2c0374c85bd5292cf49039b685b41c323152215f6",
+  "originHash" : "ecc56e4cfcdf9d75b1f6e1e2a434526ca997faa122a8b9165bf94b55808fb9eb",
   "pins" : [
     {
       "identity" : "swift-argument-parser",
@@ -16,7 +16,7 @@
       "location" : "https://github.com/RISCfuture/SwiftNASR.git",
       "state" : {
         "branch" : "master",
-        "revision" : "2eab35449752fad5ee1755d3a1dfb82ac292f030"
+        "revision" : "3e80e125128cfb563d18b9d6c80e9046c75412e5"
       }
     },
     {

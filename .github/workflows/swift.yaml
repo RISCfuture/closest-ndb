@@ -18,7 +18,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [macos-13, macos-latest]
-        swift: ["6.0"]
+        swift: ['6.0']
     steps:
       - uses: actions/checkout@v4
       - uses: SwiftyLab/setup-swift@latest
@@ -26,3 +26,11 @@ jobs:
           swift-version: ${{ matrix.swift }}
       - name: Build
         run: cd generate-navaids && swift build -v
+  lint:
+    name: Run Swiftlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: norio-nomura/action-swiftlint@3.2.1
+        env:
+          WORKING_DIRECTORY: generate-navaids

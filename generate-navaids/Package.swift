@@ -18,7 +18,7 @@ let package = Package(
             dependencies: ["SwiftNASR"]),
         .testTarget(
             name: "generate-navaidsTests",
-            dependencies: ["generate-navaids"]),
+            dependencies: ["generate-navaids"])
     ],
     swiftLanguageModes: [.v6]
 )

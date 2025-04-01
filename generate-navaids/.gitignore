@@ -10,3 +10,7 @@ DerivedData/
 
 distribution.zip
 ndbs.json
+
+
+# SwiftLint Remote Config Cache
+.swiftlint/RemoteConfigCache
