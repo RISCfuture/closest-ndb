@@ -530,8 +530,8 @@ svg {
   place-self: stretch stretch;
 
   #pointer {
-    transition: transform 0.5s linear;
     transform-origin: 49% 49.5%;
+    transition: transform 0.5s linear;
 
     &.spin {
       animation: spin 2s linear infinite;
