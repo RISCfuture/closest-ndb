@@ -49,7 +49,7 @@ const errorText = computed(() => {
   font-size: constants.$med-size;
   font-weight: 700;
   color: constants.$ndb-color;
-  background-color: rgba(255 255 255 / 75%);
+  background-color: rgb(255 255 255 / 75%);
   border-width: 0.5vmin;
 
   @include constants.info-plate;

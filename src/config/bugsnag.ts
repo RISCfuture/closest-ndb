@@ -1,10 +1,10 @@
-import Bugsnag from '@bugsnag/js'
+import Bugsnag, { type Plugin } from '@bugsnag/js'
 import BugsnagPluginVue from '@bugsnag/plugin-vue'
 import BugsnagPerformance from '@bugsnag/browser-performance'
 
 Bugsnag.start({
   apiKey: 'd214574b02750f3fbb4609cb8dda9a0a',
-  plugins: [new BugsnagPluginVue()]
+  plugins: [new BugsnagPluginVue() as Plugin]
 })
 BugsnagPerformance.start({ apiKey: 'd214574b02750f3fbb4609cb8dda9a0a' })
 

@@ -41,11 +41,17 @@ jobs:
         submodules: true
     - name: Enable Corepack
       run: corepack enable
-    - uses: cypress-io/github-action@v6
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
       with:
-        build: yarn build
-        start: npx vite preview --port 4173
-        record: true
+        cache: yarn
+        node-version-file: .nvmrc
+    - name: Install dependencies
+      run: yarn install
+    - name: Build project
+      run: yarn build
+    - name: Run E2E tests
+      run: yarn test:e2e
       env:
         CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
   lint:
@@ -67,6 +73,6 @@ jobs:
     - name: Run ESLint
       run: yarn lint
     - name: Run Stylelint
-      run: npx stylelint src/**/*.css src/**/*.vue src/**/*.scss
+      run: yarn stylelint
     - name: Type check
       run: yarn type-check
