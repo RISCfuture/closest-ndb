@@ -55,6 +55,7 @@ const retryLocation = async () => {
 </script>
 
 <style scoped lang="scss">
+@use 'sass:color';
 @use '@/assets/styles/constants';
 
 .no-location {
@@ -83,7 +84,7 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   &:hover:not(:disabled) {
-    background-color: darken(constants.$ndb-color, 10%);
+    background-color: color.adjust(constants.$ndb-color, $lightness: -10%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
   }
