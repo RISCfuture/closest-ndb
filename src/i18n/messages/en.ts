@@ -16,7 +16,16 @@ const en: LocaleMessage = {
     header: 'Simply allow this web page to know your location, and you’ll have ' + 'your answer.',
     body:
       '(Don’t make that face. How did you expect this to work if you aren’t ' +
-      'willing to give up your location?)'
+      'willing to give up your location?)',
+    permissionDeniedHeader: 'Location permission was denied',
+    permissionDeniedBody:
+      'You need location access to use this app, sorry. Go into your browser ' +
+      'settings and enable Location. (Don’t make that face. How did you expect ' +
+      'this to work if you aren’t willing to give up your location?)',
+    errorHeader: 'Unable to get your location',
+    retryButton: 'Try Again',
+    retrying: 'Retrying…',
+    stillNotWorking: 'Still Not Working? Did You Change Your Browser Settings?'
   },
   title: {
     header: 'Where’s the closest NDB to me right now?',

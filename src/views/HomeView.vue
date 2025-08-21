@@ -1,5 +1,5 @@
 <template>
-  <no-location-view v-if="locationUnknown" />
+  <no-location-view v-if="showNoLocation" />
   <location-view v-else />
 </template>
 
@@ -11,10 +11,13 @@ import { computed, onMounted } from 'vue'
 
 const navaidsStore = useNavaidsStore()
 
-const locationUnknown = computed(() => navaidsStore.locationUnknown)
+const showNoLocation = computed(() => navaidsStore.locationUnknown || !!navaidsStore.locationError)
 
 onMounted(() => {
   navaidsStore.loadNDBs()
-  navaidsStore.setLocation()
+  navaidsStore.setLocation().catch(() => {
+    // Error is already handled in the store by setting locationError
+    // No need to propagate it further
+  })
 })
 </script>
