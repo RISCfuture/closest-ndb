@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import InfoView from '../InfoView.vue'
 import i18n from '../../i18n'
 import { render } from 'vitest-browser-vue'
-import { page } from '@vitest/browser/context'
+import { page } from 'vitest/browser'
 
 describe('InfoView', () => {
   it('renders NDB information', () => {

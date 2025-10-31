@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import DistanceView from '../DistanceView.vue'
 import i18n from '../../i18n'
 import { render } from 'vitest-browser-vue'
-import { page } from '@vitest/browser/context'
+import { page } from 'vitest/browser'
 
 describe('DistanceView', () => {
   describe('with known distance', () => {
