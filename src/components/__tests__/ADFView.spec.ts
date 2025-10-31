@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import ADFView from '../ADFView.vue'
 import { render } from 'vitest-browser-vue'
-import { page } from '@vitest/browser/context'
+import { page } from 'vitest/browser'
 
 describe('ADFView', () => {
   describe('with known bearing', () => {
