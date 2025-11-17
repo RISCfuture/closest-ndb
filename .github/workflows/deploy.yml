@@ -81,5 +81,5 @@ jobs:
           SENTRY_PROJECT: closest-ndb
         with:
           environment: production
-          version: ${{ github.sha }}
+          release: ${{ github.sha }}
           sourcemaps: "./dist"
