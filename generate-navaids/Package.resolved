@@ -1,13 +1,40 @@
 {
-  "originHash" : "ecc56e4cfcdf9d75b1f6e1e2a434526ca997faa122a8b9165bf94b55808fb9eb",
+  "originHash" : "b8a4b1ab4343486a735d5572f51317e46d0c7c0ca1a18701bc12c867e3277d81",
   "pins" : [
+    {
+      "identity" : "streamingcsv",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RISCfuture/StreamingCSV.git",
+      "state" : {
+        "revision" : "7f9340aa0eb840444c1fb19ad26d77492547df5e",
+        "version" : "2.0.0"
+      }
+    },
     {
       "identity" : "swift-argument-parser",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser.git",
       "state" : {
-        "revision" : "309a47b2b1d9b5e991f36961c983ecec72275be3",
-        "version" : "1.6.1"
+        "revision" : "c5d11a805e765f52ba34ec7284bd4fcd6ba68615",
+        "version" : "1.7.0"
+      }
+    },
+    {
+      "identity" : "swift-macro-toolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stackotter/swift-macro-toolkit",
+      "state" : {
+        "revision" : "569627091e1fbb8745d691aeeb008e7247dedb7c",
+        "version" : "0.6.1"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax",
+      "state" : {
+        "revision" : "0687f71944021d616d34d922343dcef086855920",
+        "version" : "600.0.1"
       }
     },
     {
@@ -16,7 +43,7 @@
       "location" : "https://github.com/RISCfuture/SwiftNASR.git",
       "state" : {
         "branch" : "master",
-        "revision" : "f6d661ae791cf1e3cefcbc89578e58f071439850"
+        "revision" : "c5074b31354f6678d742674a0dcc4ed41c8aa019"
       }
     },
     {

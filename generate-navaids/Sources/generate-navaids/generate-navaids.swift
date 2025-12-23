@@ -29,11 +29,11 @@ enum GenerateNavaids {
       guard let freq = navaid.frequency else { continue }
 
       jsonDict.append([
-        "id": navaid.ID,
+        "id": navaid.id,
         "name": navaid.name,
-        "lat": navaid.position.latitude,
-        "lon": navaid.position.longitude,
-        "freq": String(freq / 1000)
+        "lat": navaid.position.latitude.converted(to: .arcSeconds).value,
+        "lon": navaid.position.longitude.converted(to: .arcSeconds).value,
+        "freq": String(Int(freq.converted(to: .kilohertz).value))
       ])
     }
     jsonDict.sort(by: { ($0["id"] as! String) < ($1["id"] as! String) })
