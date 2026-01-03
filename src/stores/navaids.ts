@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import type { Loc, NDB } from '@/types'
 import { isEmpty, isUndefined, minBy, toString } from 'lodash-es'
 import { geoDistance, geoInitialBearing, secondsToDegrees } from '@/util/geo'
+import * as Sentry from '@sentry/vue'
 
 export const useNavaidsStore = defineStore('navaids', {
   state: () => ({
@@ -66,10 +67,20 @@ export const useNavaidsStore = defineStore('navaids', {
               location: [position.coords.latitude, position.coords.longitude],
               locationError: undefined
             })
+            Sentry.metrics.count('geolocation_result', 1, { attributes: { outcome: 'success' } })
             resolve()
           },
           (error) => {
             this.$patch({ location: undefined, locationError: error })
+            const errorType =
+              error.code === GeolocationPositionError.PERMISSION_DENIED
+                ? 'permission_denied'
+                : error.code === GeolocationPositionError.POSITION_UNAVAILABLE
+                  ? 'position_unavailable'
+                  : 'timeout'
+            Sentry.metrics.count('geolocation_result', 1, {
+              attributes: { outcome: 'error', error_type: errorType }
+            })
             reject(new Error(error.message))
           }
         )
