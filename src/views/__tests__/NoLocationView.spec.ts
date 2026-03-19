@@ -13,8 +13,8 @@ describe('NoLocationView', () => {
   beforeEach(() => {
     wrapper = mount(NoLocationView, {
       global: {
-        plugins: [createTestingPinia({ createSpy: vi.fn }), i18n]
-      }
+        plugins: [createTestingPinia({ createSpy: vi.fn }), i18n],
+      },
     })
     store = useNavaidsStore()
   })
@@ -38,8 +38,8 @@ describe('NoLocationView', () => {
           message: 'User denied Geolocation',
           PERMISSION_DENIED: 1,
           POSITION_UNAVAILABLE: 2,
-          TIMEOUT: 3
-        } as GeolocationPositionError
+          TIMEOUT: 3,
+        } as GeolocationPositionError,
       })
     })
 
@@ -65,8 +65,8 @@ describe('NoLocationView', () => {
           message: 'Position unavailable',
           PERMISSION_DENIED: 1,
           POSITION_UNAVAILABLE: 2,
-          TIMEOUT: 3
-        } as GeolocationPositionError
+          TIMEOUT: 3,
+        } as GeolocationPositionError,
       })
     })
 
@@ -92,8 +92,8 @@ describe('NoLocationView', () => {
           message: 'User denied Geolocation',
           PERMISSION_DENIED: 1,
           POSITION_UNAVAILABLE: 2,
-          TIMEOUT: 3
-        } as GeolocationPositionError
+          TIMEOUT: 3,
+        } as GeolocationPositionError,
       })
     })
 

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "perf": "error",
+    "pedantic": "error",
+    "restriction": "error",
+    "style": "error"
+  },
+  "rules": {
+    "no-console": "off",
+    "no-inline-comments": "off",
+    "max-lines-per-function": "off",
+    "max-lines": "off",
+    "max-statements": "off",
+
+    "no-void": "off",
+    "no-undefined": "off",
+    "no-plusplus": "off",
+    "no-implicit-coercion": "off",
+    "no-nested-ternary": "off",
+    "no-use-before-define": "off",
+    "no-useless-concat": "off",
+    "no-promise-executor-return": "off",
+    "id-length": "off",
+    "init-declarations": "off",
+    "capitalized-comments": "off",
+    "func-style": "off",
+    "prefer-destructuring": "off",
+
+    "curly": "off",
+    "sort-imports": "off",
+    "arrow-body-style": "off",
+
+    "no-magic-numbers": "off",
+    "sort-keys": "off",
+    "no-ternary": "off",
+
+    "oxc/no-optional-chaining": "off",
+    "oxc/no-async-await": "off",
+
+    "typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "prefer-exponentiation-operator": "off",
+
+    "unicorn/no-null": "off",
+    "unicorn/filename-case": "off",
+    "unicorn/numeric-separators-style": "off",
+    "unicorn/prefer-spread": "off",
+    "unicorn/switch-case-braces": "off",
+    "unicorn/no-nested-ternary": "off",
+    "unicorn/no-useless-undefined": "off",
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/no-anonymous-default-export": "off",
+    "unicorn/prefer-top-level-await": "off",
+    "unicorn/no-array-callback-reference": "off",
+    "unicorn/no-new-array": "off",
+    "unicorn/prefer-dom-node-text-content": "off",
+    "unicorn/prefer-query-selector": "off",
+    "unicorn/prefer-global-this": "off",
+    "unicorn/no-zero-fractions": "off",
+
+    "promise/no-return-in-finally": "off",
+    "promise/no-promise-in-callback": "off",
+    "promise/catch-or-return": "off",
+    "promise/always-return": "off",
+    "promise/avoid-new": "off",
+    "promise/no-callback-in-promise": "off",
+
+    "eslint-plugin-vitest/prefer-to-be-truthy": "off",
+    "eslint-plugin-vitest/prefer-to-be-falsy": "off"
+  }
+}

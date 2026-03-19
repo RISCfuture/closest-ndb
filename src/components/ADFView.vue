@@ -479,7 +479,7 @@ const props = defineProps<{ bearing?: number; distance?: number }>()
 const animationTimeout = ref<ReturnType<typeof setInterval> | undefined>(undefined)
 const pointerClass = computed(() => (isUndefined(props.bearing) ? 'spin' : ''))
 const pointerStyle = ref<Record<string, string>>({
-  transform: `rotate(${props.bearing ?? 0}deg)`
+  transform: `rotate(${props.bearing ?? 0}deg)`,
 })
 
 const inaccuracy = computed(() => {
@@ -492,7 +492,9 @@ const inaccuracy = computed(() => {
 })
 
 onMounted(() => {
-  animationTimeout.value = setInterval(() => animatePointer(), 500)
+  animationTimeout.value = setInterval(() => {
+    animatePointer()
+  }, 500)
 })
 
 onUnmounted(() => {

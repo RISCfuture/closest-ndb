@@ -8,7 +8,7 @@ const ca: NDB = {
   lat: 37.655 * 3600,
   lon: -122.36 * 3600,
   name: 'OAKLAND',
-  freq: '362'
+  freq: '362',
 }
 
 const ny: NDB = {
@@ -16,7 +16,7 @@ const ny: NDB = {
   lat: 40.77 * 3600,
   lon: -73.87 * 3600,
   name: 'NEW YORK',
-  freq: '385'
+  freq: '385',
 }
 
 const azLocation: Loc = [33.43, -112.01]

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "project": ["src/**/*.{ts,vue}"],
+  "entry": ["src/**/__tests__/*.spec.ts"],
+  "ignoreExportsUsedInFile": true,
+  "ignoreBinaries": [
+    "typedoc",
+    "playwright",
+    "vue-tsc",
+    "vite",
+    "vitest",
+    "prettier",
+    "eslint",
+    "oxlint",
+    "knip",
+    "stylelint",
+    "start-server-and-test"
+  ],
+  "ignoreDependencies": [
+    "@vue/compiler-core",
+    "@vue/compiler-dom",
+    "@vue/server-renderer",
+    "@vitest/browser",
+    "setimmediate",
+    "@types/setimmediate",
+    "stylelint-config-recommended-scss",
+    "motion",
+    "@flydotio/dockerfile",
+    "@opentelemetry/api",
+    "playwright",
+    "eslint",
+    "jiti",
+    "oxlint",
+    "postcss",
+    "sass",
+    "start-server-and-test",
+    "stylelint",
+    "stylelint-order",
+    "vue-eslint-parser",
+    "vue-tsc"
+  ],
+  "rules": {
+    "exports": "warn"
+  }
+}

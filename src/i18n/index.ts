@@ -8,7 +8,7 @@ const i18n = createI18n({
   locale: navigator.language,
   fallbackLocale: 'en',
   silentFallbackWarn: true,
-  legacy: false
+  legacy: false,
 })
 
 export default i18n

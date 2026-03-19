@@ -32,7 +32,7 @@ const retryCount = ref(0)
 
 const locationError = computed(() => navaidsStore.locationError)
 const isPermissionDenied = computed(
-  () => locationError.value?.code === GeolocationPositionError.PERMISSION_DENIED
+  () => locationError.value?.code === GeolocationPositionError.PERMISSION_DENIED,
 )
 
 const retryLocation = async () => {
@@ -65,39 +65,39 @@ const retryLocation = async () => {
 }
 
 p {
+  margin-bottom: 1rem;
   font-size: constants.$small-size;
   text-align: center;
   opacity: 0.35;
-  margin-bottom: 1rem;
 }
 
 .retry-button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 500;
-  background-color: constants.$ndb-color;
   color: white;
+  cursor: pointer;
+  background-color: constants.$ndb-color;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
   transition: all 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:disabled {
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.5;
+  }
 
   &:hover:not(:disabled) {
     background-color: color.adjust(constants.$ndb-color, $lightness: -10%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
     transform: translateY(-1px);
   }
 
   &:active:not(:disabled) {
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
     transform: translateY(0);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  }
-
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    box-shadow: none;
   }
 }
 </style>

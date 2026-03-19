@@ -1,12 +1,13 @@
 {
   "short_name": "Closest NDB",
   "name": "Closest NDB",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "512x512",
-    "purpose": "any maskable"
-  }
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
   ],
   "start_url": "/",
   "background_color": "#ffffff",

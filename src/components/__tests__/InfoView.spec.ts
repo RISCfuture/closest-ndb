@@ -13,12 +13,12 @@ describe('InfoView', () => {
           name: 'TOPGUN',
           lat: 118353,
           lon: -421695,
-          freq: '661'
-        }
+          freq: '661',
+        },
       },
       global: {
-        plugins: [i18n]
-      }
+        plugins: [i18n],
+      },
     })
 
     expect(page.getByTestId('ndb-name').element().textContent).toBe('TOPGUN')

@@ -43,7 +43,7 @@ const latLonText = computed(() => {
     lonDeg: lonDegText,
     lonSign,
     latMin: latMinText,
-    lonMin: lonMinText
+    lonMin: lonMinText,
   })
 })
 </script>

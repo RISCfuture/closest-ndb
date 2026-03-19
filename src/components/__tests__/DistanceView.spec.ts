@@ -9,7 +9,7 @@ describe('DistanceView', () => {
     it('renders the distance', () => {
       render(DistanceView, {
         props: { distance: 10 },
-        global: { plugins: [i18n] }
+        global: { plugins: [i18n] },
       })
       expect(page.getByTestId('ndb-distance').element().textContent).toBe('10 NM')
     })
@@ -18,7 +18,7 @@ describe('DistanceView', () => {
   describe('with unknown distance', () => {
     it('renders “???”', () => {
       render(DistanceView, {
-        global: { plugins: [i18n] }
+        global: { plugins: [i18n] },
       })
       expect(page.getByTestId('ndb-distance').element().textContent).toBe('???')
     })
@@ -27,16 +27,16 @@ describe('DistanceView', () => {
   describe('without location permission', () => {
     const error = {
       code: GeolocationPositionError.PERMISSION_DENIED,
-      message: 'Location permission denied'
+      message: 'Location permission denied',
     } as GeolocationPositionError
 
     it('renders a “location not given” message', () => {
       render(DistanceView, {
         props: { error },
-        global: { plugins: [i18n] }
+        global: { plugins: [i18n] },
       })
       expect(page.getByTestId('ndb-distance').element().textContent).toBe(
-        'Location permission denied :('
+        'Location permission denied :(',
       )
     })
   })
@@ -44,13 +44,13 @@ describe('DistanceView', () => {
   describe('with unknown location', () => {
     const error = {
       code: GeolocationPositionError.POSITION_UNAVAILABLE,
-      message: 'Position unavailable'
+      message: 'Position unavailable',
     } as GeolocationPositionError
 
     it('renders “???”', () => {
       render(DistanceView, {
         props: { error },
-        global: { plugins: [i18n] }
+        global: { plugins: [i18n] },
       })
       expect(page.getByTestId('ndb-distance').element().textContent).toBe('???')
     })
@@ -59,13 +59,13 @@ describe('DistanceView', () => {
   describe('with other error', () => {
     const error = {
       code: -1,
-      message: 'Other error'
+      message: 'Other error',
     } as GeolocationPositionError
 
     it('renders the error', () => {
       render(DistanceView, {
         props: { error },
-        global: { plugins: [i18n] }
+        global: { plugins: [i18n] },
       })
       expect(page.getByTestId('ndb-distance').element().textContent).toBe('Other error')
     })

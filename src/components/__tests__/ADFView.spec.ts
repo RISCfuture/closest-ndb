@@ -8,8 +8,8 @@ describe('ADFView', () => {
     it.skip('sets the pointer rotation', () => {
       render(ADFView, {
         props: {
-          bearing: 90
-        }
+          bearing: 90,
+        },
       })
       const pointer = page.getByTestId('pointer').element() as SVGPathElement
       expect(pointer.style.rotate).toEqual('90deg')

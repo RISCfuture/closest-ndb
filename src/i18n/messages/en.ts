@@ -10,7 +10,7 @@ const en: LocaleMessage = {
     '{github}.',
   geolocationError: {
     positionUnknown: '???',
-    permissionDenied: 'Location permission denied :('
+    permissionDenied: 'Location permission denied :(',
   },
   noLocation: {
     header: 'Simply allow this web page to know your location, and you’ll have ' + 'your answer.',
@@ -25,12 +25,12 @@ const en: LocaleMessage = {
     errorHeader: 'Unable to get your location',
     retryButton: 'Try Again',
     retrying: 'Retrying…',
-    stillNotWorking: 'Still Not Working? Did You Change Your Browser Settings?'
+    stillNotWorking: 'Still Not Working? Did You Change Your Browser Settings?',
   },
   title: {
     header: 'Where’s the closest NDB to me right now?',
-    body: 'Don’t worry, we can help.'
-  }
+    body: 'Don’t worry, we can help.',
+  },
 }
 
 export default en

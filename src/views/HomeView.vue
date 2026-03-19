@@ -14,7 +14,7 @@ const navaidsStore = useNavaidsStore()
 const showNoLocation = computed(() => navaidsStore.locationUnknown || !!navaidsStore.locationError)
 
 onMounted(() => {
-  navaidsStore.loadNDBs()
+  void navaidsStore.loadNDBs()
   navaidsStore.setLocation().catch(() => {
     // Error is already handled in the store by setting locationError
     // No need to propagate it further

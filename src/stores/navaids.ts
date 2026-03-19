@@ -9,7 +9,7 @@ export const useNavaidsStore = defineStore('navaids', {
     NDBs: [] as NDB[],
     loadError: undefined as Error | undefined,
     location: undefined as Loc | undefined,
-    locationError: undefined as GeolocationPositionError | undefined
+    locationError: undefined as GeolocationPositionError | undefined,
   }),
 
   getters: {
@@ -39,7 +39,7 @@ export const useNavaidsStore = defineStore('navaids', {
 
     locationUnknown: (state) => isUndefined(state.location) && isUndefined(state.locationError),
 
-    loading: (state) => isEmpty(state.NDBs) && isUndefined(state.loadError)
+    loading: (state) => isEmpty(state.NDBs) && isUndefined(state.loadError),
   },
 
   actions: {
@@ -51,10 +51,13 @@ export const useNavaidsStore = defineStore('navaids', {
         if (response.status !== 200)
           throw new Error(`Unexpected status code ${response.status} ${response.statusText}`)
 
-        this.$patch({ NDBs: await response.json(), loadError: undefined })
+        this.$patch({ NDBs: (await response.json()) as NDB[], loadError: undefined })
       } catch (error: unknown) {
-        if (error instanceof Error) this.$patch({ NDBs: [], loadError: error })
-        else this.$patch({ NDBs: [], loadError: new Error(toString(error)) })
+        const loadError = error instanceof Error ? error : new Error(toString(error))
+        this.$patch((state) => {
+          state.NDBs = []
+          state.loadError = loadError
+        })
       }
     },
 
@@ -65,7 +68,7 @@ export const useNavaidsStore = defineStore('navaids', {
           (position) => {
             this.$patch({
               location: [position.coords.latitude, position.coords.longitude],
-              locationError: undefined
+              locationError: undefined,
             })
             Sentry.metrics.count('geolocation_result', 1, { attributes: { outcome: 'success' } })
             resolve()
@@ -79,12 +82,12 @@ export const useNavaidsStore = defineStore('navaids', {
                   ? 'position_unavailable'
                   : 'timeout'
             Sentry.metrics.count('geolocation_result', 1, {
-              attributes: { outcome: 'error', error_type: errorType }
+              attributes: { outcome: 'error', error_type: errorType },
             })
             reject(new Error(error.message))
-          }
+          },
         )
       })
-    }
-  }
+    },
+  },
 })
