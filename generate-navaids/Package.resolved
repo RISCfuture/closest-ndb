@@ -1,5 +1,5 @@
 {
-  "originHash" : "b8a4b1ab4343486a735d5572f51317e46d0c7c0ca1a18701bc12c867e3277d81",
+  "originHash" : "03a65dde9c8b6714b89a503f2d97231446686730a2d4b6355800a4768c2e312b",
   "pins" : [
     {
       "identity" : "streamingcsv",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser.git",
       "state" : {
-        "revision" : "c5d11a805e765f52ba34ec7284bd4fcd6ba68615",
-        "version" : "1.7.0"
+        "revision" : "626b5b7b2f45e1b0b1c6f4a309296d1d21d7311b",
+        "version" : "1.7.1"
       }
     },
     {
@@ -43,7 +43,7 @@
       "location" : "https://github.com/RISCfuture/SwiftNASR.git",
       "state" : {
         "branch" : "master",
-        "revision" : "f2e6c5ccd38a85572d55a570a7739484634de224"
+        "revision" : "a48403aebe34e59bb1d462ea21d4b61fb0268a8d"
       }
     },
     {
