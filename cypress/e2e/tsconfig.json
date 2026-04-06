@@ -8,5 +8,5 @@
     "types": ["cypress", "@testing-library/cypress"],
     "skipLibCheck": true
   },
-  "include": ["./**/*", "../support/**/*"]
+  "include": ["./**/*", "../support/**/*", "../pages/**/*"]
 }

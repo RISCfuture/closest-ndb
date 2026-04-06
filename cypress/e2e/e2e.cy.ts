@@ -1,121 +1,131 @@
-// https://on.cypress.io/api
-
 import type { SinonStub } from 'cypress/types/sinon'
+import { NdbResultPage } from '../pages/NdbResultPage'
+import { NoLocationPage } from '../pages/NoLocationPage'
 
 describe('Website', () => {
-  let stub: SinonStub<unknown[], unknown> | undefined = undefined
+  let stub: SinonStub | undefined
+
   afterEach(() => stub?.restore())
 
-  it('shows the closest NDB', () => {
-    cy.visit('/', {
-      onBeforeLoad({ navigator }) {
-        stub = cy
-          .stub(navigator.geolocation, 'getCurrentPosition')
-          .callsArgWith(0, { coords: { latitude: 36.0, longitude: -121.0 } })
-      },
+  describe('when geolocation succeeds', () => {
+    const ndbResult = new NdbResultPage()
+
+    beforeEach(() => {
+      cy.visitWithGeolocationSuccess(36.0, -121.0).then((s) => {
+        stub = s
+      })
     })
-    cy.findByRole('heading').contains('Where’s the closest NDB to me right now?')
-    cy.findByTestId('ndb-distance').contains('9 NM')
-    cy.findByTestId('ndb-name').contains('HUNTER LIGGETT')
+
+    it('shows the closest NDB', () => {
+      ndbResult.heading().should('contain.text', '\u2019s the closest NDB to me right now?')
+      ndbResult.distance().should('contain.text', '9 NM')
+      ndbResult.name().should('contain.text', 'HUNTER LIGGETT')
+    })
   })
 
-  it('displays a message if the user does not turn on location', () => {
-    cy.visit('/', {
-      onBeforeLoad({ navigator }) {
-        stub = cy.stub(navigator.geolocation, 'getCurrentPosition').callsArgWith(1, {
-          code: GeolocationPositionError.PERMISSION_DENIED,
-          message: 'User denied Geolocation',
-        })
-      },
+  describe('when geolocation permission is denied', () => {
+    const noLocation = new NoLocationPage()
+
+    beforeEach(() => {
+      cy.visitWithGeolocationError(
+        GeolocationPositionError.PERMISSION_DENIED,
+        'User denied Geolocation',
+      ).then((s) => {
+        stub = s
+      })
     })
-    cy.findByText('Location permission was denied').should('exist')
-    cy.findByRole('button', { name: 'Try Again' }).should('exist')
 
-    // Test retry functionality
-    cy.findByRole('button', { name: 'Try Again' }).click()
+    it('displays a permission denied message', () => {
+      cy.findByText('Location permission was denied').should('exist')
+      noLocation.retryButton().should('exist')
+    })
 
-    // After retry fails, button text should change
-    cy.findByRole('button', {
-      name: 'Still Not Working? Did You Change Your Browser Settings?',
-    }).should('exist')
+    it('changes retry button text after failed retry', () => {
+      noLocation.clickRetry()
+      noLocation.stillNotWorkingButton().should('exist')
+    })
 
-    // Test another retry - button text should stay the same
-    cy.findByRole('button', {
-      name: 'Still Not Working? Did You Change Your Browser Settings?',
-    }).click()
-    cy.findByRole('button', {
-      name: 'Still Not Working? Did You Change Your Browser Settings?',
-    }).should('exist')
+    it('keeps the still-not-working button text on subsequent retries', () => {
+      noLocation.clickRetry()
+      noLocation.clickStillNotWorking()
+      noLocation.stillNotWorkingButton().should('exist')
+    })
   })
 
-  it('displays a message if the location is unknown', () => {
-    cy.visit('/', {
-      onBeforeLoad({ navigator }) {
-        stub = cy.stub(navigator.geolocation, 'getCurrentPosition').callsArgWith(1, {
-          code: GeolocationPositionError.POSITION_UNAVAILABLE,
-          message: 'Position unavailable',
-        })
-      },
-    })
-    cy.findByText('Unable to get your location').should('exist')
-    cy.findByText('Position unavailable').should('exist')
-    cy.findByRole('button', { name: 'Try Again' }).should('exist')
+  describe('when position is unavailable', () => {
+    const noLocation = new NoLocationPage()
 
-    // Test retry functionality
-    cy.findByRole('button', { name: 'Try Again' }).click()
-    cy.findByRole('button', {
-      name: 'Still Not Working? Did You Change Your Browser Settings?',
-    }).should('exist')
+    beforeEach(() => {
+      cy.visitWithGeolocationError(
+        GeolocationPositionError.POSITION_UNAVAILABLE,
+        'Position unavailable',
+      ).then((s) => {
+        stub = s
+      })
+    })
+
+    it('displays an error message with details', () => {
+      cy.findByText('Unable to get your location').should('exist')
+      cy.findByText('Position unavailable').should('exist')
+      noLocation.retryButton().should('exist')
+    })
+
+    it('changes retry button text after failed retry', () => {
+      noLocation.clickRetry()
+      noLocation.stillNotWorkingButton().should('exist')
+    })
   })
 
-  it('successfully retries after initial failure', () => {
-    let callCount = 0
-    cy.visit('/', {
-      onBeforeLoad({ navigator }) {
-        stub = cy.stub(navigator.geolocation, 'getCurrentPosition').callsFake((success, error) => {
-          callCount++
-          if (callCount === 1) {
-            // First call fails
-            error({
-              code: GeolocationPositionError.POSITION_UNAVAILABLE,
-              message: 'Position unavailable',
-            })
-          } else {
-            // Subsequent calls succeed
-            success({ coords: { latitude: 36.0, longitude: -121.0 } })
-          }
-        })
-      },
+  describe('when geolocation fails then succeeds on retry', () => {
+    const noLocation = new NoLocationPage()
+    const ndbResult = new NdbResultPage()
+
+    beforeEach(() => {
+      let callCount = 0
+      cy.visitWithGeolocationFake((success, error) => {
+        callCount++
+        if (callCount === 1) {
+          error({
+            code: GeolocationPositionError.POSITION_UNAVAILABLE,
+            message: 'Position unavailable',
+          } as GeolocationPositionError)
+        } else {
+          success({ coords: { latitude: 36.0, longitude: -121.0 } } as GeolocationPosition)
+        }
+      }).then((s) => {
+        stub = s
+      })
     })
 
-    // Initially shows error
-    cy.findByText('Unable to get your location').should('exist')
-    cy.findByRole('button', { name: 'Try Again' }).should('exist')
+    it('recovers and shows NDB info after retry', () => {
+      cy.findByText('Unable to get your location').should('exist')
+      noLocation.retryButton().should('exist')
 
-    // Click retry and it succeeds
-    cy.findByRole('button', { name: 'Try Again' }).click()
+      noLocation.clickRetry()
 
-    // Should now show the NDB info
-    cy.findByTestId('ndb-distance').should('exist')
-    cy.findByTestId('ndb-name').should('exist')
+      ndbResult.distance().should('exist')
+      ndbResult.name().should('exist')
+    })
   })
 
-  it('displays other errors', () => {
-    cy.visit('/', {
-      onBeforeLoad({ navigator }) {
-        stub = cy
-          .stub(navigator.geolocation, 'getCurrentPosition')
-          .callsArgWith(1, { code: -1, message: 'Timeout' })
-      },
-    })
-    cy.findByText('Unable to get your location').should('exist')
-    cy.findByText('Timeout').should('exist')
-    cy.findByRole('button', { name: 'Try Again' }).should('exist')
+  describe('when geolocation fails with other errors', () => {
+    const noLocation = new NoLocationPage()
 
-    // Test retry functionality
-    cy.findByRole('button', { name: 'Try Again' }).click()
-    cy.findByRole('button', {
-      name: 'Still Not Working? Did You Change Your Browser Settings?',
-    }).should('exist')
+    beforeEach(() => {
+      cy.visitWithGeolocationError(-1, 'Timeout').then((s) => {
+        stub = s
+      })
+    })
+
+    it('displays a generic error message', () => {
+      cy.findByText('Unable to get your location').should('exist')
+      cy.findByText('Timeout').should('exist')
+      noLocation.retryButton().should('exist')
+    })
+
+    it('changes retry button text after failed retry', () => {
+      noLocation.clickRetry()
+      noLocation.stillNotWorkingButton().should('exist')
+    })
   })
 })
