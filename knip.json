@@ -13,8 +13,7 @@
     "eslint",
     "oxlint",
     "knip",
-    "stylelint",
-    "start-server-and-test"
+    "stylelint"
   ],
   "ignoreDependencies": [
     "@vue/compiler-core",
@@ -33,7 +32,6 @@
     "oxlint",
     "postcss",
     "sass",
-    "start-server-and-test",
     "stylelint",
     "stylelint-order",
     "vue-eslint-parser",

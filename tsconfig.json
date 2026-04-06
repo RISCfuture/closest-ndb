@@ -13,5 +13,5 @@
     "paths": { "@/*": ["./src/*"] }
   },
   "include": ["src/**/*.ts", "src/**/*.vue", "env.d.ts"],
-  "exclude": ["node_modules", "dist", "cypress"]
+  "exclude": ["node_modules", "dist", "e2e"]
 }

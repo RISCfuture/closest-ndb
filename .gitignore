@@ -14,8 +14,9 @@ dist-ssr
 coverage
 *.local
 
-/cypress/videos/
-/cypress/screenshots/
+/test-results/
+/playwright-report/
+/blob-report/
 
 __screenshots__/*
 __screenshots__

@@ -11,7 +11,7 @@ export default tseslint.config(
       '.yarn',
       '.pnp.cjs',
       '.pnp.loader.mjs',
-      'cypress',
+      'e2e',
       '*.config.mjs',
     ],
   },
