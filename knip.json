@@ -15,7 +15,9 @@
     "knip",
     "stylelint"
   ],
+  "vite": false,
   "ignoreDependencies": [
+    "vite-plugin-csp-guard",
     "@vue/compiler-core",
     "@vue/compiler-dom",
     "@vue/server-renderer",
