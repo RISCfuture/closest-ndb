@@ -12,7 +12,6 @@
       v-if="locationError"
       class="retry-button"
       :disabled="isRetrying"
-      :aria-label="t('noLocation.retryButton')"
       :aria-busy="isRetrying"
       @click="retryLocation"
     >
