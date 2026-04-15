@@ -3,3 +3,5 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
+
+Sitemap: https://tim.codes/closest-ndb/sitemap.xml

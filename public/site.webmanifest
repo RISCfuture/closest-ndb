@@ -1,15 +1,31 @@
 {
   "short_name": "Closest NDB",
   "name": "Closest NDB",
+  "description": "Find the closest aviation Non-Directional Beacon (NDB) to your current location.",
   "icons": [
     {
       "src": "icon.png",
       "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
       "sizes": "512x512",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
-  "start_url": "/",
+  "start_url": "/closest-ndb/",
+  "scope": "/closest-ndb/",
+  "display": "standalone",
+  "categories": ["navigation", "travel", "utilities"],
   "background_color": "#ffffff",
   "theme_color": "#7d5732"
 }

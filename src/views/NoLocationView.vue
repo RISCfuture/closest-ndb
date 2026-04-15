@@ -8,7 +8,14 @@
     <p v-else-if="isPermissionDenied">{{ t('noLocation.permissionDeniedBody') }}</p>
     <p v-else>{{ locationError.message }}</p>
 
-    <button v-if="locationError" class="retry-button" :disabled="isRetrying" @click="retryLocation">
+    <button
+      v-if="locationError"
+      class="retry-button"
+      :disabled="isRetrying"
+      :aria-label="t('noLocation.retryButton')"
+      :aria-busy="isRetrying"
+      @click="retryLocation"
+    >
       {{
         isRetrying
           ? t('noLocation.retrying')

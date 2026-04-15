@@ -3,7 +3,10 @@
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 100 98"
+    role="img"
+    :aria-label="ariaLabel"
   >
+    <title>{{ ariaLabel }}</title>
     <defs>
       <linearGradient id="a" x1="59.058%" x2="45.942%" y1="-41.184%" y2="90.866%">
         <stop offset="0%" stop-color="#FFF" />
@@ -478,6 +481,11 @@ const props = defineProps<{ bearing?: number; distance?: number }>()
 
 const animationTimeout = ref<ReturnType<typeof setInterval> | undefined>(undefined)
 const pointerClass = computed(() => (isUndefined(props.bearing) ? 'spin' : ''))
+const ariaLabel = computed(() =>
+  isUndefined(props.bearing)
+    ? 'Automatic Direction Finder, searching for nearest NDB'
+    : `Automatic Direction Finder pointing to bearing ${Math.round(props.bearing)} degrees`,
+)
 const pointerStyle = ref<Record<string, string>>({
   transform: `rotate(${props.bearing ?? 0}deg)`,
 })

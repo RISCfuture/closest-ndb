@@ -1,7 +1,10 @@
 <template>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="container full-height">
     <title-view />
-    <home-view />
+    <main id="main-content">
+      <home-view />
+    </main>
     <footer-view />
   </div>
 </template>
@@ -14,6 +17,31 @@ import FooterView from '@/views/FooterView.vue'
 
 <style lang="scss">
 @use '@/assets/styles/constants';
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  z-index: 1000;
+  padding: 0.75em 1em;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  background-color: constants.$ndb-color;
+  border: 2px solid #fff;
+  border-radius: 0 0 6px;
+
+  &:focus,
+  &:focus-visible {
+    top: 0;
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+  }
+}
+
+#main-content {
+  display: contents;
+}
 
 .container {
   display: grid;
