@@ -27,6 +27,7 @@
   "dependencies": {
     "@intlify/core-base": "^11.3.0",
     "@sentry/vue": "^10.45.0",
+    "@vueuse/core": "^14.3.0",
     "lodash-es": "^4.17.23",
     "motion": "^12.38.0",
     "normalize.css": "^8.0.1",

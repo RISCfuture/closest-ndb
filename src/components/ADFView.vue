@@ -474,12 +474,12 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, ref } from 'vue'
+import { useIntervalFn } from '@vueuse/core'
 import { isUndefined } from 'lodash-es'
 
 const props = defineProps<{ bearing?: number; distance?: number }>()
 
-const animationTimeout = ref<ReturnType<typeof setInterval> | undefined>(undefined)
 const pointerClass = computed(() => (isUndefined(props.bearing) ? 'spin' : ''))
 const ariaLabel = computed(() =>
   isUndefined(props.bearing)
@@ -499,18 +499,7 @@ const inaccuracy = computed(() => {
   return calcInaccuracy
 })
 
-onMounted(() => {
-  animationTimeout.value = setInterval(() => {
-    animatePointer()
-  }, 500)
-})
-
-onUnmounted(() => {
-  if (!isUndefined(animationTimeout.value)) {
-    clearInterval(animationTimeout.value)
-    animationTimeout.value = undefined
-  }
-})
+useIntervalFn(animatePointer, 500)
 
 function animatePointer() {
   if (isUndefined(props.bearing)) {
