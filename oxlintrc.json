@@ -40,10 +40,8 @@
     "oxc/no-optional-chaining": "off",
     "oxc/no-async-await": "off",
 
-    "typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "typescript/explicit-function-return-type": "off",
+    "typescript/explicit-module-boundary-types": "off",
     "prefer-exponentiation-operator": "off",
 
     "unicorn/no-null": "off",
