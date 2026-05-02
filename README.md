@@ -1,5 +1,9 @@
 # Closest NDB
 
+[![CI](https://github.com/RISCfuture/closest-ndb/actions/workflows/ci.yml/badge.svg)](https://github.com/RISCfuture/closest-ndb/actions/workflows/ci.yml)
+[![Deploy](https://github.com/RISCfuture/closest-ndb/actions/workflows/deploy.yml/badge.svg)](https://github.com/RISCfuture/closest-ndb/actions/workflows/deploy.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 This website displays a simulated ADF instrument that tells you where the
 closest NDB to you is. NDB data is downloaded and parsed by hand from the FAA
 National Flight Data Center (NFDC) Facility Aeronautical Data Distribution
