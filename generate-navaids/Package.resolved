@@ -1,5 +1,5 @@
 {
-  "originHash" : "3f66ef721476034bf938ce1b30ae5aedfa95c9154c8bf57f42bdf8c5bad8d8b4",
+  "originHash" : "255e13ecb516073f6047a8e41b8a53a5cd3c69a5ae3025ccc95311eecd38ac71",
   "pins" : [
     {
       "identity" : "streamingcsv",
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/stackotter/swift-macro-toolkit",
       "state" : {
-        "revision" : "569627091e1fbb8745d691aeeb008e7247dedb7c",
-        "version" : "0.6.1"
+        "revision" : "d6ed555bb83c9f21a292e9769952e8f52610a6e2",
+        "version" : "0.9.0"
       }
     },
     {
@@ -42,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RISCfuture/SwiftNASR.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "080d1c817d17471bfcd5a8847c58adae8a284481"
+        "revision" : "1830f51bfbbd789bcdbf57f4f9decb9726123e87",
+        "version" : "2.0.0"
       }
     },
     {
