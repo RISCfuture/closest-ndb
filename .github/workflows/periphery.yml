@@ -1,0 +1,15 @@
+name: Periphery
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  periphery:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Periphery
+        run: brew install peripheryapp/periphery/periphery
+      - name: Run Periphery
+        working-directory: generate-navaids
+        run: periphery scan
