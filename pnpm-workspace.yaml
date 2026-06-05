@@ -1,0 +1,6 @@
+allowBuilds:
+  '@parcel/watcher': true
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+patchedDependencies:
+  vite-plugin-csp-guard@4.0.1: patches/vite-plugin-csp-guard.patch
