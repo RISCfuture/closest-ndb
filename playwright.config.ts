@@ -38,7 +38,7 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: process.env.CI ? 'yarn preview --port 4173' : 'yarn preview --port 4173',
+    command: process.env.CI ? 'pnpm preview --port 4173' : 'pnpm preview --port 4173',
     port: 4173,
     reuseExistingServer: !process.env.CI,
   },
