@@ -7,7 +7,7 @@ type GeoFixtures = {
   noLocationPage: NoLocationPage
   geoSuccess: (latitude: number, longitude: number) => Promise<void>
   geoError: (code: number, message: string) => Promise<void>
-  geoFake: (script: string) => Promise<void>
+  geoFailThenSucceed: (coords: { latitude: number; longitude: number }) => Promise<void>
 }
 
 export const test = base.extend<GeoFixtures>({
@@ -50,9 +50,28 @@ export const test = base.extend<GeoFixtures>({
     })
   },
 
-  geoFake: async ({ page }, use) => {
-    await use(async (script: string) => {
-      await page.addInitScript(script)
+  geoFailThenSucceed: async ({ page }, use) => {
+    await use(async (coords: { latitude: number; longitude: number }) => {
+      await page.addInitScript((coords) => {
+        let callCount = 0
+        navigator.geolocation.getCurrentPosition = (
+          success: PositionCallback,
+          error?: PositionErrorCallback | null,
+        ) => {
+          callCount++
+          if (callCount === 1) {
+            error?.({
+              code: 2,
+              message: 'Position unavailable',
+              PERMISSION_DENIED: 1,
+              POSITION_UNAVAILABLE: 2,
+              TIMEOUT: 3,
+            } as GeolocationPositionError)
+          } else {
+            success({ coords } as GeolocationPosition)
+          }
+        }
+      }, coords)
       await page.goto('/')
     })
   },
