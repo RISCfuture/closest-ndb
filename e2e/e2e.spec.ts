@@ -54,28 +54,12 @@ test.describe('Website', () => {
 
   test.describe('when geolocation fails then succeeds on retry', () => {
     test('recovers and shows NDB info after retry', async ({
-      geoFake,
+      geoFailThenSucceed,
       noLocationPage,
       ndbResultPage,
       page,
     }) => {
-      await geoFake(`
-        let callCount = 0;
-        navigator.geolocation.getCurrentPosition = (success, error) => {
-          callCount++;
-          if (callCount === 1) {
-            error({
-              code: 2,
-              message: 'Position unavailable',
-              PERMISSION_DENIED: 1,
-              POSITION_UNAVAILABLE: 2,
-              TIMEOUT: 3,
-            });
-          } else {
-            success({ coords: { latitude: 36.0, longitude: -121.0 } });
-          }
-        };
-      `)
+      await geoFailThenSucceed({ latitude: 36.0, longitude: -121.0 })
 
       await expect(page.getByText('Unable to get your location')).toBeVisible()
       await expect(noLocationPage.retryButton).toBeVisible()

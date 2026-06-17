@@ -17,16 +17,4 @@ export class NdbResultPage extends BasePage {
   get name(): Locator {
     return this.page.getByTestId('ndb-name')
   }
-
-  get frequency(): Locator {
-    return this.page.getByTestId('ndb-freq')
-  }
-
-  get identifier(): Locator {
-    return this.page.getByTestId('ndb-id')
-  }
-
-  get coordinates(): Locator {
-    return this.page.getByTestId('ndb-coords')
-  }
 }
