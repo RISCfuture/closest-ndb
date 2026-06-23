@@ -36,6 +36,8 @@ Sentry.init({
   ],
   tracesSampleRate: 1.0,
   enableLogs: true,
+  // Transient browser/network noise when fetching the auto-injected service worker script.
+  ignoreErrors: [/Failed to register a ServiceWorker/u],
   replaysSessionSampleRate: 0.1,
   replaysOnErrorSampleRate: 1.0,
 })
