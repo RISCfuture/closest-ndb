@@ -3,6 +3,11 @@
 
 import PackageDescription
 
+let approachableConcurrency: [SwiftSetting] = [
+  .enableUpcomingFeature("NonisolatedNonsendingByDefault"),
+  .enableUpcomingFeature("InferIsolatedConformances")
+]
+
 let package = Package(
   name: "generate-navaids",
   platforms: [.macOS(.v13)],
@@ -15,11 +20,13 @@ let package = Package(
     // Targets can depend on other targets in this package, and on products in packages this package depends on.
     .executableTarget(
       name: "generate-navaids",
-      dependencies: ["SwiftNASR"]
+      dependencies: ["SwiftNASR"],
+      swiftSettings: approachableConcurrency
     ),
     .testTarget(
       name: "generate-navaidsTests",
-      dependencies: ["generate-navaids"]
+      dependencies: ["generate-navaids"],
+      swiftSettings: approachableConcurrency
     )
   ],
   swiftLanguageModes: [.v6]
