@@ -10,6 +10,7 @@ node_modules/
 dist/
 dist-ssr
 .env*
+!.env.example
 *.local
 coverage/
 
@@ -23,3 +24,4 @@ coverage/
 
 __screenshots__/*
 __screenshots__
+.claude/settings.local.json
