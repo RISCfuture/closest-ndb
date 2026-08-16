@@ -10,6 +10,9 @@ import { createSentryPiniaPlugin } from '@sentry/vue'
 
 import App from './App.vue'
 import i18n from '@/i18n'
+import { recoverFromPreloadErrors } from '@/utils/preloadRecovery'
+
+recoverFromPreloadErrors()
 
 const parser = new UAParser(navigator.userAgent)
 if (parser.getBrowser().name === 'Chrome') {
@@ -24,6 +27,8 @@ const sentryDSN = import.meta.env.VITE_SENTRY_DSN
 Sentry.init({
   app,
   dsn: sentryDSN,
+  release: import.meta.env.VITE_SENTRY_RELEASE || undefined,
+  environment: import.meta.env.PROD ? 'production' : 'development',
   sendDefaultPii: true,
   integrations: [
     Sentry.browserTracingIntegration(),
@@ -32,7 +37,7 @@ Sentry.init({
         trackComponents: true,
       },
     }),
-    Sentry.replayIntegration(),
+    Sentry.replayIntegration({ maskAllText: true, blockAllMedia: true }),
   ],
   tracesSampleRate: 1.0,
   enableLogs: true,
@@ -49,3 +54,27 @@ app.use(pinia)
 app.use(i18n)
 
 app.mount('#app')
+
+/**
+ * Installs the Workbox service worker that backs offline use.
+ *
+ * A failed registration costs offline caching and nothing else, so the
+ * rejection is logged rather than left to surface as an unhandled error.
+ */
+function registerServiceWorker(): void {
+  if (!('serviceWorker' in navigator)) return
+
+  window.addEventListener('load', () => {
+    const swURL = `${import.meta.env.BASE_URL}sw.js`
+    navigator.serviceWorker
+      .register(swURL, { scope: import.meta.env.BASE_URL })
+      .catch((error: unknown) => {
+        Sentry.logger.warn('Service worker registration failed', {
+          reason: error instanceof Error ? error.message : String(error),
+        })
+      })
+  })
+}
+
+// Only a production build emits `sw.js`.
+if (import.meta.env.PROD) registerServiceWorker()

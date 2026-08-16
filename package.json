@@ -8,8 +8,6 @@
   },
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
-    "ci:build": "vue-tsc --noEmit && vite build",
-    "ci:unit": "vitest --run",
     "dev": "vite",
     "doc": "npx typedoc --out docs src",
     "format": "prettier --write .",

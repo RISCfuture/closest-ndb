@@ -4,4 +4,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://tim.codes/closest-ndb/sitemap.xml
+Sitemap: https://riscfuture.github.io/closest-ndb/sitemap.xml

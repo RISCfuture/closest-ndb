@@ -16,19 +16,23 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
+# Allow one concurrent deployment, and never cancel one in flight
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: deploy
+  cancel-in-progress: false
 
 jobs:
-  # Build job
-  build:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+  deploy:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
       - name: Setup pages
         uses: actions/configure-pages@v6
       - name: Set up pnpm
@@ -41,37 +45,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Build
-        run: pnpm build
+        run: pnpm run build
         env:
           VITE_SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
-      - name: Upload
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: 'dist/'
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-      - name: Download artifact
-        uses: actions/download-artifact@v8
-        with:
-          name: github-pages
-      - name: Extract artifact
-        run: |
-          mkdir -p dist
-          tar -xvf artifact.tar -C dist
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+          VITE_SENTRY_RELEASE: ${{ github.sha }}
+      # Sourcemaps must reach Sentry BEFORE they are deleted. Do not reorder.
       - name: Create Sentry release
         uses: getsentry/action-release@v3
         env:
@@ -82,3 +60,13 @@ jobs:
           environment: production
           release: ${{ github.sha }}
           sourcemaps: './dist'
+      # Sourcemaps must not reach the public. Do not reorder.
+      - name: Strip source maps from the published artifact
+        run: find dist -name '*.map' -delete
+      - name: Upload
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: 'dist/'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
