@@ -11,6 +11,7 @@
     "dev": "vite",
     "doc": "npx typedoc --out docs src",
     "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "pnpm run lint:eslint && pnpm run lint:oxlint && pnpm run lint:stylelint && pnpm run lint:knip",
     "lint:eslint": "eslint .",
     "lint:oxlint": "oxlint -c oxlintrc.json src",
