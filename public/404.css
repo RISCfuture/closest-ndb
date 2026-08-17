@@ -5,8 +5,8 @@
    humanist sans. */
 
 :root {
-  --background: #ffffff;
-  --text-color: #000000;
+  --background: #fff;
+  --text-color: #000;
   --muted-color: #7d5732;
   --button-background-color: #e8dccf;
   --button-background-hover-color: #d9c7b3;
@@ -15,8 +15,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --text-color: #ffffff;
+    --background: #000;
+    --text-color: #fff;
     --muted-color: #c9a87c;
     --button-background-color: #3a2a19;
     --button-background-hover-color: #4f3a23;
@@ -34,8 +34,8 @@ body {
   justify-content: center;
   min-height: 100vh;
   min-height: 100dvh;
-  margin: 0;
   padding: 40px 5vw;
+  margin: 0;
   font-family: Mulish, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: var(--text-color);
@@ -45,14 +45,18 @@ body {
 
 main {
   width: 100%;
-  max-width: 800px;
+  max-width: 880px;
 }
 
-.morse {
-  margin: 0 0 20px;
-  font-size: 24px;
-  letter-spacing: 0.35em;
-  color: var(--muted-color);
+.panel {
+  display: grid;
+  grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.readout {
+  text-align: left;
 }
 
 h1 {
@@ -97,11 +101,162 @@ h1 {
   outline-offset: 3px;
 }
 
-@media (width <= 700px) {
-  .morse {
-    font-size: 18px;
+/* The instrument keeps the hues of `src/components/ADFView.vue`, so it looks
+   the same here as it does in the app: grey case and chrome bezel, white card
+   markings, orange indices and reference cross, a yellow pointer. Painted metal
+   takes no notice of the reader's colour scheme, so none of it is themed. */
+
+.adf {
+  width: 100%;
+  height: auto;
+}
+
+.adf-case {
+  fill: #4d4d4f;
+  stroke: #2f2f30;
+  stroke-width: 0.5;
+}
+
+.adf-case-screw circle {
+  stroke: #6d6e71;
+  stroke-width: 0.3;
+}
+
+.adf-bezel-edge {
+  fill: #1d1d1d;
+}
+
+.adf-card {
+  fill: #4d4d4f;
+}
+
+.adf-drum {
+  fill: #4a4a4d;
+  stroke: #000;
+  stroke-width: 0.4;
+}
+
+.adf-tick {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.45;
+}
+
+.adf-tick-major {
+  stroke-width: 0.6;
+}
+
+.adf-figure {
+  font-family: 'Arial Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 6.6px;
+  font-weight: 700;
+  dominant-baseline: central;
+  text-anchor: middle;
+  fill: #fff;
+}
+
+.adf-card-screw circle {
+  stroke: #6d6e71;
+  stroke-width: 0.2;
+}
+
+.adf-index {
+  fill: #f7941e;
+}
+
+.adf-hub-screw circle {
+  stroke: #6d6e71;
+  stroke-width: 0.2;
+}
+
+.adf-hub-screw path {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.45;
+}
+
+.adf-hub {
+  fill: #dbdcdd;
+}
+
+.adf-pointer {
+  fill: #f8e406;
+}
+
+.adf-reference {
+  fill: none;
+  stroke: #e0851d;
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
+
+/* The index knob overhangs the case corner, knurled rim first, and the black
+   collar and grey cap sit slightly up and to the left of its shadow. */
+
+.adf-knob-shadow {
+  fill: #000;
+  fill-opacity: 0.71;
+}
+
+.adf-knob-knurl {
+  fill: #3e3e3f;
+  stroke: #6d6e71;
+  stroke-width: 1.3;
+  stroke-dasharray: 1.15 1.1;
+}
+
+.adf-knob-body {
+  fill: #000;
+}
+
+.adf-knob-cap {
+  fill: #4a4a4d;
+}
+
+/* With no station to point at, the pointer turns at the rate
+   `src/components/ADFView.vue` gives it: one even revolution every two
+   seconds, for ever. */
+
+.adf-needle {
+  /* The bearing the pointer rests on when it is still: between two ten-degree
+     ticks, so it claims no station the card could name. */
+  --needle-rest-angle: 214deg;
+
+  transform-origin: 49% 49.5%;
+  transform-box: view-box;
+  animation: adf-spin 2s linear infinite;
+}
+
+@keyframes adf-spin {
+  from {
+    transform: rotate(0deg);
   }
 
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* The instrument sits beside the readout only while the wide column has room
+   for the display type; below that the two stack. */
+
+@media (width <= 900px) {
+  .panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    justify-items: center;
+  }
+
+  .adf {
+    max-width: min(58vw, 200px);
+  }
+
+  .readout {
+    text-align: center;
+  }
+}
+
+@media (width <= 700px) {
   .code {
     font-size: 48px;
   }
@@ -117,5 +272,16 @@ h1 {
   .button {
     padding: 15px;
     font-size: 24px;
+  }
+}
+
+/* Reduced motion parks the pointer on its resting bearing. An endless turn has
+   no last frame to hold, and an off-station reading is what a receiver with no
+   signal gives. */
+
+@media (prefers-reduced-motion: reduce) {
+  .adf-needle {
+    transform: rotate(var(--needle-rest-angle));
+    animation: none;
   }
 }

@@ -15,7 +15,7 @@
     "lint:eslint": "eslint .",
     "lint:oxlint": "oxlint -c oxlintrc.json src",
     "lint:knip": "knip",
-    "lint:stylelint": "stylelint \"src/**/*.{vue,css,scss,sass}\"",
+    "lint:stylelint": "stylelint \"src/**/*.{vue,css,scss,sass}\" \"public/*.css\"",
     "preview": "vite preview",
     "test:e2e": "pnpm build && playwright test",
     "test:e2e:dev": "playwright test --ui",
