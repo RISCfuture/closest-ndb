@@ -5,3 +5,7 @@ node_modules
 # pnpm writes this in its own format on every install; formatting it here only
 # starts a fight Prettier loses on the next lockfile change.
 pnpm-lock.yaml
+
+# DocC catalogs are Markdown-shaped but not Markdown: Prettier flattens the
+# double-backtick symbol links and directive blocks that DocC depends on.
+*.docc
