@@ -28,6 +28,7 @@
     "capitalized-comments": "off",
     "func-style": "off",
     "prefer-destructuring": "off",
+    "one-var": "off",
 
     "curly": "off",
     "sort-imports": "off",

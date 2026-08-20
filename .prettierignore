@@ -9,3 +9,8 @@ pnpm-lock.yaml
 # DocC catalogs are Markdown-shaped but not Markdown: Prettier flattens the
 # double-backtick symbol links and directive blocks that DocC depends on.
 *.docc
+
+# SwiftPM's build directory: vendored, read-only checkouts of other people's
+# sources. Git ignores it via generate-navaids/.gitignore, which Prettier
+# doesn't read because it only consults the root .gitignore.
+generate-navaids/.build

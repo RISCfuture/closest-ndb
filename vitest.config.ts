@@ -2,7 +2,7 @@ import { fileURLToPath } from 'node:url'
 import { configDefaults, defineConfig, mergeConfig } from 'vitest/config'
 import { type PluginOption, type UserConfig } from 'vite'
 import { playwright } from '@vitest/browser-playwright'
-import viteConfig from './vite.config'
+import viteConfig from './vite.config.ts'
 
 const VUE_DEVTOOLS_PLUGIN = 'vite-plugin-vue-devtools'
 

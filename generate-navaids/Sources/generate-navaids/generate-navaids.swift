@@ -19,7 +19,7 @@ enum GenerateNavaids {
       .navaids,
       errorHandler: { error in
         fputs(error.localizedDescription + "\n", stderr)
-        return true
+        return .proceed
       }
     )
 

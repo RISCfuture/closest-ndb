@@ -1,5 +1,5 @@
 {
-  "originHash" : "72609805a845cbd12d50cb449da25815a3c49ffbe5642483deb4450142ee24c4",
+  "originHash" : "ad52b753419df9c137c7daba01e37e1b0a6e2966c0686f1ed43b5b49eb4f02cb",
   "pins" : [
     {
       "identity" : "streamingcsv",
@@ -60,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RISCfuture/SwiftNASR.git",
       "state" : {
-        "revision" : "1830f51bfbbd789bcdbf57f4f9decb9726123e87",
-        "version" : "2.0.0"
+        "revision" : "fba98e390d7ff0f87ad6543f4de4f2041db1c722",
+        "version" : "4.1.0"
       }
     },
     {
