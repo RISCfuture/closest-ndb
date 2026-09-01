@@ -14,6 +14,20 @@ jobs:
       - uses: SwiftyLab/setup-swift@latest
         with:
           swift-version: '6.3'
+      # `latest-stable` Xcode drifts, so the resolved compiler identifies the cache.
+      - name: Record toolchain version
+        id: toolchain
+        run: |
+          version="$(swift --version | head -1)-$(xcodebuild -version | head -1)"
+          echo "id=$(printf '%s' "$version" | tr -c '[:alnum:].' '-')" >> "$GITHUB_OUTPUT"
+      - name: Cache SwiftPM build products
+        uses: actions/cache@v6
+        with:
+          path: |
+            generate-navaids/.build
+            ~/.cache/org.swift.swiftpm
+            ~/Library/Caches/org.swift.swiftpm
+          key: swiftpm-periphery-macos-26-${{ steps.toolchain.outputs.id }}-${{ hashFiles('generate-navaids/Package.resolved') }}
       - name: Install Periphery
         run: brew install periphery
       - name: Run Periphery

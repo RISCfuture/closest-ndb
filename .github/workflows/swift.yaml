@@ -22,6 +22,14 @@ jobs:
       - uses: SwiftyLab/setup-swift@latest
         with:
           swift-version: '6.3'
+      - name: Cache SwiftPM build products
+        uses: actions/cache@v6
+        with:
+          path: |
+            generate-navaids/.build
+            ~/.cache/org.swift.swiftpm
+            ~/Library/Caches/org.swift.swiftpm
+          key: swiftpm-test-macos-26-swift6.3-${{ hashFiles('generate-navaids/Package.resolved') }}
       - name: Build
         run: cd generate-navaids && swift build -v
   lint:
@@ -60,6 +68,14 @@ jobs:
       - uses: SwiftyLab/setup-swift@latest
         with:
           swift-version: '6.3'
+      - name: Cache SwiftPM build products
+        uses: actions/cache@v6
+        with:
+          path: |
+            generate-navaids/.build
+            ~/.cache/org.swift.swiftpm
+            ~/Library/Caches/org.swift.swiftpm
+          key: swiftpm-docs-macos-26-swift6.3-${{ hashFiles('generate-navaids/Package.resolved') }}
       # The archive is thrown away; the job exists to fail on DocC warnings.
       - name: Build documentation
         working-directory: generate-navaids
