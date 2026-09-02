@@ -13,7 +13,7 @@ let package = Package(
   platforms: [.macOS(.v15)],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
-    .package(url: "https://github.com/RISCfuture/SwiftNASR.git", from: "4.1.0"),
+    .package(url: "https://github.com/RISCfuture/SwiftNASR.git", from: "4.1.1"),
     .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.5.0")
   ],
   targets: [
