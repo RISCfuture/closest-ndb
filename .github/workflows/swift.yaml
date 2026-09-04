@@ -18,10 +18,16 @@ jobs:
       - uses: actions/checkout@v6
       - uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '26.4'
+          xcode-version: latest-stable
       - uses: SwiftyLab/setup-swift@latest
         with:
           swift-version: '6.3'
+      # `latest-stable` Xcode drifts, so the resolved compiler identifies the cache.
+      - name: Record toolchain version
+        id: toolchain
+        run: |
+          version="$(swift --version | head -1)-$(xcodebuild -version | head -1)"
+          echo "id=$(printf '%s' "$version" | tr -c '[:alnum:].' '-')" >> "$GITHUB_OUTPUT"
       - name: Cache SwiftPM build products
         uses: actions/cache@v6
         with:
@@ -29,12 +35,12 @@ jobs:
             generate-navaids/.build
             ~/.cache/org.swift.swiftpm
             ~/Library/Caches/org.swift.swiftpm
-          key: swiftpm-test-macos-26-swift6.3-${{ hashFiles('generate-navaids/Package.resolved') }}
+          key: swiftpm-test-macos-26-${{ steps.toolchain.outputs.id }}-${{ hashFiles('generate-navaids/Package.resolved') }}
       - name: Build
         run: cd generate-navaids && swift build -v
   lint:
     name: Run SwiftLint
-    runs-on: macos-latest
+    runs-on: macos-26
     defaults:
       run:
         working-directory: generate-navaids
@@ -48,7 +54,7 @@ jobs:
     name: Run swift-format
     runs-on: ubuntu-latest
     container:
-      image: swift:latest
+      image: swift:6.3
     steps:
       - uses: actions/checkout@v6
       - name: Download .swift-format config
@@ -64,10 +70,16 @@ jobs:
       - uses: actions/checkout@v6
       - uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '26.4'
+          xcode-version: latest-stable
       - uses: SwiftyLab/setup-swift@latest
         with:
           swift-version: '6.3'
+      # `latest-stable` Xcode drifts, so the resolved compiler identifies the cache.
+      - name: Record toolchain version
+        id: toolchain
+        run: |
+          version="$(swift --version | head -1)-$(xcodebuild -version | head -1)"
+          echo "id=$(printf '%s' "$version" | tr -c '[:alnum:].' '-')" >> "$GITHUB_OUTPUT"
       - name: Cache SwiftPM build products
         uses: actions/cache@v6
         with:
@@ -75,7 +87,7 @@ jobs:
             generate-navaids/.build
             ~/.cache/org.swift.swiftpm
             ~/Library/Caches/org.swift.swiftpm
-          key: swiftpm-docs-macos-26-swift6.3-${{ hashFiles('generate-navaids/Package.resolved') }}
+          key: swiftpm-docs-macos-26-${{ steps.toolchain.outputs.id }}-${{ hashFiles('generate-navaids/Package.resolved') }}
       # The archive is thrown away; the job exists to fail on DocC warnings.
       - name: Build documentation
         working-directory: generate-navaids

@@ -23,7 +23,7 @@ enum GenerateNavaids {
       }
     )
 
-    var jsonDict = [[String: Encodable]]()
+    var jsonDict = [[String: any Encodable]]()
     for navaid in await nasr.data.navaids! {
       if !navaid.isNDB || !navaid.isOperational { continue }
       guard let freq = navaid.frequency else { continue }
