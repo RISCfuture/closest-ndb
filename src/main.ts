@@ -57,7 +57,7 @@ app.mount('#app')
  * Loads the session replay recorder once the app is on screen.
  *
  * The recorder is the heaviest part of the Sentry SDK and nothing on screen depends on it, so it
- * arrives on its own chunk instead of in the bundle the app needs to mount.
+ * lives in a chunk of its own that the browser fetches once the app is up.
  */
 function startSessionReplayAfterMount(): void {
   void import('@/utils/sentryReplay').then(({ startSessionReplay }) => {

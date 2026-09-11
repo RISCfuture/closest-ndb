@@ -12,8 +12,8 @@ const VENDOR_PACKAGE = /node_modules\/(\.pnpm\/)?(@vue|@intlify|vue|vue-i18n|pin
 
 /**
  * Splits the framework, Sentry's core, and Sentry's session replay recorder into chunks of their
- * own, so the app's own code is no longer one bundle the browser must have in full before it can
- * mount.
+ * own, so the browser can cache them apart from the app's own code and fetch the recorder only
+ * once the app has mounted.
  *
  * @param id - Absolute path of the module being placed.
  * @returns The name of the chunk the module belongs in, or `undefined` to leave the choice to the
