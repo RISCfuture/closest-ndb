@@ -1,18 +1,22 @@
+// Both Mulish faces are variable fonts whose `wght` axis spans 200-1000; declaring that range lets
+// the browser instance the real masters instead of synthesising bold.
 @font-face {
   font-family: Mulish;
-  src: url('/fonts/mulish.ttf') format('truetype');
+  font-weight: 200 1000;
+  src: url('/fonts/mulish.woff2') format('woff2');
+  font-display: swap;
 }
 
 @font-face {
   font-family: Mulish;
   font-style: italic;
-  font-weight: 100 900;
-  src: url('/fonts/mulish-italic.ttf') format('truetype');
+  font-weight: 200 1000;
+  src: url('/fonts/mulish-italic.woff2') format('woff2');
   font-display: swap;
 }
 
 @font-face {
   font-family: Morse;
-  src: url('/fonts/morse.ttf') format('truetype');
+  src: url('/fonts/morse.woff2') format('woff2');
   font-display: block;
 }

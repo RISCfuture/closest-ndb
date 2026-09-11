@@ -8,7 +8,6 @@
     "@types/setimmediate",
     "@vitest/browser",
     "@vue/compiler-core",
-    "motion",
     "setimmediate",
     "stylelint-config-recommended-scss"
   ],

@@ -6,6 +6,26 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import csp from 'vite-plugin-csp-guard'
 import { VitePWA } from 'vite-plugin-pwa'
 
+const SENTRY_PACKAGE = /node_modules\/(\.pnpm\/)?@sentry/u
+const SENTRY_REPLAY_PACKAGE = /replay|rrweb/u
+const VENDOR_PACKAGE = /node_modules\/(\.pnpm\/)?(@vue|@intlify|vue|vue-i18n|pinia)[@/]/u
+
+/**
+ * Splits the framework, Sentry's core, and Sentry's session replay recorder into chunks of their
+ * own, so the app's own code is no longer one bundle the browser must have in full before it can
+ * mount.
+ *
+ * @param id - Absolute path of the module being placed.
+ * @returns The name of the chunk the module belongs in, or `undefined` to leave the choice to the
+ *   bundler.
+ */
+function manualChunks(id: string): string | undefined {
+  if (SENTRY_PACKAGE.test(id)) return SENTRY_REPLAY_PACKAGE.test(id) ? 'sentry-replay' : 'sentry'
+  if (VENDOR_PACKAGE.test(id)) return 'vendor'
+
+  return undefined
+}
+
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
   server: {
@@ -19,7 +39,7 @@ export default defineConfig(({ command }) => ({
       manifest: false,
       injectRegister: false,
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest,woff,woff2,ttf,json}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest,woff2,json}'],
         // This site has no client-side router, so an unknown path is a real 404.
         // vite-plugin-pwa otherwise defaults this to index.html, which makes the
         // service worker answer every unknown path with the home page.
@@ -56,6 +76,9 @@ export default defineConfig(({ command }) => ({
   },
   build: {
     sourcemap: 'hidden',
+    rollupOptions: {
+      output: { manualChunks },
+    },
   },
   base: '/closest-ndb/',
 }))

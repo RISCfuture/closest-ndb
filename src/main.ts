@@ -4,18 +4,17 @@ import './assets/styles/base.scss'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { UAParser } from 'ua-parser-js'
 import * as Sentry from '@sentry/vue'
 import { createSentryPiniaPlugin } from '@sentry/vue'
 
 import App from './App.vue'
 import i18n from '@/i18n'
+import { isDesktopChrome } from '@/utils/browser'
 import { recoverFromPreloadErrors } from '@/utils/preloadRecovery'
 
 recoverFromPreloadErrors()
 
-const parser = new UAParser(navigator.userAgent)
-if (parser.getBrowser().name === 'Chrome') {
+if (isDesktopChrome()) {
   document.documentElement.classList.add('is-chrome')
   document.body.classList.add('is-chrome')
 }
@@ -37,7 +36,6 @@ Sentry.init({
         trackComponents: true,
       },
     }),
-    Sentry.replayIntegration({ maskAllText: true, blockAllMedia: true }),
   ],
   tracesSampleRate: 1.0,
   enableLogs: true,
@@ -54,6 +52,20 @@ app.use(pinia)
 app.use(i18n)
 
 app.mount('#app')
+
+/**
+ * Loads the session replay recorder once the app is on screen.
+ *
+ * The recorder is the heaviest part of the Sentry SDK and nothing on screen depends on it, so it
+ * arrives on its own chunk instead of in the bundle the app needs to mount.
+ */
+function startSessionReplayAfterMount(): void {
+  void import('@/utils/sentryReplay').then(({ startSessionReplay }) => {
+    startSessionReplay()
+  })
+}
+
+startSessionReplayAfterMount()
 
 /**
  * Installs the Workbox service worker that backs offline use.
