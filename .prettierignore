@@ -14,3 +14,8 @@ pnpm-lock.yaml
 # sources. Git ignores it via generate-navaids/.gitignore, which Prettier
 # doesn't read because it only consults the root .gitignore.
 generate-navaids/.build
+
+# Wire-format data written by generate-navaids: parallel arrays the browser
+# fetches on every visit. Formatting it for human eyes would undo the point of
+# the shape.
+public/ndbs.json

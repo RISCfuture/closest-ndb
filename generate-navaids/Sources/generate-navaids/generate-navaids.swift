@@ -23,25 +23,46 @@ enum GenerateNavaids {
       }
     )
 
-    var jsonDict = [[String: any Encodable]]()
+    var NDBs = [NDB]()
     for navaid in await nasr.data.navaids! {
       if !navaid.isNDB || !navaid.isOperational { continue }
       guard let freq = navaid.frequency else { continue }
 
-      jsonDict.append([
-        "id": navaid.id,
-        "name": navaid.name,
-        "lat": navaid.position.latitude.converted(to: .arcSeconds).value,
-        "lon": navaid.position.longitude.converted(to: .arcSeconds).value,
-        "freq": String(Int(freq.converted(to: .kilohertz).value))
-      ])
+      NDBs.append(
+        .init(
+          id: navaid.id,
+          name: navaid.name,
+          latitude: navaid.position.latitude.converted(to: .arcSeconds).value,
+          longitude: navaid.position.longitude.converted(to: .arcSeconds).value,
+          frequency: String(Int(freq.converted(to: .kilohertz).value))
+        )
+      )
     }
-    jsonDict.sort(by: { ($0["id"] as! String) < ($1["id"] as! String) })
+    NDBs.sort(by: { $0.id < $1.id })
 
-    let json = try JSONSerialization.data(
-      withJSONObject: jsonDict,
-      options: [.prettyPrinted, .sortedKeys]
-    )
+    let json = try JSONSerialization.data(withJSONObject: columns(of: NDBs), options: [.sortedKeys])
     try json.write(to: outputURL)
+  }
+
+  /// The website reads `ndbs.json` as one array per field: a few hundred records of identical
+  /// shape weigh far less that way than as objects repeating the same five keys.
+  private static func columns(of NDBs: [NDB]) -> [String: [Any]] {
+    [
+      "id": NDBs.map(\.id),
+      "name": NDBs.map(\.name),
+      "lat": NDBs.map(\.latitude),
+      "lon": NDBs.map(\.longitude),
+      "freq": NDBs.map(\.frequency)
+    ]
+  }
+
+  /// An operational NDB as the website consumes it: position in arc-seconds, frequency in
+  /// kilohertz.
+  private struct NDB {
+    let id: String
+    let name: String
+    let latitude: Double
+    let longitude: Double
+    let frequency: String
   }
 }

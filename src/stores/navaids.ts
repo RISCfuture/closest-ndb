@@ -1,8 +1,23 @@
 import { defineStore } from 'pinia'
-import type { Loc, NDB } from '@/types'
+import type { Loc, NDB, NDBColumns } from '@/types'
 import { isEmpty, isUndefined, minBy, toString } from 'lodash-es'
 import { geoDistance, geoInitialBearing, secondsToDegrees } from '@/util/geo'
 import * as Sentry from '@sentry/vue'
+
+/**
+ * Zips the parallel arrays `ndbs.json` ships into the records the rest of the app works with.
+ *
+ * @returns One record per entry, in the order the arrays give them.
+ */
+function recordsFromColumns({ id, name, lat, lon, freq }: NDBColumns): NDB[] {
+  return id.map((identifier, index) => ({
+    id: identifier,
+    name: name[index],
+    lat: lat[index],
+    lon: lon[index],
+    freq: freq[index],
+  }))
+}
 
 export const useNavaidsStore = defineStore('navaids', {
   state: () => ({
@@ -51,7 +66,8 @@ export const useNavaidsStore = defineStore('navaids', {
         if (response.status !== 200)
           throw new Error(`Unexpected status code ${response.status} ${response.statusText}`)
 
-        this.$patch({ NDBs: (await response.json()) as NDB[], loadError: undefined })
+        const columns = (await response.json()) as NDBColumns
+        this.$patch({ NDBs: recordsFromColumns(columns), loadError: undefined })
       } catch (error: unknown) {
         const loadError = error instanceof Error ? error : new Error(toString(error))
         this.$patch((state) => {
