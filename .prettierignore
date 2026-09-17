@@ -15,7 +15,14 @@ pnpm-lock.yaml
 # doesn't read because it only consults the root .gitignore.
 generate-navaids/.build
 
+# SwiftLint's cache of the shared config it fetches from a gist, written in
+# whatever shape SwiftLint pleases. Ignored via generate-navaids/.gitignore for
+# the same reason as .build above.
+generate-navaids/.swiftlint
+
 # Wire-format data written by generate-navaids: parallel arrays the browser
 # fetches on every visit. Formatting it for human eyes would undo the point of
-# the shape.
+# the shape. The second path is the generator's own working copy, left behind in
+# generate-navaids after a run and ignored there by its nested .gitignore.
 public/ndbs.json
+generate-navaids/ndbs.json
