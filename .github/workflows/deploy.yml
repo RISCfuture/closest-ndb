@@ -30,15 +30,15 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
       - name: Setup pages
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@v6.0.0
       - name: Set up pnpm
-        uses: pnpm/action-setup@v6
+        uses: pnpm/action-setup@v6.1.0
       - name: Set up Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7.1.0
         with:
           cache: pnpm
           node-version-file: .nvmrc
@@ -51,7 +51,7 @@ jobs:
           VITE_SENTRY_RELEASE: ${{ github.sha }}
       # Sourcemaps must reach Sentry BEFORE they are deleted. Do not reorder.
       - name: Create Sentry release
-        uses: getsentry/action-release@v3
+        uses: getsentry/action-release@v3.7.2
         env:
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_ORG: timcodes
@@ -64,9 +64,9 @@ jobs:
       - name: Strip source maps from the published artifact
         run: find dist -name '*.map' -delete
       - name: Upload
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: 'dist/'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v5.0.1

@@ -1,5 +1,7 @@
 allowBuilds:
   '@parcel/watcher': true
+minimumReleaseAgeExclude:
+  - knip@6.44.1
 onlyBuiltDependencies:
   - '@parcel/watcher'
 patchedDependencies:

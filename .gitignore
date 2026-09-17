@@ -25,3 +25,7 @@ coverage/
 __screenshots__/*
 __screenshots__
 .claude/settings.local.json
+
+.build/
+
+docs/

@@ -5,7 +5,15 @@ import pluginVue from 'eslint-plugin-vue'
 
 export default tseslint.config(
   {
-    ignores: ['dist', 'node_modules', 'e2e', '*.config.mjs'],
+    ignores: [
+      'docs/**',
+      'test-results/**',
+      'playwright-report/**',
+      'dist',
+      'node_modules',
+      'e2e',
+      '*.config.mjs',
+    ],
   },
   js.configs.recommended,
   ...tseslint.configs.strictTypeChecked,

@@ -6,8 +6,8 @@ import { page } from 'vitest/browser'
 
 describe('DistanceView', () => {
   describe('with known distance', () => {
-    it('renders the distance', () => {
-      render(DistanceView, {
+    it('renders the distance', async () => {
+      await render(DistanceView, {
         props: { distance: 10 },
         global: { plugins: [i18n] },
       })
@@ -16,8 +16,8 @@ describe('DistanceView', () => {
   })
 
   describe('with unknown distance', () => {
-    it('renders “???”', () => {
-      render(DistanceView, {
+    it('renders “???”', async () => {
+      await render(DistanceView, {
         global: { plugins: [i18n] },
       })
       expect(page.getByTestId('ndb-distance').element().textContent).toBe('???')
@@ -30,8 +30,8 @@ describe('DistanceView', () => {
       message: 'Location permission denied',
     } as GeolocationPositionError
 
-    it('renders a “location not given” message', () => {
-      render(DistanceView, {
+    it('renders a “location not given” message', async () => {
+      await render(DistanceView, {
         props: { error },
         global: { plugins: [i18n] },
       })
@@ -47,8 +47,8 @@ describe('DistanceView', () => {
       message: 'Position unavailable',
     } as GeolocationPositionError
 
-    it('renders “???”', () => {
-      render(DistanceView, {
+    it('renders “???”', async () => {
+      await render(DistanceView, {
         props: { error },
         global: { plugins: [i18n] },
       })
@@ -62,8 +62,8 @@ describe('DistanceView', () => {
       message: 'Other error',
     } as GeolocationPositionError
 
-    it('renders the error', () => {
-      render(DistanceView, {
+    it('renders the error', async () => {
+      await render(DistanceView, {
         props: { error },
         global: { plugins: [i18n] },
       })

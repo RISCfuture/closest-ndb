@@ -1,4 +1,4 @@
-// swift-tools-version: 6.3
+// swift-tools-version: 6.4
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -14,10 +14,10 @@ let upcomingFeatures: [SwiftSetting] = [
 
 let package = Package(
   name: "generate-navaids",
-  platforms: [.macOS(.v15)],
+  platforms: [.macOS(.v27)],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
-    .package(url: "https://github.com/RISCfuture/SwiftNASR.git", from: "4.1.1"),
+    .package(url: "https://github.com/RISCfuture/SwiftNASR.git", from: "5.0.1"),
     .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.5.0")
   ],
   targets: [

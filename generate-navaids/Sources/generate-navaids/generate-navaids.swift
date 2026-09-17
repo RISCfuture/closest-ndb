@@ -32,8 +32,8 @@ enum GenerateNavaids {
         .init(
           id: navaid.id,
           name: navaid.name,
-          latitude: navaid.position.latitude.converted(to: .arcSeconds).value,
-          longitude: navaid.position.longitude.converted(to: .arcSeconds).value,
+          latitude: Double(navaid.position.latitudeArcsec),
+          longitude: Double(navaid.position.longitudeArcsec),
           frequency: String(Int(freq.converted(to: .kilohertz).value))
         )
       )

@@ -9,7 +9,8 @@
     "@vitest/browser",
     "@vue/compiler-core",
     "setimmediate",
-    "stylelint-config-recommended-scss"
+    "stylelint-config-recommended-scss",
+    "@typescript/native"
   ],
   "rules": {
     "exports": "error"

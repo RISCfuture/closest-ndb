@@ -5,8 +5,8 @@ import { page } from 'vitest/browser'
 
 describe('ADFView', () => {
   describe('with known bearing', () => {
-    it.skip('sets the pointer rotation', () => {
-      render(ADFView, {
+    it.skip('sets the pointer rotation', async () => {
+      await render(ADFView, {
         props: {
           bearing: 90,
         },
@@ -17,8 +17,8 @@ describe('ADFView', () => {
   })
 
   describe('with unknown bearing', () => {
-    it.skip('spins the pointer', () => {
-      render(ADFView)
+    it.skip('spins the pointer', async () => {
+      await render(ADFView)
       const pointer = page.getByTestId('pointer').element() as SVGPathElement
       expect(pointer.style.rotate).toEqual('0deg')
     })

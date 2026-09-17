@@ -5,8 +5,8 @@ import { render } from 'vitest-browser-vue'
 import { page } from 'vitest/browser'
 
 describe('InfoView', () => {
-  it('renders NDB information', () => {
-    render(InfoView, {
+  it('renders NDB information', async () => {
+    await render(InfoView, {
       props: {
         ndb: {
           id: 'TG',
