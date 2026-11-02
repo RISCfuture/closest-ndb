@@ -19,6 +19,21 @@ export const test = base.extend<GeoFixtures>({
     await use(new NoLocationPage(page))
   },
 
+  page: async ({ page }, use) => {
+    await page.route('**/closest-ndb/ndbs.json', (route) =>
+      route.fulfill({
+        json: {
+          id: ['HGT'],
+          name: ['HUNTER LIGGETT'],
+          lat: [129460.203125],
+          lon: [-436281],
+          freq: ['209'],
+        },
+      }),
+    )
+    await use(page)
+  },
+
   geoSuccess: async ({ context, page }, use) => {
     await use(async (latitude: number, longitude: number) => {
       await context.grantPermissions(['geolocation'])

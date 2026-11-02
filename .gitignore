@@ -29,3 +29,6 @@ __screenshots__
 .build/
 
 docs/
+
+/public/ndbs.json
+/public/ndbs-cycle.txt

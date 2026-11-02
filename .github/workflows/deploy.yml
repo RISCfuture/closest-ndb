@@ -1,6 +1,9 @@
 name: Deploy to GitHub Pages
 
 on:
+  schedule:
+    - cron: '17 9 * * *'
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -22,8 +25,79 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  generate:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    outputs:
+      publish: ${{ steps.cycle.outputs.publish }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: SwiftyLab/setup-swift@v1.14.2
+        with:
+          swift-version: '6.4'
+      - name: Install ZIP dependencies
+        run: sudo apt-get update && sudo apt-get install -y zlib1g-dev
+      - name: Cache SwiftPM build products
+        uses: actions/cache@v6.1.0
+        with:
+          path: |
+            generate-navaids/.build
+            ~/.cache/org.swift.swiftpm
+          key: swiftpm-ndbs-${{ runner.os }}-${{ runner.arch }}-swift6.4-${{ hashFiles('generate-navaids/Package.resolved') }}
+      - name: Build generator
+        working-directory: generate-navaids
+        run: swift build -c release
+      - name: Check effective cycle
+        id: cycle
+        working-directory: generate-navaids
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          cycle="$(.build/release/generate-navaids --print-cycle)"
+          publish=true
+          if [ "$EVENT_NAME" = schedule ]; then
+            status="$(curl --silent --show-error --location --retry 3 \
+              --output "$RUNNER_TEMP/published-cycle.txt" --write-out '%{http_code}' \
+              "https://riscfuture.github.io/closest-ndb/ndbs-cycle.txt?check=$GITHUB_RUN_ID")"
+            case "$status" in
+              200)
+                if [ "$(cat "$RUNNER_TEMP/published-cycle.txt")" = "$cycle" ]; then
+                  publish=false
+                fi
+                ;;
+              404) ;;
+              *) echo "Could not read published cycle: HTTP $status" >&2; exit 1 ;;
+            esac
+          fi
+          echo "publish=$publish" >> "$GITHUB_OUTPUT"
+          echo "Effective cycle: $cycle; publish: $publish"
+      - name: Generate NDB data
+        if: steps.cycle.outputs.publish == 'true'
+        working-directory: generate-navaids
+        run: |
+          set -euo pipefail
+          .build/release/generate-navaids
+          jq -e '
+            [.id, .name, .lat, .lon, .freq] as $columns |
+            all($columns[]; type == "array") and
+            (.id | length > 0) and
+            ([$columns[] | length] | unique | length == 1)
+          ' ndbs.json
+      - name: Upload NDB data
+        if: steps.cycle.outputs.publish == 'true'
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: ndb-data
+          path: |
+            generate-navaids/ndbs.json
+            generate-navaids/ndbs-cycle.txt
+          if-no-files-found: error
+          retention-days: 1
+
   deploy:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    needs: generate
+    if: needs.generate.outputs.publish == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -44,6 +118,11 @@ jobs:
           node-version-file: .nvmrc
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Download NDB data
+        uses: actions/download-artifact@v8.0.2
+        with:
+          name: ndb-data
+          path: public
       - name: Build
         run: pnpm run build
         env:

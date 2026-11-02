@@ -9,6 +9,7 @@ DerivedData/
 
 distribution.zip
 ndbs.json
+ndbs-cycle.txt
 
 
 # SwiftLint Remote Config Cache
